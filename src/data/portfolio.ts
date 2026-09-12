@@ -84,337 +84,344 @@ export type SkillGroup = {
 
 export const portfolio = {
     meta: {
-        title: "Raheem Kawojue | Senior Backend & Platform Engineer for Payments, AI, and Web3",
+        title: "Edwin Ayabie | Python Backend Engineer for Fintech, Payments, and AI Platforms",
         description:
-            "Raheem Kawojue is a senior backend and platform engineer, CTO and co-founder at Waysdrop and Terrakru, and co-founder of Opsettle. He builds payment systems, AI infrastructure, and distributed platforms where correctness and reliability matter: ~5M-line NestJS backend, 4 payment rails, 15+ queues, 6 SDKs, and zero-downtime Railway->AWS migration across 30+ AWS resources.",
+            "Edwin Ayabie is a Python backend engineer and Technical Lead at AET Technologies, building fintech, payments, and AI systems out of Abuja, Nigeria: bill-payment and crypto on/off-ramp platforms, FastAPI/Django services, Celery task pipelines, and RAG-based AI products across 10+ production systems since 2023.",
     },
     site: {
-        url: "https://kawojue.dev",
-        name: "Raheem Kawojue",
+        url: "https://beshel.dev",
+        name: "Edwin Ayabie",
         locale: "en_NG",
-        twitter: "@0xkawojue",
+        twitter: "@1madvirus",
         ogImage: "/og.jpg",
-        updated: "2026-09-12",
+        updated: "2026-09-13",
         keywords: [
-            "Raheem Kawojue",
-            "kawojue",
-            "0xkawojue",
+            "Edwin Ayabie",
+            "madvirus",
+            "1madvirus",
+            "Python backend engineer",
             "senior backend engineer",
-            "senior platform engineer",
-            "staff backend engineer",
-            "founding engineer backend",
-            "NestJS engineer",
-            "TypeScript backend engineer",
-            "AI agent engineer",
-            "AI infrastructure engineer",
-            "LLM tool calling engineer",
-            "Web3 engineer",
-            "Solidity developer",
-            "smart contract engineer",
-            "payment systems engineer",
-            "backend architecture engineer",
-            "fintech backend engineer",
-            "Paystack integration engineer",
-            "Nomba Stripe NestJS",
-            "escrow wallet systems",
-            "money movement systems",
-            "distributed systems engineer",
-            "real-time operations platform",
-            "BullMQ Redis Kafka",
-            "PostgreSQL NestJS",
-            "remote NestJS engineer",
-            "remote backend engineer",
-            "EVM Solana engineer",
-            "AWS engineer",
-            "zero-downtime cloud migration",
-            "Railway to AWS migration",
-            "AWS EC2 RDS ElastiCache Lambda",
-            "WAF Shield CloudFront Amplify",
-            "agriculture tech Nigeria",
-            "agritech marketplace",
-            "Terrakru CTO",
-            "Terrakru co-founder",
-            "agricultural marketplace Nigeria",
-            "farmers merchants platform Nigeria",
-            "Next.js full stack engineer",
-            "Next.js admin dashboard",
-            "CTO Waysdrop",
-            "Head of Engineering Waysdrop",
-            "Waysdrop SDK",
-            "Dart Node Go PHP Rust Python SDK",
-            "Opsettle",
-            "Ojah Payshiga",
-            "backend engineer Lagos",
+            "technical lead",
+            "FastAPI engineer",
+            "Django engineer",
+            "Celery engineer",
             "backend engineer Nigeria",
+            "backend engineer Abuja",
+            "remote Python engineer",
+            "fintech backend engineer",
+            "payments backend engineer",
+            "VAS integration engineer",
+            "bill payment platform engineer",
+            "crypto on ramp off ramp engineer",
+            "virtual card issuance backend",
+            "RAG pipeline engineer",
+            "LLM integration engineer",
+            "AI backend engineer",
+            "PostgreSQL engineer",
+            "Redis caching engineer",
+            "RabbitMQ Celery engineer",
+            "Kafka engineer",
+            "ETL pipeline engineer",
+            "microservices engineer",
+            "distributed systems engineer",
+            "Technical Lead AET Technologies",
+            "SCIDaR backend engineer",
+            "health data engineer Nigeria",
         ].join(", "),
         skills: [
-            "NestJS",
-            "TypeScript",
-            "Next.js",
+            "Python",
+            "FastAPI",
+            "Django",
+            "Celery",
             "PostgreSQL",
             "Redis",
-            "BullMQ",
-            "AI agents",
-            "LLM tool calling",
-            "notification agents",
-            "retention agents",
-            "payment systems",
-            "escrow",
-            "Paystack",
-            "Nomba",
-            "Stripe",
-            "AWS",
-            "zero-downtime cloud migration",
-            "Solidity",
-            "EVM",
-            "Solana",
-            "Kafka",
             "RabbitMQ",
-            "WebSockets",
-            "distributed systems",
+            "Kafka",
+            "GraphQL",
+            "RAG pipelines",
+            "LLM integration",
+            "bill payments",
+            "VAS integrations",
+            "crypto on/off-ramp",
+            "virtual card issuance",
+            "idempotent billing",
+            "ETL pipelines",
+            "microservices",
             "fintech",
-            "agritech",
-            "agricultural marketplace",
-            "platform SDKs",
+            "distributed systems",
         ],
     },
-    handle: "kawojue",
-    headline: "Raheem Kawojue",
-    title: "Senior Backend & Platform Engineer · Commerce · Payments · AI Agents · Web3",
-    punch: "CTO & Co-founder at Waysdrop and Terrakru · Co-founder at Opsettle",
+    handle: "madvirus",
+    headline: "Edwin Ayabie",
+    title: "Python Backend Engineer · Fintech · Payments · AI Platforms",
+    punch: "Technical Lead at AET Technologies · backend engineer across fintech, payments, and AI products",
     valueProp:
-        "I design and ship backend and platform systems where mistakes are expensive: payments, AI agents, fulfillment, and real-time operations.",
-    lede: "Trusted to own backend architecture for systems that move money, coordinate real-world operations, and stay reliable under load. Built and own Waysdrop end-to-end: ~3M-line NestJS backend, 6+ frontends, 6 SDKs, 3 production AI agents, 15+ queues, and 4 payment rails. Led its zero-downtime Railway -> AWS migration across 30+ AWS resources. Also CTO and co-founder at Terrakru, co-founder at Opsettle, and shipped 9+ production systems since 2023.",
+        "I build backend systems for fintech, payments, and AI products, where transaction correctness, concurrency, and reliability under load all matter.",
+    lede: "Backend engineer across 10+ production systems since 2023: fintech bill-payment and crypto on/off-ramp apps, a food-delivery platform handling 10,000+ daily orders, an AI mental-health companion built on a RAG pipeline, and a national health-coverage API rebuilt for an 80%+ speed-up. Currently Technical Lead at AET Technologies, guiding architecture decisions and mentoring engineers across its fintech and VAS backend systems.",
     availability:
-        "Open to senior, staff, and founding-engineer roles · remote-first · Lagos (WAT, UTC+1)",
+        "Open to senior backend and technical-lead roles · remote-first · Abuja, Nigeria (WAT, UTC+1)",
     tags: [
-        "Backend architecture · money-moving systems",
-        "AI infrastructure · agents · ops automation",
-        "Payments · escrow · wallets · payouts",
-        "Reliability · queues · real-time systems",
-        "TypeScript · NestJS · Go · Solidity",
+        "Backend architecture · fintech & payments",
+        "AI pipelines · RAG · LLM integration",
+        "Crypto on/off-ramp · virtual cards · wallets",
+        "Reliability · queues · concurrent transactions",
+        "Python · FastAPI · Django · Celery",
     ],
     highlights: [
-        { value: "9+", label: "production systems shipped since 2023" },
-        { value: "4", label: "payment rails owned in production" },
+        { value: "10+", label: "production backend systems shipped since 2023" },
         {
-            value: "15+",
-            label: "async queues for delivery, payments, KYC, and webhooks",
+            value: "80%+",
+            label: "API response-time improvement on a national health coverage tool",
         },
-        { value: "30+", label: "AWS resources migrated with 0 downtime" },
-        { value: "~5M", label: "lines of backend operated in prod" },
+        {
+            value: "100,000+",
+            label: "monthly transactions on idempotent billing pipelines",
+        },
+        {
+            value: "25%+",
+            label: "latency cut via Redis caching for 10,000+ daily orders",
+        },
+        {
+            value: "40%",
+            label: "engagement lift from an AI emotional-support pipeline",
+        },
     ] satisfies Highlight[],
     actions: [
         {
             label: "email me",
-            href: "mailto:kawojue08@gmail.com",
+            href: "mailto:edwinayabie1@gmail.com",
             primary: true,
         },
-        { label: "linkedin", href: "https://www.linkedin.com/in/kawojue" },
+        { label: "linkedin", href: "https://linkedin.com/in/madvirus" },
         { label: "resume", href: "/resume" },
     ] satisfies Action[],
-    location: "Lagos, Nigeria · Open to remote",
+    location: "Abuja, Nigeria · Open to remote",
     phone: {
-        label: "+234 813 191 1964",
-        href: "tel:+2348131911964",
+        label: "+234 907 007 3152",
+        href: "tel:+2349070073152",
     },
     contact: {
         heading: "Let's talk",
-        body: "Hiring for backend architecture, payment systems, AI infrastructure, or a founding engineer who can own delivery end-to-end? I build systems where correctness, concurrency, money movement, and reliability matter. I'm remote-first out of Lagos (UTC+1), with overlap across European and US East hours. Email is the fastest route; a short note about the problem is enough to get started.",
-        email: "kawojue08@gmail.com",
+        body: "Hiring for backend engineering across fintech, payments, or AI-driven products? I build systems where transaction integrity, concurrency, and reliability under load matter: Python/FastAPI/Django backends, Celery task pipelines, and LLM-backed features. I'm remote-first out of Abuja (WAT, UTC+1). Email is the fastest way to reach me.",
+        email: "edwinayabie1@gmail.com",
         links: [
-            { label: "mail", href: "mailto:kawojue08@gmail.com" },
-            { label: "github", href: "https://github.com/kawojue" },
-            { label: "linkedin", href: "https://www.linkedin.com/in/kawojue" },
-            { label: "x", href: "https://x.com/0xkawojue" },
+            { label: "mail", href: "mailto:edwinayabie1@gmail.com" },
+            { label: "github", href: "https://github.com/madvirus-ops" },
+            { label: "linkedin", href: "https://linkedin.com/in/madvirus" },
+            { label: "x", href: "https://x.com/1madvirus" },
         ] satisfies SocialLink[],
     },
-    // Periods are drafted from the project writeups. Correct them here and
+    // Periods are drafted from the CV/LinkedIn writeups. Correct them here and
     // the timeline, resume, and llms corpus follow.
     experience: [
         {
-            id: "waysdrop-cto",
-            role: "CTO & Co-founder",
-            org: "Waysdrop",
-            orgHref: "https://waysdrop.com",
-            period: "Sep 2026 - present",
+            id: "synterra-digital",
+            role: "Back End Developer & Data Scientist",
+            org: "Synterra Digital",
+            orgHref: "https://synterradigital.ai",
+            period: "Jul 2026 - present",
             summary:
-                "Own backend and platform architecture for the whole business: the ~5M-line NestJS backend, the agent fleet (support, notifications, activation/retention), multi-rail wallets, 6+ frontend apps (admin, API dashboard, affiliate, web, CRM, global-admin), 6 cross-language SDKs, and zero-downtime migration from Railway to AWS across 30+ resources including 4 RDS, 3 EC2, 2 Load Balancers, ElastiCache, 9 Amplify deployments, and 2 Lambda/EventBridge schedulers.",
-            projectIds: ["waysdrop"],
+                "Dual backend and data role at an early-stage AI company, building the data and API layer behind its product ahead of public launch.",
         },
         {
-            id: "waysdrop-hoe",
-            role: "Head of Engineering",
-            org: "Waysdrop",
-            orgHref: "https://waysdrop.com",
-            period: "Jan 2026 - Aug 2026",
+            id: "scidar",
+            role: "Backend Engineer",
+            org: "SCIDaR",
+            orgHref: "https://scidar.org",
+            period: "Feb 2026 - Jul 2026",
             summary:
-                "Led engineering for a platform where delivery ops, payment correctness, and AI automation all had to hold up in production: H3 courier matching, 15+ queues, the admin/API-dashboard/affiliate/web/CRM/global-admin frontends, 6 SDKs (Dart, Node, Go, PHP, Rust, Python), and 3 public reference architectures on GitHub.",
-            projectIds: ["waysdrop"],
+                "Contract backend engineer at Solina Centre for International Development and Research (SCIDaR), a Nigerian health and development research organization that has run 15+ transformation programs across 15+ states since 2017. Rebuilt the API layer behind an internal program-coverage tool, cutting response times by over 80% to consistently under 100ms, and built an ETL pipeline feeding downstream program analysis.",
+            projectIds: ["scidar"],
         },
         {
-            id: "waysdrop-lead",
+            id: "auvraai",
+            role: "Backend Engineer",
+            org: "AuvraAI",
+            period: "Nov 2025 - Aug 2026",
+            summary:
+                "Built backend pipelines and pathway logic for an AI voice-call and customer-support platform, powering virtual agents that handle live calls.",
+            projectIds: ["auvraai"],
+        },
+        {
+            id: "ashinity-moodcraft",
+            role: "Backend Developer",
+            org: "Ashinity Synergy",
+            period: "Jul 2025 - Sep 2025",
+            summary:
+                "Backend for Moodcraft, an AI mental-health companion app. Engineered and maintained a RAG pipeline and LLM integration for mood classification and personalized response generation, plus secure ingestion pipelines for sensitive user data and the FastAPI inference services behind the app, alongside a reported 40% lift in user engagement.",
+            projectIds: ["moodcraft"],
+        },
+        {
+            id: "tiango-yumbarn",
             role: "Lead Backend Engineer",
-            org: "Waysdrop",
-            orgHref: "https://waysdrop.com",
-            period: "Jan 2025 - Dec 2025",
+            org: "Tiango Logistics (Yumbarn)",
+            period: "May 2025 - Dec 2025",
             summary:
-                "Built the entire platform server from early MVP to production: all NestJS services, Paystack/Nomba/Stripe wallet rails, Bull queues, the first Claude/Qwen support agent with 80+ tools, and the first internal admin and web frontends.",
-            projectIds: ["waysdrop"],
+                "Backend lead for Yumbarn, Tiango Logistics' food ordering and delivery platform. Architected and deployed the core REST API serving the customer, vendor, and rider apps, built real-time order fulfillment with geolocation-based rider assignment and payment processing, and introduced Redis caching that cut API latency by over 25% at 10,000+ daily orders.",
+            projectIds: ["yumbarn"],
         },
         {
-            id: "terrakru",
-            role: "CTO & Co-founder",
-            org: "Terrakru",
-            orgHref: "https://terrakru.com",
-            period: "2026 - present",
+            id: "aet-lead",
+            role: "Technical Lead",
+            org: "AET Technologies",
+            period: "Mar 2025 - present",
             summary:
-                "CTO and co-founder of a go-live-ready agricultural commerce marketplace connecting farmers and merchants across Nigeria. Owned backend architecture in a three-person founding team, built the NestJS backend with a colleague, paired on the Next.js frontends with another colleague, and single-handedly delivered the admin dashboard. Secure wallet, Paystack payments, in-app chat, geo-radius discovery via maps, and real-time listings ready for launch.",
-            projectIds: ["terrakru"],
+                "Leading engineering across AET's fintech and VAS backend systems: reviewing architecture and performance decisions, mentoring 10+ junior developers in Python, JavaScript, and distributed systems (a reported 30% productivity lift on critical projects), resolving production incidents in background task execution, API failures, and database performance, and communicating technical risk to senior stakeholders.",
+            projectIds: ["aet-vas"],
         },
         {
-            id: "opsettle",
-            role: "Co-founder · Lead Engineer",
-            org: "Opsettle",
-            period: "2025 - present",
+            id: "techmakeeasy",
+            role: "Backend Engineer",
+            org: "Techmakeeasy (NectaBills / NectaSwap)",
+            period: "Jan 2025 - Apr 2026",
             summary:
-                "Building non-custodial stablecoin payment infrastructure from zero: merchant dashboard and gasless checkout on top of a NestJS API, backed by an audited settlement layer across Base, Polygon, Arbitrum, Optimism, and BNB.",
-            projectIds: ["opsettle"],
+                "Backend engineer on NectaBills and NectaSwap, a fintech app for bills, transfers, eSIM, gift cards, and crypto on/off-ramp. Implemented idempotent billing and transaction workflows preventing duplicate charges across 100,000+ monthly transactions, built async payment pipelines on Celery and RabbitMQ for execution, retries, and reconciliation, and integrated multiple VAS aggregators and payment providers over REST and SOAP.",
+            projectIds: ["nectabills"],
         },
         {
-            id: "fixorflex",
-            role: "CTO",
-            org: "FixOrFlex",
-            orgHref: "https://fixorflex.com",
-            period: "2025",
+            id: "aet-backend",
+            role: "Backend Developer",
+            org: "AET Technologies",
+            period: "Apr 2024 - Feb 2025",
             summary:
-                "Architected and shipped a two-sided services marketplace backend: Paystack escrow, concurrency-safe withdrawals, SSE job discovery, KYC gating, and TOTP 2FA.",
-            projectIds: ["fixorflex"],
+                "Designed USSD, SMS, and web APIs for AET's value-added-service products, integrated external aggregators and ISPs over REST and SOAP/XML, and implemented the billing logic behind those workflows.",
+            projectIds: ["aet-vas"],
         },
         {
-            id: "payshiga",
-            role: "Product Lead · Backend Engineer",
-            org: "Payshiga (Ojah)",
-            orgHref: "https://payshiga.com",
-            period: "2024",
+            id: "sefy-paysefy",
+            role: "Lead Backend Developer",
+            org: "Sefy Technologies (Paysefy)",
+            period: "Feb 2024 - Nov 2024",
             summary:
-                "Led product and backend for Ojah, a cross-border marketplace on Payshiga's rails: live FX quotes, vendor-split checkout, dual logistics, and HMAC-signed webhook sync.",
-            projectIds: ["ojah"],
+                "Led backend architecture and implementation for Paysefy, a fintech bills-payment platform, authored technical documentation covering system design and backend standards, and worked closely with frontend teams on API integration.",
+            projectIds: ["paysefy"],
         },
         {
-            id: "web3",
-            role: "Co-founder · Backend Engineer",
-            org: "Videlabs · Metadawgs",
-            orgHref: "https://videlabs.io",
-            period: "2024 - present",
+            id: "zeelpay",
+            role: "Lead Backend Developer",
+            org: "Zeelpay",
+            orgHref: "https://zeelpay.com",
+            period: "Feb 2024 - Jan 2025",
             summary:
-                "VideSwap DEX aggregator across 5+ EVM chains with ERC-721 revenue sharing; five NestJS services for Metadawgs' Solana ecosystem covering presale, trading, SocialFi, and moderation.",
-            projectIds: ["videswap", "metadawgs"],
+                "Backend for Zeelpay, a hybrid Web2/Web3 fintech app for bill payments, airtime/data top-up, gift-card trading, and Bitcoin/USDT trading with NGN/USD virtual cards. Designed the services supporting both the cryptocurrency and bills-payment sides of the product and enforced code quality through automated testing and review.",
+            projectIds: ["zeelpay"],
         },
         {
-            id: "freelance",
-            role: "Backend Engineer · Freelance",
-            org: "Independent",
-            period: "2023 - 2024",
+            id: "gexipay",
+            role: "Backend Developer",
+            org: "Gexipay Technologies",
+            period: "Nov 2023 - Jan 2025",
             summary:
-                "Shipped production backends for clients across e-commerce, fintech, healthcare, and Web3 gaming: StedShop, TalentSphere Africa, Amopedia, Omega Loan, and MemeGoat.",
-            projectIds: [
-                "stedshop",
-                "talentsphere",
-                "memegoat",
-                "amopedia",
-                "omega-loan",
-            ],
+                "Built the full backend for Gexipay, a consumer fintech app for bill payments, bank transfers, crypto and gift-card trading, virtual cards, and betting-wallet funding. Implemented secure, compliant transaction-processing workflows, optimized database performance through indexing and query refactoring, and integrated third-party services over JSON and XML APIs.",
+            projectIds: ["gexipay"],
+        },
+        {
+            id: "tobopay",
+            role: "Backend Developer",
+            org: "Tobopay",
+            period: "Nov 2023 - Dec 2024",
+            summary:
+                "Designed, developed, and maintained the entire backend infrastructure and deployments for Tobopay.",
+            projectIds: ["tobopay"],
+        },
+        {
+            id: "shazzy",
+            role: "Backend Developer",
+            org: "Shazz Tech (Shazzy)",
+            period: "May 2023 - Mar 2025",
+            summary:
+                "Backend for Shazzy, an all-in-one digital payments app spanning money transfers, crypto trading, and virtual USD cards for global payments. Built the crypto wallet and virtual-card functionality and improved database performance through query optimization.",
+            projectIds: ["shazzy"],
+        },
+        {
+            id: "zappy-global",
+            role: "Backend Developer",
+            org: "Zappy Global Technology",
+            orgHref: "https://zappy.ng",
+            period: "May 2023 - Jan 2025",
+            summary:
+                "Backend engineer on Zappy, a Nigerian payments app for instant bank transfers and a dual NGN/USD wallet with real-time FX conversion and airtime-to-cash.",
+            projectIds: ["zappy"],
+        },
+        {
+            id: "early-career",
+            role: "Backend & Web Developer · early career",
+            org: "Various — internships & freelance",
+            period: "2020 - 2023",
+            summary:
+                "Started in freelance web design and blogging before moving into Python backend development through internships and small teams: HNG Internship, KodeCamp, Zuri Team, Sidehustle, and Workshopapps, plus early freelance backend work for Naijabase Media.",
         },
     ] satisfies Experience[],
     skillGroups: [
         {
             label: "Languages",
-            items: ["TypeScript", "Node.js", "Go", "Solidity", "SQL"],
+            items: ["Python", "JavaScript", "SQL"],
         },
         {
             label: "Backend & data",
             items: [
-                "NestJS",
+                "FastAPI",
+                "Django",
+                "Celery",
                 "PostgreSQL",
-                "MongoDB",
                 "Redis",
-                "BullMQ",
                 "RabbitMQ",
                 "Kafka",
-                "WebSockets · Socket.io",
-                "SSE",
-                "Webhooks · HMAC signing",
+                "GraphQL",
+                "pySpark",
+                "Microservices",
+                "WebSockets",
+                "REST · SOAP · XML · JSON",
             ],
         },
         {
             label: "Payments & fintech",
             items: [
-                "Paystack",
-                "Nomba",
-                "Stripe",
-                "Payshiga",
-                "Escrow & wallet ledgers",
-                "Dedicated virtual accounts",
-                "KYC (NIN · CAC)",
-                "TOTP 2FA",
-                "Refunds & reconciliation",
+                "Bill payments & VAS aggregators",
+                "Crypto on/off-ramp (BTC · USDT)",
+                "Virtual card issuance (NGN · USD)",
+                "P2P transfers & FX conversion",
+                "Idempotent billing & reconciliation",
+                "Payment gateway integrations",
+                "Gift-card & betting-wallet rails",
             ],
         },
         {
-            label: "AI agents",
+            label: "AI & data",
             items: [
-                "Claude",
-                "Qwen",
-                "LLM tool-calling",
-                "Notification decisioning",
-                "Activation & retention agents",
-                "Multi-channel (push · email · SMS · in-app)",
-                "WhatsApp · Telegram bots",
-            ],
-        },
-        {
-            label: "Web3",
-            items: [
-                "EVM · Hardhat",
-                "ERC-4337",
-                "EIP-712",
-                "ERC-721 · ERC-1271",
-                "Uniswap V3 · Stargate",
-                "Solana · SPL",
-                "Jito · Raydium · Orca",
-                "Stacks",
+                "RAG pipelines",
+                "LLM integration & tool use",
+                "Mood / intent classification",
+                "Secure data-ingestion pipelines",
+                "Voice-agent pipelines",
+                "ETL & analysis pipelines",
             ],
         },
         {
             label: "Reliability & infra",
             items: [
-                "AWS: EC2 · RDS · ElastiCache · Lambda",
-                "AWS: Load Balancers · S3 · CloudFront · SES",
-                "AWS: EventBridge · Secrets Manager · ECR",
-                "AWS: WAF & Shield · Amplify · CloudWatch",
-                "Zero-downtime cloud migrations",
-                "Read-replica routing",
-                "Redis circuit breakers",
-                "Prometheus",
-                "Sentry",
-                "H3 geospatial",
-                "Azure Blob",
-                "Cloudinary",
-                "Vercel",
+                "Docker",
+                "Linux",
+                "Git",
+                "Database indexing & query optimization",
+                "Redis caching",
+                "Background task reliability (Celery retries)",
             ],
         },
     ] satisfies SkillGroup[],
     sidebarLinks: [
-        { label: "github.com/kawojue", href: "https://github.com/kawojue" },
         {
-            label: "linkedin.com/in/kawojue",
-            href: "https://www.linkedin.com/in/kawojue",
+            label: "github.com/madvirus-ops",
+            href: "https://github.com/madvirus-ops",
         },
-        { label: "x.com/0xkawojue", href: "https://x.com/0xkawojue" },
         {
-            label: "kawojue08@gmail.com",
-            href: "mailto:kawojue08@gmail.com",
+            label: "linkedin.com/in/madvirus",
+            href: "https://linkedin.com/in/madvirus",
+        },
+        { label: "x.com/1madvirus", href: "https://x.com/1madvirus" },
+        {
+            label: "edwinayabie1@gmail.com",
+            href: "mailto:edwinayabie1@gmail.com",
         },
     ] satisfies SocialLink[],
     nav: [
@@ -428,45 +435,61 @@ export const portfolio = {
         {
             id: "projects",
             label: "projects/",
-            href: "#waysdrop",
+            href: "#yumbarn",
             kind: "dir",
         },
         {
-            id: "waysdrop",
-            label: "waysdrop.md",
-            href: "#waysdrop",
+            id: "yumbarn",
+            label: "yumbarn.md",
+            href: "#yumbarn",
             kind: "file",
             indent: true,
             hint: "case study",
         },
         {
-            id: "opsettle",
-            label: "opsettle.md",
-            href: "#opsettle",
+            id: "nectabills",
+            label: "nectabills.md",
+            href: "#nectabills",
             kind: "file",
             indent: true,
             hint: "case study",
         },
         {
-            id: "terrakru",
-            label: "terrakru.md",
-            href: "#terrakru",
+            id: "moodcraft",
+            label: "moodcraft.md",
+            href: "#moodcraft",
             kind: "file",
             indent: true,
             hint: "case study",
         },
         {
-            id: "fixorflex",
-            label: "fixorflex.md",
-            href: "#fixorflex",
+            id: "scidar",
+            label: "scidar.md",
+            href: "#scidar",
             kind: "file",
             indent: true,
             hint: "case study",
         },
         {
-            id: "ojah",
-            label: "ojah.md",
-            href: "#ojah",
+            id: "zeelpay",
+            label: "zeelpay.md",
+            href: "#zeelpay",
+            kind: "file",
+            indent: true,
+            hint: "case study",
+        },
+        {
+            id: "shazzy",
+            label: "shazzy.md",
+            href: "#shazzy",
+            kind: "file",
+            indent: true,
+            hint: "case study",
+        },
+        {
+            id: "gexipay",
+            label: "gexipay.md",
+            href: "#gexipay",
             kind: "file",
             indent: true,
             hint: "case study",
@@ -513,13 +536,15 @@ export const portfolio = {
         {
             id: "work",
             label: "work",
-            href: "#waysdrop",
+            href: "#yumbarn",
             sectionIds: [
-                "waysdrop",
-                "opsettle",
-                "terrakru",
-                "fixorflex",
-                "ojah",
+                "yumbarn",
+                "nectabills",
+                "moodcraft",
+                "scidar",
+                "zeelpay",
+                "shazzy",
+                "gexipay",
                 "more-work",
             ],
         },
@@ -544,581 +569,438 @@ export const portfolio = {
     ] satisfies PrimaryNavItem[],
     projects: [
         {
-            id: "waysdrop",
-            fileName: "waysdrop.md",
-            name: "Waysdrop",
-            status: "production",
+            id: "yumbarn",
+            fileName: "yumbarn.md",
+            name: "Yumbarn",
+            status: "maintained",
             statusLabel: "● in production",
             flagship: true,
             summary:
-                "Backend and platform ownership for logistics, payments, and AI operations: ~5M-line NestJS backend, 6+ apps, 6 SDKs, H3 courier matching, 4 payment rails, zero-downtime Railway -> AWS migration.",
+                "Food ordering and delivery platform: core REST API, geolocation rider assignment, and Redis-cached endpoints handling 10,000+ daily orders.",
             description:
-                "Logistics and commerce platform where backend correctness, money movement, and real-time operations all matter. I owned the system end-to-end: server, every web frontend, SDKs, architectures, and infrastructure, from early MVP through production scale as lead backend, then Head of Engineering, and now CTO and co-founder. The frontend fleet is 6+ production apps: waysdrop-admin, waysdrop-api-dashboard, waysdrop-affiliate, waysdrop-web, waysdrop-crm, and waysdrop-global-admin, plus partner portals and mobile wrappers for a total of 9 Amplify deployments. Led zero-downtime migration of all servers and databases from Railway to AWS: 4 RDS instances, 3 EC2 with 2 Elastic IPs, 2 Load Balancers, ElastiCache for caching, 2 Lambda functions with EventBridge Schedulers, 9 Amplify deployments, 2 ECRs, 3 CloudFront distributions, S3 for storage, 2 Secrets Managers, SES for email, and 2 WAF & Shield layers, everything instrumented with CloudWatch. Published 3 reference architectures on GitHub covering the location service, HTTP logger, and API key gateway, plus the courier matching algorithm writeup so the engineering decisions are legible, not just claimed. Authored 6 official platform SDKs in Dart, Node.js, Go, PHP, Rust, and Python so merchant and courier integrations ship in hours, not weeks. The AI layer is a production ops surface, not a demo chat box. A Claude/Qwen support agent with 80+ tools runs live on WhatsApp and Telegram and executes ops from a prompt. A notification decision agent chooses when and how to reach someone: push, email, SMS, or in-app, including new products, cart reminders, a nearby store, and holiday greetings. An activation and retention agent creates promos and pulls abandoned users back. Under that sit H3 geospatial courier matching, multi-rail wallets (Paystack, Nomba, Stripe, DVA, escrow), and 15+ Bull queues that keep delivery, payments, KYC, and webhook workloads moving outside request paths.",
-            role: "built everything · cto · co-founder",
-            stack: "nestjs · postgres · redis · bullmq · claude · qwen · aws · amplify · ec2 · rds · elasticache · react · sdk ×6",
-            site: "https://waysdrop.com",
-            diagram: {
-                src: "/waysdrop_architecture.svg",
-                alt: "Waysdrop platform architecture diagram showing frontends and SDKs feeding a NestJS backend, AI agents, and AWS infrastructure.",
-                caption:
-                    "Architecture overview: frontends and SDKs feed the NestJS core, which powers the AI agent fleet and runs on AWS infra.",
-            },
+                "Yumbarn is Tiango Logistics' food ordering and delivery platform connecting customers, vendors, and riders. As lead backend engineer I architected and deployed the core REST API serving all three client apps, built real-time order-fulfillment workflows including geolocation-based rider assignment and payment processing, and designed high-availability database schemas to keep order and payment state consistent under concurrent load. Introduced a Redis caching layer on hot read paths that cut API latency by more than 25% while the platform was handling 10,000+ orders a day.",
+            role: "lead backend engineer",
+            stack: "python · fastapi · postgresql · redis · celery",
+            site: "https://yumbarn.com",
             systems: [
                 {
-                    name: "Platform server (entire codebase)",
+                    name: "Core order API",
                     summary:
-                        "The ~5M-line NestJS monorepo I built end-to-end: services, domain models, auth, payments, matching, queues, WebSockets, webhooks, audit, and every internal API the frontends and SDKs call.",
+                        "REST API serving the customer, vendor, and rider apps: catalog, ordering, and order-state transitions.",
                 },
                 {
-                    name: "Frontend apps × 6+",
+                    name: "Rider assignment & fulfillment",
                     summary:
-                        "Contributed to 6+ production web frontends: waysdrop-admin, waysdrop-api-dashboard, waysdrop-affiliate, waysdrop-web, waysdrop-crm, and waysdrop-global-admin — plus partner portals — all deployed to AWS Amplify.",
+                        "Real-time, geolocation-based rider matching and order-fulfillment tracking from placement to delivery.",
                 },
                 {
-                    name: "Support agent",
+                    name: "Payment processing",
                     summary:
-                        "Claude/Qwen ops agent with 80+ tools on WhatsApp and Telegram. Users and staff prompt it; it executes across the platform.",
+                        "Secure payment capture and confirmation wired into the order lifecycle.",
                 },
                 {
-                    name: "Notification agent",
+                    name: "Redis caching layer",
                     summary:
-                        "Decision agent that picks channel, timing, and copy: push, email, SMS, or in-app. New products, cart reminders, nearby stores, holiday greetings, and the rest of the lifecycle.",
-                },
-                {
-                    name: "Activation & retention agent",
-                    summary:
-                        "Brings abandoned users back. Creates promos, drives sessions, and decides what to say so people who left the app have a reason to open it again.",
-                },
-                {
-                    name: "AWS migration (zero downtime)",
-                    summary:
-                        "Full stack migration from Railway to AWS with zero downtime. 4 RDS, 3 EC2 with 2 EIPs, 2 ALBs, ElastiCache, 2 Lambda + EventBridge schedulers, 9 Amplify deployments (all 6+ frontends + portals), 2 ECRs, 2 CloudFront + WAF/Shield, S3, 2 Secrets Managers, SES, CloudWatch across the board.",
-                },
-                {
-                    name: "Location service architecture",
-                    repo: "https://github.com/kawojue/waysdrop-location-architecture",
-                    summary:
-                        "Reference architecture and writeup for Waysdrop's geospatial location service: H3 courier matching, geofencing, real-time tracking, and high-throughput location ingestion on AWS.",
-                },
-                {
-                    name: "Courier matching algorithm",
-                    repo: "https://github.com/kawojue/waysdrop-courier-matching-algorithm",
-                    summary:
-                        "Multi-stage reactive pipeline for assigning deliveries to couriers: H3 res-7 spatial pre-filter on Redis SETs, parallel fleet/promotion/route matching via forkJoin, 3 allocation strategies (SEND_TO_ALL / NEAREST_ALL / NEAREST_ONE_BY_ONE), eligibility filters (decline cooldown, request caps, collection favorites), and Bull worker scheduling with 8 sequential stages from data prep through push notification dispatch.",
-                },
-                {
-                    name: "HTTP logger architecture",
-                    repo: "https://github.com/kawojue/waysdrop-http-logger-architecture",
-                    summary:
-                        "Reference architecture for Waysdrop's distributed HTTP request logger: structured logging, correlation IDs, log aggregation on CloudWatch, and replayable audit trails across every service boundary.",
-                },
-                {
-                    name: "API key gateway architecture",
-                    repo: "https://github.com/kawojue/waysdrop-api-key-architecture",
-                    summary:
-                        "Reference architecture for Waysdrop's API key gateway: rotation, scoped permissions, rate limiting, audit logging, and SDK integration across all public merchant endpoints.",
-                },
-                {
-                    name: "Platform SDKs × 6",
-                    summary:
-                        "Official SDKs for Waysdrop's public API in Dart, Node.js, Go, PHP, Rust, and Python. Typed clients, auth helpers, retry policies, and release automation so integrations with merchants, couriers, and partners ship in hours instead of weeks.",
+                        "Caching on hot read paths cut API latency by 25%+ at 10,000+ orders/day without a database upgrade.",
                 },
             ],
             diff: [
                 {
                     type: "rem",
-                    text: "- all servers and databases hosted on Railway, single-region",
+                    text: "- uncached reads on every order/catalog request under peak load",
                 },
                 {
                     type: "add",
-                    text: "+ zero-downtime Railway → AWS migration across 4 RDS, 3 EC2, 2 ALBs",
-                },
-                {
-                    type: "add",
-                    text: "+ ElastiCache, 2 Lambda + EventBridge, 9 Amplify deployments, 2 ECRs, S3, 2 Secrets Managers, SES, 2 CloudFront + WAF/Shield — all on CloudWatch",
+                    text: "+ Redis caching layer: 25%+ latency cut at 10,000+ daily orders",
                 },
                 {
                     type: "rem",
-                    text: "- no public SDKs; partners wrote raw HTTP integrations",
+                    text: "- ad hoc rider dispatch",
                 },
                 {
                     type: "add",
-                    text: "+ 6 official platform SDKs: Dart · Node.js · Go · PHP · Rust · Python",
+                    text: "+ geolocation-based rider assignment + real-time fulfillment tracking",
                 },
                 {
                     type: "add",
-                    text: "+ 6+ production frontends: admin · API-dashboard · affiliate · web · CRM · global-admin (9 Amplify deployments with portals)",
-                },
-                {
-                    type: "add",
-                    text: "+ 3 public reference architectures: location · HTTP logger · API key gateway",
-                },
-                {
-                    type: "rem",
-                    text: "- scripted support replies, no ops actions from chat",
-                },
-                {
-                    type: "add",
-                    text: "+ Claude/Qwen support agent with 80+ tools across WhatsApp/Telegram",
-                },
-                {
-                    type: "rem",
-                    text: "- blast campaigns on a cron, same message to everyone",
-                },
-                {
-                    type: "add",
-                    text: "+ decision agent picks push, email, SMS, or in-app per user",
-                },
-                {
-                    type: "add",
-                    text: "+ activation/retention agent: promos, cart, geo, holiday triggers",
-                },
-                {
-                    type: "rem",
-                    text: "- primary Postgres handling reads, writes, and high-volume audit logs",
-                },
-                {
-                    type: "add",
-                    text: "+ read-replica routing + Prometheus/Sentry slow-query tracing",
-                },
-                {
-                    type: "add",
-                    text: "+ Redis circuit breaker on hot paths, no instance upgrade needed",
+                    text: "+ high-availability schemas for transactional consistency under load",
                 },
             ],
         },
         {
-            id: "opsettle",
-            fileName: "opsettle.md",
-            name: "Opsettle",
+            id: "nectabills",
+            fileName: "nectabills.md",
+            name: "NectaBills / NectaSwap",
+            status: "production",
+            statusLabel: "● in production",
+            flagship: true,
+            summary:
+                "Fintech bills-payment app with crypto on/off-ramp: idempotent billing across 100,000+ monthly transactions on Celery/RabbitMQ pipelines.",
+            description:
+                "NectaBills, and its crypto counterpart NectaSwap, is Techmakeeasy's fintech app for bills, airtime, data, eSIM, gift cards, and crypto on/off-ramp. I implemented the core billing and transaction workflows with idempotent processing to prevent duplicate charges across 100,000+ transactions a month, built asynchronous background pipelines on Celery and RabbitMQ for payment execution, retries, and reconciliation, integrated multiple third-party payment providers and VAS aggregators over REST and SOAP, and optimized database queries and task throughput for reliability under concurrent transaction load.",
+            role: "backend engineer",
+            stack: "python · fastapi · celery · rabbitmq · postgresql · redis",
+            site: "https://nectabills.com",
+            systems: [
+                {
+                    name: "Idempotent billing engine",
+                    summary:
+                        "Transaction workflows built to reject duplicate charges by construction, holding up across 100,000+ transactions a month.",
+                },
+                {
+                    name: "Async payment pipeline",
+                    summary:
+                        "Celery + RabbitMQ workers handling payment execution, retries, and reconciliation off the request path.",
+                },
+                {
+                    name: "VAS & provider integrations",
+                    summary:
+                        "Multiple third-party payment providers and VAS aggregators integrated over REST and SOAP for airtime, data, utilities, and gift cards.",
+                },
+                {
+                    name: "Crypto on/off-ramp (NectaSwap)",
+                    summary:
+                        "Crypto buy/sell flows layered onto the same wallet and transaction infrastructure.",
+                },
+            ],
+            diff: [
+                {
+                    type: "rem",
+                    text: "- naive charge-and-retry, risk of duplicate billing on network failure",
+                },
+                {
+                    type: "add",
+                    text: "+ idempotent transaction workflows across 100,000+ monthly charges",
+                },
+                {
+                    type: "add",
+                    text: "+ Celery/RabbitMQ pipeline for async execution, retries, and reconciliation",
+                },
+                {
+                    type: "add",
+                    text: "+ crypto on/off-ramp (NectaSwap) on the same wallet rails",
+                },
+            ],
+        },
+        {
+            id: "moodcraft",
+            fileName: "moodcraft.md",
+            name: "Moodcraft",
+            status: "production",
+            statusLabel: "● in production",
+            flagship: true,
+            summary:
+                "AI mental-health companion: RAG pipeline and LLM integration for mood classification and personalized emotional support.",
+            description:
+                "Moodcraft is Ashinity Synergy's AI mental-health companion app: mood and emotion logging, trigger tracking, guided journaling, and creative tools (poetry, drawing, music) for emotional processing. I engineered and maintained a Retrieval-Augmented Generation pipeline for personalized, context-aware support, integrated and tuned LLMs for mood classification and response generation, built secure data-ingestion pipelines for sensitive user data, and developed the FastAPI services handling inference requests and continuous data capture. Shipped alongside a reported 40% lift in user engagement.",
+            role: "backend developer",
+            stack: "python · fastapi · rag · llm integration · postgresql",
+            site: "https://moodcraft.org",
+            systems: [
+                {
+                    name: "RAG pipeline",
+                    summary:
+                        "Retrieval-augmented generation for personalized, context-aware emotional-support responses.",
+                },
+                {
+                    name: "Mood classification",
+                    summary:
+                        "LLM integration for classifying user mood/emotion from journaling and check-in input.",
+                },
+                {
+                    name: "Secure data ingestion",
+                    summary:
+                        "Ingestion and processing pipelines built for sensitive user data with privacy in mind.",
+                },
+                {
+                    name: "Inference API",
+                    summary:
+                        "FastAPI services handling live inference requests and continuous data capture from the app.",
+                },
+            ],
+            diff: [
+                {
+                    type: "rem",
+                    text: "- generic, non-personalized emotional-support responses",
+                },
+                {
+                    type: "add",
+                    text: "+ RAG pipeline + tuned LLM mood classification: 40% engagement lift",
+                },
+                {
+                    type: "add",
+                    text: "+ secure ingestion pipeline for sensitive user data",
+                },
+            ],
+        },
+        {
+            id: "scidar",
+            fileName: "scidar.md",
+            name: "SCIDaR Coverage Tool",
+            status: "maintained",
+            statusLabel: "● maintained",
+            flagship: true,
+            summary:
+                "API performance work for a national health-program coverage tool at a Nigerian health research NGO: 80%+ faster, plus an ETL pipeline for analysis.",
+            description:
+                "SCIDaR (Solina Centre for International Development and Research) is a Nigerian health and development research organization that has implemented 15+ transformation programs across 15+ states since 2017. I rebuilt the API layer behind an internal program-coverage tool, improving response performance by more than 80% and keeping responses consistently under 100ms, and built a comprehensive ETL pipeline feeding downstream program analysis.",
+            role: "backend engineer · contract",
+            stack: "python · fastapi · postgresql · pyspark",
+            site: "https://scidar.org",
+            systems: [
+                {
+                    name: "Coverage tool API",
+                    summary:
+                        "Rebuilt API layer for an internal program-coverage tool: 80%+ response-time improvement, held under 100ms.",
+                },
+                {
+                    name: "ETL & analysis pipeline",
+                    summary:
+                        "Data pipeline feeding structured program-coverage data into downstream analysis.",
+                },
+            ],
+            diff: [
+                {
+                    type: "rem",
+                    text: "- coverage tool API responses well over 100ms under normal load",
+                },
+                {
+                    type: "add",
+                    text: "+ rebuilt query/response path: 80%+ faster, consistently under 100ms",
+                },
+                {
+                    type: "add",
+                    text: "+ ETL pipeline for program-coverage analysis",
+                },
+            ],
+        },
+        {
+            id: "zeelpay",
+            fileName: "zeelpay.md",
+            name: "Zeelpay",
+            status: "production",
+            statusLabel: "● in production",
+            flagship: true,
+            summary:
+                "Hybrid Web2/Web3 fintech app: bills, airtime, gift-card trading, and BTC/USDT trading with NGN/USD virtual cards.",
+            description:
+                "Zeelpay is a hybrid Web2/Web3 consumer fintech app: bill payments, airtime/data top-up, gift-card trading, Bitcoin/USDT trading, and NGN/USD virtual cards, alongside P2P transfers. I designed backend services supporting both the cryptocurrency and bills-payment sides of the product and enforced code quality through automated testing and review practices.",
+            role: "lead backend developer",
+            stack: "python · fastapi · postgresql · redis",
+            site: "https://zeelpay.com",
+            systems: [
+                {
+                    name: "Bills & VAS services",
+                    summary:
+                        "Bill payments and airtime/data top-up backed by aggregator integrations.",
+                },
+                {
+                    name: "Crypto trading & virtual cards",
+                    summary:
+                        "Bitcoin/USDT trading and gift-card trading alongside NGN/USD virtual card issuance on shared wallet infrastructure.",
+                },
+            ],
+            diff: [
+                {
+                    type: "rem",
+                    text: "- separate fiat bills-payment and crypto-trading flows",
+                },
+                {
+                    type: "add",
+                    text: "+ unified wallet backend: bills, airtime, gift cards, and BTC/USDT trading",
+                },
+                {
+                    type: "add",
+                    text: "+ NGN/USD virtual card issuance on the same rails",
+                },
+            ],
+        },
+        {
+            id: "shazzy",
+            fileName: "shazzy.md",
+            name: "Shazzy",
+            status: "production",
+            statusLabel: "● in production",
+            flagship: true,
+            summary:
+                "All-in-one digital payments app: money transfer, crypto trading, and virtual USD cards for global payments.",
+            description:
+                "Shazzy is Shazz Tech's all-in-one digital payments app: instant money transfers, crypto trading (buy/sell/swap BTC, ETH, and more), and virtual USD cards for global payments, plus airtime/data top-up. I built the crypto wallet and virtual-card functionality and improved database performance through query optimization.",
+            role: "backend developer",
+            stack: "python · fastapi · postgresql",
+            systems: [
+                {
+                    name: "Crypto wallet",
+                    summary:
+                        "Buy/sell/swap flows for BTC, ETH, and other assets inside the wallet.",
+                },
+                {
+                    name: "Virtual USD cards",
+                    summary: "Card issuance and management for global payments.",
+                },
+            ],
+            diff: [
+                {
+                    type: "rem",
+                    text: "- slow database reads on wallet/transaction history endpoints",
+                },
+                {
+                    type: "add",
+                    text: "+ query optimization across wallet and crypto-trading paths",
+                },
+            ],
+        },
+        {
+            id: "gexipay",
+            fileName: "gexipay.md",
+            name: "Gexipay",
+            status: "production",
+            statusLabel: "● in production",
+            flagship: true,
+            summary:
+                "Consumer fintech app: bill payments, bank transfers, crypto and gift-card trading, virtual cards, and betting-wallet funding.",
+            description:
+                "Gexipay is a consumer fintech app for paying Nigerian bills, transferring money to bank accounts, trading crypto and gift cards, issuing virtual cards, and funding betting wallets. I built the full backend: secure and compliant transaction-processing workflows, database performance work through indexing and query refactoring, and third-party integrations over JSON and XML APIs.",
+            role: "backend developer · freelance",
+            stack: "python · fastapi · postgresql",
+            diff: [
+                {
+                    type: "rem",
+                    text: "- unindexed transaction tables under growing load",
+                },
+                {
+                    type: "add",
+                    text: "+ indexing + query refactor across the transaction-processing path",
+                },
+                {
+                    type: "add",
+                    text: "+ compliant transaction workflows for bills, transfers, crypto, gift cards, and betting-wallet funding",
+                },
+            ],
+        },
+        {
+            id: "auvraai",
+            fileName: "auvraai.md",
+            name: "AuvraAI",
+            status: "maintained",
+            statusLabel: "● maintained",
+            summary:
+                "AI voice-call and customer-support platform: pipeline and pathway logic for virtual agents.",
+            description:
+                "Built backend pipelines and pathway logic for AuvraAI's virtual agents, which handle live voice calls and customer support.",
+            role: "backend engineer",
+            stack: "python · fastapi",
+        },
+        {
+            id: "paysefy",
+            fileName: "paysefy.md",
+            name: "Paysefy",
+            status: "maintained",
+            statusLabel: "● maintained",
+            summary:
+                "Fintech bills-payment platform; led backend architecture and technical documentation.",
+            description:
+                "Paysefy is Sefy Technologies' fintech bills-payment platform. I led backend architecture and implementation, authored technical documentation covering system design and backend standards, and worked closely with frontend teams on API integration.",
+            role: "lead backend developer",
+            stack: "python · postgresql",
+        },
+        {
+            id: "tobopay",
+            fileName: "tobopay.md",
+            name: "Tobopay",
+            status: "maintained",
+            statusLabel: "● maintained",
+            summary:
+                "Backend infrastructure and deployments for a payments product, designed and maintained end-to-end.",
+            description:
+                "Designed, developed, and maintained the entire backend infrastructure and deployments for Tobopay.",
+            role: "backend developer",
+            stack: "python",
+        },
+        {
+            id: "zappy",
+            fileName: "zappy.md",
+            name: "Zappy",
+            status: "production",
+            statusLabel: "● in production",
+            summary:
+                "Payments app: instant Nigerian bank transfers and a dual NGN/USD wallet with real-time FX conversion.",
+            description:
+                "Zappy is Zappy Global's payments app: instant transfers to any Nigerian bank account, a dual NGN/USD wallet with real-time FX conversion, and airtime-to-cash conversion.",
+            role: "backend developer",
+            stack: "python · postgresql",
+            site: "https://zappy.ng",
+            systems: [
+                {
+                    name: "Bank transfer rail",
+                    summary:
+                        "Instant transfers to any Nigerian bank account.",
+                },
+                {
+                    name: "Dual-currency wallet",
+                    summary:
+                        "NGN/USD wallet with real-time FX conversion and airtime-to-cash.",
+                },
+            ],
+        },
+        {
+            id: "aet-vas",
+            fileName: "aet-vas.md",
+            name: "AET VAS Platform",
+            status: "maintained",
+            statusLabel: "● maintained",
+            summary:
+                "USSD, SMS, and web APIs for value-added-service products, integrated with external aggregators over REST and SOAP/XML.",
+            description:
+                "Designed USSD, SMS, and web APIs for AET Technologies' value-added-service products, integrated external aggregators and ISPs over REST and SOAP/XML, and implemented the billing logic behind those workflows. Now leading the engineering team behind this and AET's other fintech backend systems.",
+            role: "technical lead",
+            stack: "python · rest · soap/xml",
+            systems: [
+                {
+                    name: "USSD / SMS / web APIs",
+                    summary:
+                        "Multi-channel API surface for VAS products across USSD, SMS, and the web.",
+                },
+                {
+                    name: "Aggregator & ISP integrations",
+                    summary:
+                        "External aggregator and ISP integrations over REST and SOAP/XML, with the billing logic behind each workflow.",
+                },
+            ],
+        },
+        {
+            id: "waitstream",
+            fileName: "waitstream.md",
+            name: "Waitstream",
+            status: "production",
+            statusLabel: "● in production",
+            summary:
+                "AI-powered waitlist-management platform for streamlining bookings and reducing no-shows, built solo freelance.",
+            description:
+                "Waitstream is an AI-powered waitlist-management platform that helps businesses streamline bookings, reduce no-shows, and improve customer experience. I designed, developed, and deployed the entire backend as a solo freelance engineer.",
+            role: "backend developer · freelance",
+            stack: "python · fastapi · postgresql",
+            site: "https://waitstream.com",
+        },
+        {
+            id: "gxpanse",
+            fileName: "gxpanse.md",
+            name: "Gxpanse",
             status: "wip",
             statusLabel: "● in progress",
-            flagship: true,
             summary:
-                "Non-custodial stablecoin payment infrastructure: gasless checkout, merchant dashboard, and audited settlement contracts across 5 EVM chains.",
+                "A social media and marketplace platform merged into one product, built freelance.",
             description:
-                "Crypto payment infrastructure built so merchants can accept stablecoins without taking on wallet UX or custody complexity. Co-founded and built from zero: a merchant dashboard and gasless checkout on top of a NestJS API, backed by an audited smart-contract settlement layer across five EVM chains: Base, Polygon, Arbitrum, Optimism, and BNB. The contract layer covers direct and relayed checkout, no-wallet deposit addresses, reusable customer wallets, escrow with dispute resolution, ERC-20 subscriptions, programmable payments like vesting, timelocks, and threshold triggers, donation campaigns, and cross-chain swaps, all fee-metered through a central token registry with oracle safety checks. Deterministic CREATE2 factories give merchants and customers the same wallet address on every supported chain. Non-custodial throughout: funds settle directly to merchant wallets; Opsettle never holds them.",
-            role: "co-founder · lead eng",
-            stack: "solidity · hardhat · nestjs · postgres · multi-chain (Base, Polygon, Arbitrum, Optimism, BNB)",
-            diagram: {
-                src: "/crypto_payment_platform_architecture.svg",
-                alt: "Opsettle crypto payment platform architecture showing access, API orchestration, smart contract settlement, and multi-chain execution layers.",
-                caption:
-                    "Architecture overview: dashboard and checkout feed API orchestration, which drives the non-custodial settlement contracts across five EVM chains.",
-            },
-            systems: [
-                {
-                    name: "Merchant dashboard & gasless checkout",
-                    summary:
-                        "Merchant-facing dashboard plus hosted checkout for links, invoices, customers, and gasless payment flows on any supported wallet.",
-                },
-                {
-                    name: "NestJS payment orchestration",
-                    summary:
-                        "Backend modules for payment intents, ledgering, webhook delivery with retry/replay, relayer coordination, and merchant-facing APIs.",
-                },
-                {
-                    name: "Settlement contract suite",
-                    summary:
-                        "TokenRegistry, MerchantRegistry, PaymentSettlement, PayoutRouter, Escrow, SubscriptionManager, and ProgrammablePayments with oracle-backed fee checks.",
-                },
-                {
-                    name: "Identity, wallets & execution",
-                    summary:
-                        "EIP-712 merchant consent, ERC-4337 account abstraction, deterministic CREATE2 wallets, no-wallet deposit addresses, and cross-chain swap routing.",
-                },
-            ],
-            diff: [
-                {
-                    type: "add",
-                    text: "+ TokenRegistry, MerchantRegistry, PaymentSettlement, PayoutRouter",
-                },
-                {
-                    type: "add",
-                    text: "+ Escrow, SubscriptionManager, ProgrammablePayments, cross-chain swap routing",
-                },
-                {
-                    type: "add",
-                    text: "+ EIP-712 merchant consent + ERC-4337 account abstraction",
-                },
-            ],
-        },
-        {
-            id: "terrakru",
-            fileName: "terrakru.md",
-            name: "Terrakru",
-            status: "go_live",
-            statusLabel: "● ready to go live",
-            flagship: true,
-            summary:
-                "Go-live-ready agritech marketplace for Nigerian agricultural trade: built-in wallet, in-app negotiation, geo-radius sourcing, and admin operations.",
-            description:
-                "Agricultural commerce platform built to move farmers and merchants from offline coordination into a safer, searchable, payment-backed marketplace. As CTO and co-founder in a three-person founding team, I owned backend architecture, built the NestJS backend with one colleague, paired on the Next.js customer and merchant frontends with another colleague, and single-handedly designed and shipped the admin dashboard. Users get a built-in wallet with bank transfers, card payments, and instant payouts via Paystack and Bull-driven payout queues, replacing screenshot-based confirmation with an auditable payout flow. Farmers and buyers chat directly inside the app to negotiate prices and share product specifications. An interactive map and geo-radius filter lets merchants source produce by distance and price. Real-time listings, price comparison, photo-based produce uploads, and verified buyer offers complete the commerce loop from listing to secure payment to delivery.",
-            role: "cto · co-founder · backend (pair) · frontend (pair) · admin dashboard (solo)",
-            stack: "nestjs · nextjs · postgres · redis · bull · paystack · s3 · cloudinary",
-            site: "https://terrakru.com",
-            systems: [
-                {
-                    name: "Built-in wallet & payouts",
-                    summary:
-                        "Secure in-app wallet with bank transfers, card payments via Paystack, and instant merchant payouts queued on Bull.",
-                },
-                {
-                    name: "In-app negotiation chat",
-                    summary:
-                        "Direct chat between farmers and merchants: price negotiation, product spec sharing, and offer counter-signing on listings.",
-                },
-                {
-                    name: "Geo-radius discovery & maps",
-                    summary:
-                        "Interactive map with geo-radius filtering so merchants source produce efficiently by distance and price.",
-                },
-                {
-                    name: "Listings, verified buyers & offers",
-                    summary:
-                        "Farmers list produce with photos and pricing; verified buyers send offers; admins moderate the whole flow.",
-                },
-                {
-                    name: "Admin dashboard",
-                    summary:
-                        "Built solo: user and listing moderation, payout operations, KYC review, dispute resolution, marketplace analytics, and super-admin controls.",
-                },
-            ],
-            diff: [
-                {
-                    type: "rem",
-                    text: "- farmers and merchants find each other offline or via WhatsApp groups",
-                },
-                {
-                    type: "add",
-                    text: "+ verified listings with photos, geo-radius map search, and real-time price comparison across Nigeria",
-                },
-                {
-                    type: "rem",
-                    text: "- payments on bank transfer screenshots, payout handled manually in spreadsheets",
-                },
-                {
-                    type: "add",
-                    text: "+ built-in wallet: Paystack card/bank intake + Bull-queued instant payouts with reconciliation",
-                },
-                {
-                    type: "add",
-                    text: "+ in-app chat for negotiation and spec sharing, plus admin dashboard (built solo) for ops and moderation",
-                },
-            ],
-        },
-        {
-            id: "fixorflex",
-            fileName: "fixorflex.md",
-            name: "FixOrFlex",
-            status: "production",
-            statusLabel: "● in production",
-            flagship: true,
-            summary:
-                "Services marketplace backend where escrow, withdrawal correctness, trust, and real-time discovery all mattered.",
-            description:
-                "Two-sided services marketplace connecting clients with professionals. As CTO I architected and delivered the backend from scratch: the full job lifecycle, escrow-based payments on Paystack (charges, transfers, webhooks), concurrency-safe wallet withdrawals, SSE job discovery with relevance ranking, in-app chat, KYC gating (NIN/CAC), and TOTP 2FA.",
-            role: "cto",
-            stack: "nestjs · postgres · paystack · redis",
-            site: "https://fixorflex.com",
-            diff: [
-                {
-                    type: "rem",
-                    text: "- direct Paystack transfer on withdraw, race-prone balance updates",
-                },
-                {
-                    type: "add",
-                    text: "+ escrow lifecycle + concurrency-safe wallet withdrawals",
-                },
-                {
-                    type: "add",
-                    text: "+ SSE job discovery with relevance ranking + TOTP 2FA",
-                },
-            ],
-        },
-        {
-            id: "ojah",
-            fileName: "ojah.md",
-            name: "Ojah",
-            status: "production",
-            statusLabel: "● in production",
-            flagship: true,
-            summary:
-                "Cross-border marketplace on Payshiga rails: live FX, vendor-split checkout, dual logistics, signed webhooks.",
-            description:
-                "Cross-border e-commerce marketplace built on Payshiga's payment and wallet rails. I led product and backend: a multi-vendor catalog with HS customs codes, vendor-split checkout priced with live FX from Payshiga quotes, dual logistics providers (Shiip and Topship), HMAC-signed vendor sync from Payshiga business webhooks, and payment confirmation from Payshiga charge events queued through Bull.",
-            role: "product lead · backend eng",
-            stack: "nestjs · postgres · redis · payshiga",
-            site: "https://ojah.shop",
-            companySite: "https://payshiga.com",
-            diff: [
-                {
-                    type: "rem",
-                    text: "- hardcoded FX rates, single courier quote at checkout",
-                },
-                {
-                    type: "add",
-                    text: "+ vendor-split carts with Shiip/Topship comparison + HS codes on international routes",
-                },
-                {
-                    type: "add",
-                    text: "+ Payshiga quote API, payment links, and HMAC-signed business sync webhooks",
-                },
-            ],
-        },
-        {
-            id: "videswap",
-            fileName: "videswap.md",
-            name: "VideSwap",
-            status: "maintained",
-            statusLabel: "● maintained",
-            summary:
-                "DEX aggregator across 5+ EVM chains with ERC-721 revenue sharing and a NestJS quote/indexing backend.",
-            description:
-                "DEX aggregator smart contract with multi-source swaps across 5+ EVM chains (Ethereum, Optimism, Base, Arbitrum, BSC, Polygon, Monad). Built ShareholderPass ERC-721 with referral rewards, USDC revenue sharing with ERC-1271 signatures, and NestJS backend for quote aggregation, trade indexing, and XP leaderboards.",
-            role: "co-founder · lead eng",
-            stack: "solidity · hardhat · nestjs · moralis · coingecko · redis",
-            companySite: "https://videlabs.io",
-            systems: [
-                {
-                    name: "Contracts",
-                    repo: "https://github.com/kawojue/videswap-contracts",
-                    summary:
-                        "DEX aggregator smart contract with multi-source swaps across 5+ EVM chains, ShareholderPass ERC-721, and USDC revenue sharing with ERC-1271 signatures.",
-                },
-                {
-                    name: "Server",
-                    repo: "https://github.com/kawojue/videswap-server",
-                    summary:
-                        "NestJS backend for multi-source quote aggregation, trade indexing from on-chain events, XP leaderboards, and referral tracking.",
-                },
-                {
-                    name: "Client",
-                    repo: "https://github.com/kawojue/videswap-client",
-                    summary:
-                        "Web client for swap routing, wallet connection, and live quote execution against the Videswap aggregator.",
-                },
-            ],
-            diff: [
-                {
-                    type: "rem",
-                    text: "- single-DEX router, no on-chain revenue share",
-                },
-                {
-                    type: "add",
-                    text: "+ multi-source aggregator across 5+ EVM chains",
-                },
-                {
-                    type: "add",
-                    text: "+ ShareholderPass ERC-721 + USDC revenue sharing with ERC-1271",
-                },
-            ],
-        },
-        {
-            id: "stedshop",
-            fileName: "stedshop.md",
-            name: "StedShop",
-            status: "production",
-            statusLabel: "● in production",
-            summary:
-                "Nigerian e-commerce backend: Paystack checkout, full-text search, delivery-gated returns and refunds.",
-            description:
-                "Live Nigerian e-commerce store backend, built freelance. Full product catalog with three-level categories, variants, and Postgres full-text search; server-side cart and checkout with Paystack; and an end-to-end returns and refunds pipeline with delivery-gated return windows, refund-vs-exchange logic, and Paystack refund API integration with webhook confirmation.",
-            role: "backend engineer · freelance",
-            stack: "nestjs · postgres · paystack · redis",
-            repo: "https://github.com/kawojue/stedshop-server",
-            diff: [
-                {
-                    type: "rem",
-                    text: "- checkout only, return handled as a status flag",
-                },
-                {
-                    type: "add",
-                    text: "+ 7-day delivery-gated returns with refund vs exchange pricing",
-                },
-                {
-                    type: "add",
-                    text: "+ Paystack refund API + Bull webhook queue for async confirmation",
-                },
-            ],
-        },
-        {
-            id: "memegoat",
-            fileName: "memegoat-game.md",
-            name: "MemeGoat Game",
-            status: "sunset",
-            statusLabel: "● sunset",
-            summary:
-                "Real-time casino and sportsbook server on Stacks: wallet auth, WebSocket games, automated STX payouts.",
-            description:
-                "Real-time backend for MemeGoat's on-chain casino and sportsbook on Stacks (Bitcoin L2). Launched on production domains, later shut down. Wallet-signature auth, live multiplayer games over WebSockets (Dice, BlackJack, Roulette, and more), ticket/tournament economy, NFL sportsbook with async settlement, and automated STX payouts broadcast from a backend-held wallet when tournaments closed.",
-            role: "backend engineer",
-            stack: "nestjs · postgres · redis · stacks",
-            repo: "https://github.com/kawojue/memegoat-game-server",
-            diff: [
-                {
-                    type: "rem",
-                    text: "- off-chain win ledger, no automated on-chain settlement",
-                },
-                {
-                    type: "add",
-                    text: "+ Stacks wallet auth (@stacks/encryption) + HMAC replay protection",
-                },
-                {
-                    type: "add",
-                    text: "+ backend signs and broadcasts STX payout txs with post-conditions",
-                },
-            ],
-        },
-        {
-            id: "talentsphere",
-            fileName: "talentsphere.md",
-            name: "TalentSphere Africa",
-            status: "production",
-            statusLabel: "● in production",
-            summary:
-                "Creative booking marketplace: e-signed contracts, OTP-gated Paystack payouts, Socket.io chat.",
-            description:
-                "Talent and creative booking marketplace for Africa's creative industry. Built roughly 70% of the backend before departure: casting briefs and production projects, project-based hiring with e-signed contracts, OTP-gated Paystack wallet payouts, real-time chat over Socket.io, and a parallel job board alongside direct booking flows.",
-            role: "backend engineer",
-            stack: "nestjs · mongodb · paystack · socket.io",
-            site: "https://www.talentsphereafrica.com",
-            diff: [
-                {
-                    type: "rem",
-                    text: "- balance field withdrawals, no async transfer reconciliation",
-                },
-                {
-                    type: "add",
-                    text: "+ OTP-gated Paystack transfers with atomic wallet debit in one transaction",
-                },
-                {
-                    type: "add",
-                    text: "+ transfer webhook reconciliation with Paystack fee and settlement tracking",
-                },
-            ],
-        },
-        {
-            id: "metadawgs",
-            fileName: "metadawgs.md",
-            name: "Metadawgs",
-            status: "maintained",
-            statusLabel: "● maintained",
-            summary:
-                "Five NestJS services for a Solana ecosystem: presale, trading terminal, SocialFi, moderation, growth.",
-            description:
-                "Solana-based meme/trading ecosystem with a live Telegram community. As co-founder and backend engineer, I owned five NestJS services covering token launch, trading, social quests, moderation, and growth. Real SOL, SPL tokens, and community trust all riding on backend correctness.",
-            role: "co-founder · backend eng",
-            stack: "nestjs · solana · redis · telegram",
-            systems: [
-                {
-                    name: "Presale Server",
-                    repo: "https://github.com/kawojue/presale-server",
-                    summary:
-                        "TGE backend with dual-round private/public sales, KOL-tiered pricing, referral commissions, and partially-signed SPL token delivery. Hard caps enforced live, async-mutex on concurrent purchases, and a retry path for failed Solana settlements.",
-                },
-                {
-                    name: "SocialFi Server",
-                    repo: "https://github.com/kawojue/metadawgs-socialfi-server",
-                    summary:
-                        "SocialFi quest and rewards platform: X OAuth2 auth, multi-platform content submissions (X/TikTok/YouTube) with Twitter API engagement scoring, points economy and Solana wallet linking, Dawghouse team tournaments with cron-driven reward distribution, and proportional airdrop allocation merged with Telegram invite leaderboard data.",
-                },
-                {
-                    name: "MetaDawgs Terminal",
-                    repo: "https://github.com/kawojue/trade-bot",
-                    summary:
-                        "Full trading terminal inside Telegram: buy/sell by token address or DexScreener/Jupiter links, Jito bundle execution for MEV protection, Raydium/Orca liquidity management, and cron-driven pool rebalancing every 6 hours.",
-                },
-                {
-                    name: "Spam Detection Bot",
-                    repo: "https://github.com/kawojue/tg-spam-detection-bot",
-                    summary:
-                        "Community moderation on every group message: scam wordlist and domain blocklist matching, Solana address drop detection, progressive warn-then-ban over a rolling 24h window, with admin exemption via live chat-member checks.",
-                },
-                {
-                    name: "Invite Bot",
-                    repo: "https://github.com/kawojue/invite-bot",
-                    summary:
-                        "Gamified referral growth: per-user Telegram invite links, join attribution on chat_member events, points and paginated leaderboards, timed campaigns with giveaway mode, and Socket.io for live dashboard updates backed by Redis.",
-                },
-            ],
-            diff: [
-                {
-                    type: "rem",
-                    text: "- single public sale round, manual token handoff",
-                },
-                {
-                    type: "add",
-                    text: "+ dual-round presale with KOL pricing tiers + live hard-cap checks",
-                },
-                {
-                    type: "add",
-                    text: "+ partially-signed SPL transfers, async-mutex, and settlement retry queue",
-                },
-            ],
-        },
-        {
-            id: "amopedia",
-            fileName: "amopedia.md",
-            name: "Amopedia",
-            status: "production",
-            statusLabel: "● in production",
-            summary:
-                "Multi-tenant radiology RIS: DICOM parsing, Azure Blob storage, role-scoped practitioner access.",
-            description:
-                "Multi-tenant radiology imaging platform (PACS-adjacent RIS), built freelance in 2023. Patient studies with real clinical metadata (modality, CPT codes, priority, reporting status), DICOM parsing and Azure Blob storage, role-based practitioner access, and a platform-level Adspec super-admin layer over independent imaging centers.",
-            role: "backend engineer · freelance",
-            stack: "nestjs · postgres · azure · dicom",
-            repo: "https://github.com/kawojue/amopedia-server",
-            diff: [
-                {
-                    type: "rem",
-                    text: "- opaque file upload, generic patient/image records",
-                },
-                {
-                    type: "add",
-                    text: "+ dicom-parser metadata extraction before Azure Blob upload",
-                },
-                {
-                    type: "add",
-                    text: "+ study-scoped expiring JWT + wadouri: URLs for viewer access",
-                },
-            ],
-        },
-        {
-            id: "omega-loan",
-            fileName: "omega-loan.md",
-            name: "Omega Loan",
-            status: "production",
-            statusLabel: "● in production",
-            summary:
-                "Microfinance loan backend shipped in under 24 hours: KYC, repayment schedules, Excel exports.",
-            description:
-                "Microfinance loan management backend, built and shipped for a client in under 24 hours (for real). Customer and guarantor KYC with Cloudinary document uploads, loan applications (Salary Loan, Asset Financing, SME) with auto-generated repayment schedules, role-scoped moderator/admin access, and Excel portfolio exports via ExcelJS.",
-            role: "backend engineer · freelance",
-            stack: "nestjs · mongodb · cloudinary · exceljs",
-            repo: "https://github.com/kawojue/omega-loan-server",
-            diff: [
-                {
-                    type: "rem",
-                    text: "- manual loan records, no repayment schedule generation",
-                },
-                {
-                    type: "add",
-                    text: "+ month-by-month payback schedules on approval, leap-year Feb handling",
-                },
-                {
-                    type: "add",
-                    text: "+ Admin vs Modmin scoping in query layer + live PAID/OVERDUE/UPCOMING remarks",
-                },
-            ],
+                "Gxpanse combines social media and large-scale shopping into a single platform. Freelance backend work on the product's core services.",
+            role: "backend developer · freelance",
+            stack: "python",
         },
     ] satisfies Project[],
     statusBar: {
         branch: "main",
         signal: "open to remote",
         timezone: "Africa/Lagos",
-        timezoneLabel: "Lagos",
+        timezoneLabel: "Abuja",
         timezoneSuffix: "WAT",
         tickMs: 30_000,
     },

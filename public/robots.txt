@@ -1,4 +1,4 @@
-# https://kawojue.dev/robots.txt
+# https://beshel.dev/robots.txt
 User-agent: *
 Allow: /
 
@@ -41,8 +41,8 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://kawojue.dev/sitemap.xml
+Sitemap: https://beshel.dev/sitemap.xml
 
 # LLM context map (https://llmstxt.org/)
-# https://kawojue.dev/llms.txt
-# https://kawojue.dev/llms-full.txt
+# https://beshel.dev/llms.txt
+# https://beshel.dev/llms-full.txt
