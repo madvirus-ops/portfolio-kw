@@ -84,18 +84,19 @@ export type SkillGroup = {
 
 export const portfolio = {
     meta: {
-        title: "Edwin Ayabie | Python Backend Engineer for Fintech, Payments, and AI Platforms",
+        title: "Edwin Beshel Ayabie | Python Backend Engineer for Fintech, Payments, and AI Platforms",
         description:
-            "Edwin Ayabie is a Python backend engineer and Technical Lead at AET Technologies, building fintech, payments, and AI systems out of Abuja, Nigeria: bill-payment and crypto on/off-ramp platforms, FastAPI/Django services, Celery task pipelines, and RAG-based AI products across 10+ production systems since 2023.",
+            "Edwin Beshel Ayabie is a Python backend engineer and Technical Lead at AET Technologies, building VAS, mobile-network DCB, fintech, and AI systems out of Abuja, Nigeria: bill-payment and crypto on/off-ramp platforms, FastAPI/Django services, Celery task pipelines, and RAG-based AI products across 10+ production systems since 2022.",
     },
     site: {
         url: "https://beshel.dev",
-        name: "Edwin Ayabie",
+        name: "Edwin Beshel Ayabie",
         locale: "en_NG",
         twitter: "@1madvirus",
         ogImage: "/og.jpg",
         updated: "2026-09-13",
         keywords: [
+            "Edwin Beshel Ayabie",
             "Edwin Ayabie",
             "madvirus",
             "1madvirus",
@@ -125,8 +126,11 @@ export const portfolio = {
             "microservices engineer",
             "distributed systems engineer",
             "Technical Lead AET Technologies",
-            "SCIDaR backend engineer",
-            "health data engineer Nigeria",
+            "VAS engineer",
+            "mobile network DCB engineer",
+            "direct carrier billing engineer",
+            "USSD SMS gateway engineer",
+            "telecom billing engineer Nigeria",
         ].join(", "),
         skills: [
             "Python",
@@ -140,8 +144,11 @@ export const portfolio = {
             "GraphQL",
             "RAG pipelines",
             "LLM integration",
+            "VAS",
+            "mobile network DCB",
+            "USSD gateways",
+            "SMS gateways",
             "bill payments",
-            "VAS integrations",
             "crypto on/off-ramp",
             "virtual card issuance",
             "idempotent billing",
@@ -152,23 +159,24 @@ export const portfolio = {
         ],
     },
     handle: "madvirus",
-    headline: "Edwin Ayabie",
+    headline: "Edwin Beshel Ayabie",
     title: "Python Backend Engineer · Fintech · Payments · AI Platforms",
     punch: "Technical Lead at AET Technologies · backend engineer across fintech, payments, and AI products",
     valueProp:
         "I build backend systems for fintech, payments, and AI products, where transaction correctness, concurrency, and reliability under load all matter.",
-    lede: "Backend engineer across 10+ production systems since 2023: fintech bill-payment and crypto on/off-ramp apps, a food-delivery platform handling 10,000+ daily orders, an AI mental-health companion built on a RAG pipeline, and a national health-coverage API rebuilt for an 80%+ speed-up. Currently Technical Lead at AET Technologies, guiding architecture decisions and mentoring engineers across its fintech and VAS backend systems.",
+    lede: "Backend engineer across 10+ production systems since 2022: VAS and mobile-network DCB (direct carrier billing) platforms, fintech bill-payment and crypto on/off-ramp apps, a food-delivery platform handling 10,000+ daily orders, and an AI mental-health companion built on a RAG pipeline. Currently Technical Lead at AET Technologies, where I built the VAS/DCB backend platform and now lead its engineering, mentoring engineers and guiding architecture across its wider fintech systems too.",
     availability:
         "Open to senior backend and technical-lead roles · remote-first · Abuja, Nigeria (WAT, UTC+1)",
     tags: [
         "Backend architecture · fintech & payments",
+        "VAS · USSD · mobile network DCB",
         "AI pipelines · RAG · LLM integration",
         "Crypto on/off-ramp · virtual cards · wallets",
         "Reliability · queues · concurrent transactions",
         "Python · FastAPI · Django · Celery",
     ],
     highlights: [
-        { value: "10+", label: "production backend systems shipped since 2023" },
+        { value: "10+", label: "production backend systems shipped since 2022" },
         {
             value: "80%+",
             label: "API response-time improvement on a national health coverage tool",
@@ -189,7 +197,7 @@ export const portfolio = {
     actions: [
         {
             label: "email me",
-            href: "mailto:edwinayabie1@gmail.com",
+            href: "mailto:hi@beshel.dev",
             primary: true,
         },
         { label: "linkedin", href: "https://linkedin.com/in/madvirus" },
@@ -202,10 +210,10 @@ export const portfolio = {
     },
     contact: {
         heading: "Let's talk",
-        body: "Hiring for backend engineering across fintech, payments, or AI-driven products? I build systems where transaction integrity, concurrency, and reliability under load matter: Python/FastAPI/Django backends, Celery task pipelines, and LLM-backed features. I'm remote-first out of Abuja (WAT, UTC+1). Email is the fastest way to reach me.",
-        email: "edwinayabie1@gmail.com",
+        body: "Hiring for backend engineering across VAS/telecom, fintech, or AI-driven products? I build systems where transaction integrity, concurrency, and reliability under load matter: Python/FastAPI/Django backends, Celery task pipelines, and LLM-backed features. I'm remote-first out of Abuja (WAT, UTC+1). Email is the fastest way to reach me.",
+        email: "hi@beshel.dev",
         links: [
-            { label: "mail", href: "mailto:edwinayabie1@gmail.com" },
+            { label: "mail", href: "mailto:hi@beshel.dev" },
             { label: "github", href: "https://github.com/madvirus-ops" },
             { label: "linkedin", href: "https://linkedin.com/in/madvirus" },
             { label: "x", href: "https://x.com/1madvirus" },
@@ -231,7 +239,6 @@ export const portfolio = {
             period: "Feb 2026 - Jul 2026",
             summary:
                 "Contract backend engineer at Solina Centre for International Development and Research (SCIDaR), a Nigerian health and development research organization that has run 15+ transformation programs across 15+ states since 2017. Rebuilt the API layer behind an internal program-coverage tool, cutting response times by over 80% to consistently under 100ms, and built an ETL pipeline feeding downstream program analysis.",
-            projectIds: ["scidar"],
         },
         {
             id: "auvraai",
@@ -266,8 +273,7 @@ export const portfolio = {
             org: "AET Technologies",
             period: "Mar 2025 - present",
             summary:
-                "Leading engineering across AET's fintech and VAS backend systems: reviewing architecture and performance decisions, mentoring 10+ junior developers in Python, JavaScript, and distributed systems (a reported 30% productivity lift on critical projects), resolving production incidents in background task execution, API failures, and database performance, and communicating technical risk to senior stakeholders.",
-            projectIds: ["aet-vas"],
+                "My 9-to-5: I built AET's VAS and mobile-network DCB (direct carrier billing) backend platform and now lead engineering across it and AET's wider fintech systems — reviewing architecture and performance decisions, mentoring 10+ junior developers in Python, JavaScript, and distributed systems (a reported 30% productivity lift on critical projects), resolving production incidents in background task execution, API failures, and database performance, and communicating technical risk to senior stakeholders.",
         },
         {
             id: "techmakeeasy",
@@ -284,8 +290,7 @@ export const portfolio = {
             org: "AET Technologies",
             period: "Apr 2024 - Feb 2025",
             summary:
-                "Designed USSD, SMS, and web APIs for AET's value-added-service products, integrated external aggregators and ISPs over REST and SOAP/XML, and implemented the billing logic behind those workflows.",
-            projectIds: ["aet-vas"],
+                "Designed and built USSD, SMS, and web APIs for AET's VAS products, including mobile-network DCB (direct carrier billing) integrations, external aggregator and ISP integrations over REST and SOAP/XML, and the billing logic behind those workflows.",
         },
         {
             id: "sefy-paysefy",
@@ -375,6 +380,16 @@ export const portfolio = {
             ],
         },
         {
+            label: "Telecom & VAS",
+            items: [
+                "VAS (Value-Added Services)",
+                "Mobile network DCB (direct carrier billing)",
+                "USSD gateways",
+                "SMS gateways",
+                "SOAP/XML aggregator integration",
+            ],
+        },
+        {
             label: "Payments & fintech",
             items: [
                 "Bill payments & VAS aggregators",
@@ -420,8 +435,8 @@ export const portfolio = {
         },
         { label: "x.com/1madvirus", href: "https://x.com/1madvirus" },
         {
-            label: "edwinayabie1@gmail.com",
-            href: "mailto:edwinayabie1@gmail.com",
+            label: "hi@beshel.dev",
+            href: "mailto:hi@beshel.dev",
         },
     ] satisfies SocialLink[],
     nav: [
@@ -463,14 +478,6 @@ export const portfolio = {
             hint: "case study",
         },
         {
-            id: "scidar",
-            label: "scidar.md",
-            href: "#scidar",
-            kind: "file",
-            indent: true,
-            hint: "case study",
-        },
-        {
             id: "zeelpay",
             label: "zeelpay.md",
             href: "#zeelpay",
@@ -500,7 +507,7 @@ export const portfolio = {
             href: "#more-work",
             kind: "file",
             indent: true,
-            hint: "7 more systems",
+            hint: "6 more systems",
         },
         {
             id: "experience",
@@ -541,7 +548,6 @@ export const portfolio = {
                 "yumbarn",
                 "nectabills",
                 "moodcraft",
-                "scidar",
                 "zeelpay",
                 "shazzy",
                 "gexipay",
@@ -734,47 +740,6 @@ export const portfolio = {
             ],
         },
         {
-            id: "scidar",
-            fileName: "scidar.md",
-            name: "SCIDaR Coverage Tool",
-            status: "maintained",
-            statusLabel: "● maintained",
-            flagship: true,
-            summary:
-                "API performance work for a national health-program coverage tool at a Nigerian health research NGO: 80%+ faster, plus an ETL pipeline for analysis.",
-            description:
-                "SCIDaR (Solina Centre for International Development and Research) is a Nigerian health and development research organization that has implemented 15+ transformation programs across 15+ states since 2017. I rebuilt the API layer behind an internal program-coverage tool, improving response performance by more than 80% and keeping responses consistently under 100ms, and built a comprehensive ETL pipeline feeding downstream program analysis.",
-            role: "backend engineer · contract",
-            stack: "python · fastapi · postgresql · pyspark",
-            site: "https://scidar.org",
-            systems: [
-                {
-                    name: "Coverage tool API",
-                    summary:
-                        "Rebuilt API layer for an internal program-coverage tool: 80%+ response-time improvement, held under 100ms.",
-                },
-                {
-                    name: "ETL & analysis pipeline",
-                    summary:
-                        "Data pipeline feeding structured program-coverage data into downstream analysis.",
-                },
-            ],
-            diff: [
-                {
-                    type: "rem",
-                    text: "- coverage tool API responses well over 100ms under normal load",
-                },
-                {
-                    type: "add",
-                    text: "+ rebuilt query/response path: 80%+ faster, consistently under 100ms",
-                },
-                {
-                    type: "add",
-                    text: "+ ETL pipeline for program-coverage analysis",
-                },
-            ],
-        },
-        {
             id: "zeelpay",
             fileName: "zeelpay.md",
             name: "Zeelpay",
@@ -940,31 +905,6 @@ export const portfolio = {
                     name: "Dual-currency wallet",
                     summary:
                         "NGN/USD wallet with real-time FX conversion and airtime-to-cash.",
-                },
-            ],
-        },
-        {
-            id: "aet-vas",
-            fileName: "aet-vas.md",
-            name: "AET VAS Platform",
-            status: "maintained",
-            statusLabel: "● maintained",
-            summary:
-                "USSD, SMS, and web APIs for value-added-service products, integrated with external aggregators over REST and SOAP/XML.",
-            description:
-                "Designed USSD, SMS, and web APIs for AET Technologies' value-added-service products, integrated external aggregators and ISPs over REST and SOAP/XML, and implemented the billing logic behind those workflows. Now leading the engineering team behind this and AET's other fintech backend systems.",
-            role: "technical lead",
-            stack: "python · rest · soap/xml",
-            systems: [
-                {
-                    name: "USSD / SMS / web APIs",
-                    summary:
-                        "Multi-channel API surface for VAS products across USSD, SMS, and the web.",
-                },
-                {
-                    name: "Aggregator & ISP integrations",
-                    summary:
-                        "External aggregator and ISP integrations over REST and SOAP/XML, with the billing logic behind each workflow.",
                 },
             ],
         },

@@ -8,9 +8,22 @@ import tailwindcss from "@tailwindcss/vite";
 const config = defineConfig({
     resolve: { tsconfigPaths: true },
     server: {
-        allowedHosts: ["kawojue.dev"],
+        allowedHosts: ["beshel.dev"],
     },
-    plugins: [devtools(), tailwindcss(), tanstackStart(), nitro(), viteReact()],
+    plugins: [
+        devtools(),
+        tailwindcss(),
+        tanstackStart(),
+        nitro({
+            preset: "cloudflare-module",
+            compatibilityDate: "2024-09-19",
+            cloudflare: {
+                deployConfig: true,
+                nodeCompat: true,
+            },
+        }),
+        viteReact(),
+    ],
 });
 
 export default config;

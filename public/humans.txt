@@ -1,7 +1,7 @@
-/* Team: Edwin Ayabie
+/* Team: Edwin Beshel Ayabie
    Site: https://beshel.dev
    Stack: TanStack Start · React · TypeScript · Tailwind · Nitro · Vercel
-   Contact: edwinayabie1@gmail.com
+   Contact: hi@beshel.dev
    Standards: robots.txt · sitemap.xml · llms.txt · llms-full.txt
    Motto: backends that handle real money.
 */
