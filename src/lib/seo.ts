@@ -58,7 +58,7 @@ export function getWebsiteJsonLd() {
         "@type": "WebSite",
         "@id": `${siteUrl}/#website`,
         name: portfolio.site.name,
-        alternateName: "kawojue.dev",
+        alternateName: "beshel.dev",
         url: siteUrl,
         description: portfolio.meta.description,
         inLanguage: "en",

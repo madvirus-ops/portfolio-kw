@@ -21,7 +21,7 @@ const resumeLinks = [
     { label: portfolio.contact.email, href: `mailto:${portfolio.contact.email}` },
     { label: portfolio.phone.label, href: portfolio.phone.href },
     ...portfolio.sidebarLinks.filter((link) => isExternalHref(link.href)),
-    { label: "kawojue.dev", href: portfolio.site.url },
+    { label: "beshel.dev", href: portfolio.site.url },
 ];
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
