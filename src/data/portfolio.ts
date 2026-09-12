@@ -335,7 +335,7 @@ export const portfolio = {
             org: "Tobopay",
             period: "Nov 2023 - Dec 2024",
             summary:
-                "Designed, developed, and maintained the entire backend infrastructure and deployments for Tobopay.",
+                "Built the backend for Tobopay, a Nigerian payments app, end-to-end and solo: wallet and ledger logic, transaction processing for deposits, withdrawals, and transfers, and the infrastructure and deployment pipeline underneath it.",
             projectIds: ["tobopay"],
         },
         {
@@ -966,21 +966,36 @@ export const portfolio = {
             statusLabel: "● maintained",
             flagship: true,
             summary:
-                "Payments product backend, built end-to-end: infrastructure, design, and deployments.",
+                "Nigerian payments app: wallet, ledger, and transaction processing, built end-to-end solo.",
             description:
-                "I built Tobopay's backend end-to-end: designed, developed, and maintained the entire backend infrastructure and deployments.",
+                "Tobopay is a Nigerian payments app: a wallet backed by a proper ledger, moving money in and out for its users. I built it end-to-end and solo, with nothing handed to me to maintain: wallet and ledger logic, the transaction-processing flow for deposits, withdrawals, and transfers, and the infrastructure and deployment pipeline underneath all of it.",
             role: "backend developer",
             stack: "python",
             systems: [
                 {
-                    name: "Backend API & services",
+                    name: "Wallet & ledger",
                     summary:
-                        "Core backend services designed and built from scratch for the payments product.",
+                        "Core wallet balance and ledger system tracking every user's money movement.",
+                },
+                {
+                    name: "Transaction processing",
+                    summary:
+                        "Deposit, withdrawal, and transfer flows built with the reconciliation discipline real money demands.",
                 },
                 {
                     name: "Infrastructure & deployments",
                     summary:
                         "Owned the deployment pipeline and backend infrastructure end-to-end, solo.",
+                },
+            ],
+            diff: [
+                {
+                    type: "rem",
+                    text: "- no backend to speak of, product built from a blank slate",
+                },
+                {
+                    type: "add",
+                    text: "+ wallet, ledger, and transaction-processing backend built and deployed solo",
                 },
             ],
         },
@@ -1020,7 +1035,7 @@ export const portfolio = {
             summary:
                 "AI-powered waitlist-management platform for streamlining bookings and reducing no-shows, built solo freelance.",
             description:
-                "Waitstream is an AI-powered waitlist-management platform that helps businesses streamline bookings, reduce no-shows, and improve customer experience. I designed, developed, and deployed the entire backend as a solo freelance engineer.",
+                "Waitstream replaces the walk-in clipboard with a live digital waitlist for service businesses: customers join a queue or book a slot, get automated status updates as their turn approaches, and the business gets AI-assisted signal on who's likely to no-show so they can overbook safely instead of losing revenue to empty slots. I designed, built, and deployed the entire backend solo: the waitlist and booking engine, the customer notification pipeline, and the no-show prediction logic underneath it.",
             role: "backend developer · freelance",
             stack: "python · fastapi · postgresql",
             site: "https://waitstream.com",
@@ -1028,12 +1043,17 @@ export const portfolio = {
                 {
                     name: "Waitlist & booking core",
                     summary:
-                        "Core engine handling waitlist state and booking flow for businesses.",
+                        "Real-time queue and booking engine tracking each customer's position and slot end-to-end.",
                 },
                 {
-                    name: "No-show reduction",
+                    name: "Customer notifications",
                     summary:
-                        "AI-driven logic aimed at cutting no-shows and improving booking follow-through.",
+                        "Automated status updates keeping customers informed as their turn approaches, cutting drop-off.",
+                },
+                {
+                    name: "No-show prediction",
+                    summary:
+                        "AI-assisted scoring that flags likely no-shows so businesses can overbook safely instead of losing revenue to empty slots.",
                 },
                 {
                     name: "Solo backend ownership",
@@ -1044,11 +1064,15 @@ export const portfolio = {
             diff: [
                 {
                     type: "rem",
-                    text: "- manual waitlist tracking, no automated no-show mitigation",
+                    text: "- walk-in waitlists on paper, no visibility into no-show risk",
                 },
                 {
                     type: "add",
-                    text: "+ AI-powered waitlist and booking platform, backend built and deployed solo",
+                    text: "+ live digital waitlist with automated status updates and AI-assisted no-show prediction",
+                },
+                {
+                    type: "add",
+                    text: "+ entire backend designed, built, and deployed solo",
                 },
             ],
         },
@@ -1062,14 +1086,24 @@ export const portfolio = {
             summary:
                 "A social media and marketplace platform merged into one product; built the backend freelance.",
             description:
-                "Gxpanse combines social media and large-scale shopping into a single platform. I built the backend for its core services as a freelance engineer.",
+                "Gxpanse merges a social feed with large-scale online shopping into one product: people browse and buy the way they'd scroll a timeline, with commerce and social sharing the same backend instead of being bolted together as separate apps. As freelance backend engineer I'm building the core services behind both sides: the social layer (profiles, feed, posts, engagement) and the marketplace layer (product catalog and the transaction flow behind it), on shared infrastructure.",
             role: "backend developer · freelance",
             stack: "python",
             systems: [
                 {
-                    name: "Social feed & marketplace core",
+                    name: "Social feed & profiles",
                     summary:
-                        "Backend core services for a product merging a social feed with large-scale shopping.",
+                        "User profiles, posts, feed, and engagement (likes, comments, follows).",
+                },
+                {
+                    name: "Marketplace & catalog",
+                    summary:
+                        "Product listings and the marketplace transaction flow behind them.",
+                },
+                {
+                    name: "Unified backend",
+                    summary:
+                        "Social and commerce sharing one backend rather than two bolted-together systems.",
                 },
             ],
             diff: [

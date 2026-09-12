@@ -17,9 +17,9 @@ Prefer this file for a short orientation, then fetch `llms-full.txt` for the com
 - [Shazzy](https://beshel.dev/#shazzy): Backend Developer, Shazz Tech. All-in-one digital payments app: money transfer, crypto trading, virtual USD cards
 - [Gexipay](https://beshel.dev/#gexipay): Backend Developer (freelance). Consumer fintech app: bill payments, bank transfers, crypto/gift-card trading, virtual cards, betting-wallet funding
 - [Paysefy](https://beshel.dev/#paysefy): Lead Backend Developer, Sefy Technologies. Fintech bills-payment platform built end-to-end: architecture, implementation, technical documentation
-- [Tobopay](https://beshel.dev/#tobopay): Backend Developer. Payments product backend built end-to-end: infrastructure, services, deployments
-- [Waitstream](https://beshel.dev/#waitstream): Backend Developer (solo freelance). AI-powered waitlist management platform: streamlining bookings, reducing no-shows
-- [Gxpanse](https://beshel.dev/#gxpanse): Backend Developer (freelance). Social media and marketplace platform merged into one, in progress
+- [Tobopay](https://beshel.dev/#tobopay): Backend Developer. Nigerian payments app: wallet, ledger, and transaction processing built end-to-end and solo
+- [Waitstream](https://beshel.dev/#waitstream): Backend Developer (solo freelance). AI-powered waitlist and booking platform: automated customer notifications, AI-assisted no-show prediction
+- [Gxpanse](https://beshel.dev/#gxpanse): Backend Developer (freelance). Social feed + marketplace merged into one backend, in progress
 
 ## More work
 - [AuvraAI](https://beshel.dev/#auvraai): AI voice-call and customer-support platform, pipeline logic for virtual agents

@@ -142,7 +142,7 @@ Built the full backend for Gexipay, a consumer fintech app for bill payments, ba
 - Period: Nov 2023 - Dec 2024
 - Project: https://beshel.dev/#tobopay
 
-Built Tobopay's backend end-to-end: designed, developed, and maintained the entire backend infrastructure and deployments.
+Built the backend for Tobopay, a Nigerian payments app, end-to-end and solo: wallet and ledger logic, transaction processing for deposits, withdrawals, and transfers, and the infrastructure and deployment pipeline underneath it.
 
 ### Backend Developer · Shazz Tech (Shazzy)
 - Period: May 2023 - Mar 2025
@@ -303,11 +303,15 @@ Highlights:
 - Role: backend developer
 - Stack: python
 
-Built Tobopay's backend end-to-end: designed, developed, and maintained the entire backend infrastructure and deployments.
+Built the backend for Tobopay, a Nigerian payments app, end-to-end and solo: wallet and ledger logic, transaction processing for deposits, withdrawals, and transfers, and the infrastructure and deployment pipeline underneath it.
 
 Systems:
-- Backend API & services: core backend services designed and built from scratch for the payments product
+- Wallet & ledger: core wallet balance and ledger system tracking every user's money movement
+- Transaction processing: deposit, withdrawal, and transfer flows built with real-money reconciliation discipline
 - Infrastructure & deployments: owned the deployment pipeline and backend infrastructure end-to-end, solo
+
+Highlights:
+- wallet, ledger, and transaction-processing backend built and deployed solo
 
 ### Waitstream
 - URL: https://beshel.dev/#waitstream
@@ -316,15 +320,17 @@ Systems:
 - Stack: python · fastapi · postgresql
 - Site: https://waitstream.com
 
-Waitstream is an AI-powered waitlist-management platform that helps businesses streamline bookings, reduce no-shows, and improve customer experience. I designed, developed, and deployed the entire backend as a solo freelance engineer.
+Waitstream replaces the walk-in clipboard with a live digital waitlist for service businesses: customers join a queue or book a slot, get automated status updates as their turn approaches, and the business gets AI-assisted signal on who's likely to no-show so they can overbook safely instead of losing revenue to empty slots. I designed, built, and deployed the entire backend solo: the waitlist and booking engine, the customer notification pipeline, and the no-show prediction logic underneath it.
 
 Systems:
-- Waitlist & booking core: core engine handling waitlist state and booking flow for businesses
-- No-show reduction: AI-driven logic aimed at cutting no-shows and improving booking follow-through
+- Waitlist & booking core: real-time queue and booking engine tracking each customer's position and slot end-to-end
+- Customer notifications: automated status updates keeping customers informed as their turn approaches, cutting drop-off
+- No-show prediction: AI-assisted scoring that flags likely no-shows so businesses can overbook safely
 - Solo backend ownership: entire backend designed, built, and deployed independently as the sole engineer
 
 Highlights:
-- AI-powered waitlist and booking platform, backend built and deployed solo
+- live digital waitlist with automated status updates and AI-assisted no-show prediction
+- entire backend designed, built, and deployed solo
 
 ### Gxpanse
 - URL: https://beshel.dev/#gxpanse
@@ -332,10 +338,12 @@ Highlights:
 - Role: backend developer · freelance
 - Stack: python
 
-Gxpanse combines social media and large-scale shopping into a single platform. I built the backend for its core services as a freelance engineer.
+Gxpanse merges a social feed with large-scale online shopping into one product: people browse and buy the way they'd scroll a timeline, with commerce and social sharing the same backend instead of being bolted together as separate apps. As freelance backend engineer I'm building the core services behind both sides: the social layer (profiles, feed, posts, engagement) and the marketplace layer (product catalog and the transaction flow behind it), on shared infrastructure.
 
 Systems:
-- Social feed & marketplace core: backend core services for a product merging a social feed with large-scale shopping
+- Social feed & profiles: user profiles, posts, feed, and engagement (likes, comments, follows)
+- Marketplace & catalog: product listings and the marketplace transaction flow behind them
+- Unified backend: social and commerce sharing one backend rather than two bolted-together systems
 
 ## More work
 
