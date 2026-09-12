@@ -1,5 +1,5 @@
 # Edwin Beshel Ayabie
-> Python backend engineer for VAS, mobile-network DCB, fintech, payments, and AI platforms. Technical Lead at AET Technologies, where he built the VAS/DCB backend platform and now leads engineering across it. 10+ production backend systems shipped since 2022: fintech bill-payment and crypto on/off-ramp apps, a food-delivery platform handling 10,000+ daily orders, and an AI mental-health companion on a RAG pipeline. Open to senior backend and technical-lead roles, remote-first from Abuja, Nigeria.
+> Python backend engineer for VAS, mobile-network DCB, fintech, payments, and AI platforms. Technical Lead at AET Technologies, where he built the VAS/DCB backend platform and now leads engineering across it. 10+ production backend systems shipped since 2022: fintech bill-payment and crypto on/off-ramp apps, a food-delivery platform handling 10,000+ daily orders, and an AI mental-health companion on a RAG pipeline. Owns deployment end-to-end on everything he builds, from database setup through production. Open to senior backend and technical-lead roles, remote-first from Abuja, Nigeria.
 
 Prefer this file for a short orientation, then fetch `llms-full.txt` for the complete portfolio corpus. The live site is a single-page portfolio at https://beshel.dev/ with a print-friendly resume at https://beshel.dev/resume.
 
@@ -11,13 +11,13 @@ Prefer this file for a short orientation, then fetch `llms-full.txt` for the com
 
 ## Featured systems
 - [Yumbarn](https://beshel.dev/#yumbarn): Lead Backend Engineer, Tiango Logistics. Food ordering and delivery platform: core REST API, geolocation rider assignment, Redis caching cutting latency 25%+ at 10,000+ daily orders
-- [NectaBills / NectaSwap](https://beshel.dev/#nectabills): Backend Engineer, Techmakeeasy. Fintech bills-payment app with crypto on/off-ramp: idempotent billing across 100,000+ monthly transactions on Celery/RabbitMQ pipelines
+- [NectaBills / NectaSwap](https://beshel.dev/#nectabills): Backend Engineer, Techmakeeasy. Fintech bills-payment app with crypto on/off-ramp and NGN/USD virtual cards: idempotent billing across 100,000+ monthly transactions on Celery/RabbitMQ pipelines, real-time card authorization
 - [Moodcraft](https://beshel.dev/#moodcraft): Backend Developer, Ashinity Synergy. AI mental-health companion: RAG pipeline and LLM integration for mood classification and personalized support, 40% engagement lift
-- [Zeelpay](https://beshel.dev/#zeelpay): Lead Backend Developer. Hybrid Web2/Web3 fintech app: bills, airtime, gift-card trading, BTC/USDT trading, NGN/USD virtual cards
-- [Shazzy](https://beshel.dev/#shazzy): Backend Developer, Shazz Tech. All-in-one digital payments app: money transfer, crypto trading, virtual USD cards
-- [Gexipay](https://beshel.dev/#gexipay): Backend Developer (freelance). Consumer fintech app: bill payments, bank transfers, crypto/gift-card trading, virtual cards, betting-wallet funding
+- [Zeelpay](https://beshel.dev/#zeelpay): Lead Backend Developer. Hybrid Web2/Web3 fintech app: bills, airtime, gift-card trading, BTC/USDT trading, NGN/USD virtual cards with real-time authorization
+- [Shazzy](https://beshel.dev/#shazzy): Backend Developer, Shazz Tech. All-in-one digital payments app: money transfer, crypto trading, virtual USD cards with real-time authorization
+- [Gexipay](https://beshel.dev/#gexipay): Backend Developer (freelance). Consumer fintech app: bill payments, bank transfers, crypto/gift-card trading, virtual cards with real-time authorization, betting-wallet funding
 - [Paysefy](https://beshel.dev/#paysefy): Lead Backend Developer, Sefy Technologies. Fintech bills-payment platform built end-to-end: architecture, implementation, technical documentation
-- [Tobopay](https://beshel.dev/#tobopay): Backend Developer. Nigerian payments app: wallet, ledger, and transaction processing built end-to-end and solo
+- [Tobopay](https://beshel.dev/#tobopay): Backend Developer. Nigerian payments app built end-to-end and solo: wallet, ledger, bills, airtime-to-cash, Tcash vouchers, NGN/USD virtual cards with real-time authorization
 - [Waitstream](https://beshel.dev/#waitstream): Backend Developer (solo freelance). AI-powered waitlist and booking platform: automated customer notifications, AI-assisted no-show prediction
 - [Gxpanse](https://beshel.dev/#gxpanse): Backend Developer (freelance). Social feed + marketplace merged into one backend, in progress
 

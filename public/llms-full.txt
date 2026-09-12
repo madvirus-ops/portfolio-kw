@@ -1,6 +1,6 @@
 # Edwin Beshel Ayabie - Full Portfolio Corpus
 
-> Python backend engineer for VAS, mobile-network DCB, fintech, payments, and AI platforms. Technical Lead at AET Technologies, where he built the VAS/DCB backend platform and now leads engineering across it. 10+ production backend systems shipped since 2022: fintech bill-payment and crypto on/off-ramp apps, a food-delivery platform handling 10,000+ daily orders, and an AI mental-health companion on a RAG pipeline. Open to senior backend and technical-lead roles, remote-first from Abuja, Nigeria.
+> Python backend engineer for VAS, mobile-network DCB, fintech, payments, and AI platforms. Technical Lead at AET Technologies, where he built the VAS/DCB backend platform and now leads engineering across it. 10+ production backend systems shipped since 2022: fintech bill-payment and crypto on/off-ramp apps, a food-delivery platform handling 10,000+ daily orders, and an AI mental-health companion on a RAG pipeline. Owns deployment end-to-end on everything he builds, from database setup through production. Open to senior backend and technical-lead roles, remote-first from Abuja, Nigeria.
 
 Source of truth: https://beshel.dev/
 Resume: https://beshel.dev/resume
@@ -13,7 +13,7 @@ Edwin Beshel Ayabie (also: madvirus, 1madvirus) is a Python backend engineer spe
 
 I build backend systems for fintech, payments, and AI products, where transaction correctness, concurrency, and reliability under load all matter.
 
-Backend engineer across 10+ production systems since 2022: VAS and mobile-network DCB platforms, fintech bill-payment and crypto on/off-ramp apps, a food-delivery platform handling 10,000+ daily orders, and an AI mental-health companion built on a RAG pipeline. Currently Technical Lead at AET Technologies — his 9-to-5, where he built the VAS/DCB backend platform and now leads its engineering, mentoring engineers and guiding architecture across AET's wider fintech systems too.
+Backend engineer across 10+ production systems since 2022: VAS and mobile-network DCB platforms, fintech bill-payment and crypto on/off-ramp apps, a food-delivery platform handling 10,000+ daily orders, and an AI mental-health companion built on a RAG pipeline. Owns deployment end-to-end on everything he builds, from database setup through production. Currently Technical Lead at AET Technologies — his 9-to-5, where he built the VAS/DCB backend platform and now leads its engineering, mentoring engineers and guiding architecture across AET's wider fintech systems too.
 
 Availability: Open to senior backend and technical-lead roles · remote-first · Abuja, Nigeria (WAT, UTC+1)
 
@@ -112,7 +112,7 @@ His 9-to-5. Built AET's VAS and mobile-network DCB (direct carrier billing) back
 - Period: Jan 2025 - Apr 2026
 - Project: https://beshel.dev/#nectabills
 
-Backend engineer on NectaBills and NectaSwap, a fintech app for bills, transfers, eSIM, gift cards, and crypto on/off-ramp. Implemented idempotent billing and transaction workflows preventing duplicate charges across 100,000+ monthly transactions, built async payment pipelines on Celery and RabbitMQ for execution, retries, and reconciliation, and integrated multiple VAS aggregators and payment providers over REST and SOAP.
+Backend engineer on NectaBills and NectaSwap, a fintech app for bills, transfers, eSIM, gift cards, NGN/USD virtual cards, and crypto on/off-ramp. Implemented idempotent billing and transaction workflows preventing duplicate charges across 100,000+ monthly transactions, built async payment pipelines on Celery and RabbitMQ for execution, retries, and reconciliation, real-time card authorization, and integrated multiple VAS aggregators and payment providers over REST and SOAP.
 
 ### Backend Developer · AET Technologies
 - Period: Apr 2024 - Feb 2025
@@ -130,25 +130,25 @@ Built the backend end-to-end for Paysefy, a fintech bills-payment platform: arch
 - Site: https://zeelpay.com
 - Project: https://beshel.dev/#zeelpay
 
-Backend for Zeelpay, a hybrid Web2/Web3 fintech app for bill payments, airtime/data top-up, gift-card trading, and Bitcoin/USDT trading with NGN/USD virtual cards. Designed the services supporting both the cryptocurrency and bills-payment sides of the product and enforced code quality through automated testing and review.
+Backend for Zeelpay, a hybrid Web2/Web3 fintech app for bill payments, airtime/data top-up, gift-card trading, and Bitcoin/USDT trading with NGN/USD virtual cards on real-time authorization. Designed the services supporting both the cryptocurrency and bills-payment sides of the product and enforced code quality through automated testing and review.
 
 ### Backend Developer · Gexipay Technologies
 - Period: Nov 2023 - Jan 2025
 - Project: https://beshel.dev/#gexipay
 
-Built the full backend for Gexipay, a consumer fintech app for bill payments, bank transfers, crypto and gift-card trading, virtual cards, and betting-wallet funding. Implemented secure, compliant transaction-processing workflows, optimized database performance through indexing and query refactoring, and integrated third-party services over JSON and XML APIs.
+Built the full backend for Gexipay, a consumer fintech app for bill payments, bank transfers, crypto and gift-card trading, virtual cards with real-time authorization, and betting-wallet funding. Implemented secure, compliant transaction-processing workflows, optimized database performance through indexing and query refactoring, and integrated third-party services over JSON and XML APIs.
 
 ### Backend Developer · Tobopay
 - Period: Nov 2023 - Dec 2024
 - Project: https://beshel.dev/#tobopay
 
-Built the backend for Tobopay, a Nigerian payments app, end-to-end and solo: wallet and ledger logic, transaction processing for deposits, withdrawals, and transfers, and the infrastructure and deployment pipeline underneath it.
+Built the backend for Tobopay, a Nigerian payments app, end-to-end and solo: wallet and ledger, bills, airtime-to-cash, Tcash vouchers, and NGN/USD virtual cards with real-time POS/ATM authorization, plus the infrastructure and deployment pipeline underneath it.
 
 ### Backend Developer · Shazz Tech (Shazzy)
 - Period: May 2023 - Mar 2025
 - Project: https://beshel.dev/#shazzy
 
-Backend for Shazzy, an all-in-one digital payments app spanning money transfers, crypto trading, and virtual USD cards for global payments. Built the crypto wallet and virtual-card functionality and improved database performance through query optimization.
+Backend for Shazzy, an all-in-one digital payments app spanning money transfers, crypto trading, and virtual USD cards for global payments. Built the crypto wallet and virtual-card functionality, including real-time card authorization, and improved database performance through query optimization.
 
 ### Backend Developer · Zappy Global Technology
 - Period: May 2023 - Jan 2025
@@ -174,7 +174,7 @@ Payments & fintech: Bill payments & VAS aggregators · Crypto on/off-ramp (BTC �
 
 AI & data: RAG pipelines · LLM integration & tool use · Mood / intent classification · Secure data-ingestion pipelines · Voice-agent pipelines · ETL & analysis pipelines
 
-Reliability & infra: Docker · Linux · Git · Database indexing & query optimization · Redis caching · Background task reliability (Celery retries)
+Reliability & infra: End-to-end deployment ownership (DB setup → production) · Docker · Linux · Git · Database indexing & query optimization · Redis caching · Background task reliability (Celery retries)
 
 ## Featured systems
 
@@ -205,13 +205,14 @@ Highlights:
 - Stack: python · fastapi · celery · rabbitmq · postgresql · redis
 - Site: https://nectabills.com
 
-NectaBills, and its crypto counterpart NectaSwap, is Techmakeeasy's fintech app for bills, airtime, data, eSIM, gift cards, and crypto on/off-ramp. I implemented the core billing and transaction workflows with idempotent processing to prevent duplicate charges across 100,000+ transactions a month, built asynchronous background pipelines on Celery and RabbitMQ for payment execution, retries, and reconciliation, integrated multiple third-party payment providers and VAS aggregators over REST and SOAP, and optimized database queries and task throughput for reliability under concurrent transaction load.
+NectaBills, and its crypto counterpart NectaSwap, is Techmakeeasy's fintech app for bills, airtime, data, eSIM, gift cards, NGN/USD virtual cards, and crypto on/off-ramp. I implemented the core billing and transaction workflows with idempotent processing to prevent duplicate charges across 100,000+ transactions a month, built asynchronous background pipelines on Celery and RabbitMQ for payment execution, retries, and reconciliation, integrated multiple third-party payment providers and VAS aggregators over REST and SOAP, built real-time authorization for the virtual cards, and optimized database queries and task throughput for reliability under concurrent transaction load.
 
 Systems:
 - Idempotent billing engine: transaction workflows built to reject duplicate charges by construction, holding up across 100,000+ transactions a month
 - Async payment pipeline: Celery + RabbitMQ workers handling payment execution, retries, and reconciliation off the request path
 - VAS & provider integrations: multiple third-party payment providers and VAS aggregators over REST and SOAP
 - Crypto on/off-ramp (NectaSwap): crypto buy/sell flows layered onto the same wallet and transaction infrastructure
+- Real-time card authorization: NGN/USD virtual cards with live balance control, POS/ATM transaction requests routed to the backend for real-time approval or decline
 
 Highlights:
 - idempotent transaction workflows across 100,000+ monthly charges
@@ -249,6 +250,7 @@ Zeelpay is a hybrid Web2/Web3 consumer fintech app: bill payments, airtime/data 
 Systems:
 - Bills & VAS services: bill payments and airtime/data top-up backed by aggregator integrations
 - Crypto trading & virtual cards: Bitcoin/USDT trading and gift-card trading alongside NGN/USD virtual card issuance
+- Real-time card authorization: NGN/USD cards with live balance control, POS/ATM transaction requests routed to the backend for real-time approval or decline
 
 Highlights:
 - unified wallet backend: bills, airtime, gift cards, and BTC/USDT trading
@@ -260,11 +262,11 @@ Highlights:
 - Role: backend developer
 - Stack: python · fastapi · postgresql
 
-Shazzy is Shazz Tech's all-in-one digital payments app: instant money transfers, crypto trading (buy/sell/swap BTC, ETH, and more), and virtual USD cards for global payments, plus airtime/data top-up. I built the crypto wallet and virtual-card functionality and improved database performance through query optimization.
+Shazzy is Shazz Tech's all-in-one digital payments app: instant money transfers, crypto trading (buy/sell/swap BTC, ETH, and more), and virtual USD cards for global payments, plus airtime/data top-up. I built the crypto wallet and virtual-card functionality, including real-time card authorization, and improved database performance through query optimization.
 
 Systems:
 - Crypto wallet: buy/sell/swap flows for BTC, ETH, and other assets
-- Virtual USD cards: card issuance and management for global payments
+- Virtual USD cards: card issuance with real-time authorization, POS/ATM transaction requests routed to the backend for real-time approval or decline against the card's live balance
 
 Highlights:
 - query optimization across wallet and crypto-trading paths
@@ -275,7 +277,10 @@ Highlights:
 - Role: backend developer · freelance
 - Stack: python · fastapi · postgresql
 
-Gexipay is a consumer fintech app for paying Nigerian bills, transferring money to bank accounts, trading crypto and gift cards, issuing virtual cards, and funding betting wallets. I built the full backend: secure and compliant transaction-processing workflows, database performance work through indexing and query refactoring, and third-party integrations over JSON and XML APIs.
+Gexipay is a consumer fintech app for paying Nigerian bills, transferring money to bank accounts, trading crypto and gift cards, issuing virtual cards, and funding betting wallets. I built the full backend: secure and compliant transaction-processing workflows, database performance work through indexing and query refactoring, third-party integrations over JSON and XML APIs, and real-time authorization for the virtual cards.
+
+Systems:
+- Real-time card authorization: virtual cards with live balance control, POS/ATM transaction requests routed to the backend for real-time approval or decline
 
 Highlights:
 - indexing + query refactor across the transaction-processing path
@@ -283,7 +288,7 @@ Highlights:
 
 ### Paysefy
 - URL: https://beshel.dev/#paysefy
-- Status: maintained
+- Status: in production
 - Role: lead backend developer
 - Stack: python · postgresql
 
@@ -299,19 +304,22 @@ Highlights:
 
 ### Tobopay
 - URL: https://beshel.dev/#tobopay
-- Status: maintained
+- Status: in production
 - Role: backend developer
 - Stack: python
 
-Built the backend for Tobopay, a Nigerian payments app, end-to-end and solo: wallet and ledger logic, transaction processing for deposits, withdrawals, and transfers, and the infrastructure and deployment pipeline underneath it.
+Built the backend for Tobopay, a Nigerian payments app, end-to-end and solo: wallet and ledger, bills, airtime-to-cash, Tcash vouchers, and NGN/USD virtual cards with real-time POS/ATM authorization, plus the infrastructure and deployment pipeline underneath it.
 
 Systems:
 - Wallet & ledger: core wallet balance and ledger system tracking every user's money movement
-- Transaction processing: deposit, withdrawal, and transfer flows built with real-money reconciliation discipline
+- Bills & airtime-to-cash: bill payments and airtime-to-cash conversion on top of the wallet
+- Tcash vouchers: voucher-style cash-equivalent product built on the wallet and ledger
+- Real-time card authorization: NGN/USD virtual cards with live balance control, POS/ATM transaction requests routed to the backend for real-time approval or decline
 - Infrastructure & deployments: owned the deployment pipeline and backend infrastructure end-to-end, solo
 
 Highlights:
-- wallet, ledger, and transaction-processing backend built and deployed solo
+- wallet, ledger, bills, airtime-to-cash, and Tcash vouchers built and deployed solo
+- NGN/USD virtual cards with real-time POS/ATM authorization against live balance
 
 ### Waitstream
 - URL: https://beshel.dev/#waitstream
