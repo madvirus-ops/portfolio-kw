@@ -82,6 +82,15 @@ export type SkillGroup = {
     items: readonly string[];
 };
 
+export type Education = {
+    id: string;
+    degree: string;
+    institution: string;
+    institutionHref?: string;
+    period: string;
+    location: string;
+};
+
 export const portfolio = {
     meta: {
         title: "Edwin Beshel Ayabie | Python Backend Engineer for Fintech, Payments, and AI Platforms",
@@ -298,7 +307,7 @@ export const portfolio = {
             org: "Sefy Technologies (Paysefy)",
             period: "Feb 2024 - Nov 2024",
             summary:
-                "Led backend architecture and implementation for Paysefy, a fintech bills-payment platform, authored technical documentation covering system design and backend standards, and worked closely with frontend teams on API integration.",
+                "Built the backend end-to-end for Paysefy, a fintech bills-payment platform: architecture, implementation, and technical documentation covering system design and backend standards, working closely with the frontend team on API integration.",
             projectIds: ["paysefy"],
         },
         {
@@ -424,6 +433,22 @@ export const portfolio = {
             ],
         },
     ] satisfies SkillGroup[],
+    education: [
+        {
+            id: "msc-ejust",
+            degree: "Master of Science (MSc), Space Environment",
+            institution: "Egypt-Japan University of Science and Technology",
+            period: "Feb 2025 - Aug 2027",
+            location: "Alexandria, Egypt",
+        },
+        {
+            id: "bsc-afit",
+            degree: "Bachelor of Science (BSc), Physics",
+            institution: "Air Force Institute of Technology",
+            period: "2019 - 2023",
+            location: "Kaduna, Nigeria",
+        },
+    ] satisfies Education[],
     sidebarLinks: [
         {
             label: "github.com/madvirus-ops",
@@ -502,12 +527,44 @@ export const portfolio = {
             hint: "case study",
         },
         {
+            id: "paysefy",
+            label: "paysefy.md",
+            href: "#paysefy",
+            kind: "file",
+            indent: true,
+            hint: "case study",
+        },
+        {
+            id: "tobopay",
+            label: "tobopay.md",
+            href: "#tobopay",
+            kind: "file",
+            indent: true,
+            hint: "case study",
+        },
+        {
+            id: "waitstream",
+            label: "waitstream.md",
+            href: "#waitstream",
+            kind: "file",
+            indent: true,
+            hint: "case study",
+        },
+        {
+            id: "gxpanse",
+            label: "gxpanse.md",
+            href: "#gxpanse",
+            kind: "file",
+            indent: true,
+            hint: "case study",
+        },
+        {
             id: "more-work",
             label: "more-work.md",
             href: "#more-work",
             kind: "file",
             indent: true,
-            hint: "6 more systems",
+            hint: "2 more systems",
         },
         {
             id: "experience",
@@ -551,6 +608,10 @@ export const portfolio = {
                 "zeelpay",
                 "shazzy",
                 "gexipay",
+                "paysefy",
+                "tobopay",
+                "waitstream",
+                "gxpanse",
                 "more-work",
             ],
         },
@@ -862,12 +923,40 @@ export const portfolio = {
             name: "Paysefy",
             status: "maintained",
             statusLabel: "● maintained",
+            flagship: true,
             summary:
-                "Fintech bills-payment platform; led backend architecture and technical documentation.",
+                "Fintech bills-payment platform; built the backend end-to-end as lead backend developer.",
             description:
-                "Paysefy is Sefy Technologies' fintech bills-payment platform. I led backend architecture and implementation, authored technical documentation covering system design and backend standards, and worked closely with frontend teams on API integration.",
+                "Paysefy is Sefy Technologies' fintech bills-payment platform. I built the backend end-to-end: architecture, implementation, and technical documentation covering system design and backend standards, working closely with the frontend team on API integration.",
             role: "lead backend developer",
             stack: "python · postgresql",
+            systems: [
+                {
+                    name: "Backend architecture & implementation",
+                    summary:
+                        "Owned the platform end-to-end, from architecture decisions through implementation.",
+                },
+                {
+                    name: "Technical documentation",
+                    summary:
+                        "Authored system design and backend-standards documentation for the platform.",
+                },
+                {
+                    name: "Frontend integration",
+                    summary:
+                        "Worked closely with the frontend team on API contracts and integration.",
+                },
+            ],
+            diff: [
+                {
+                    type: "rem",
+                    text: "- no documented backend architecture or engineering standards",
+                },
+                {
+                    type: "add",
+                    text: "+ backend built end-to-end with documented system design and backend standards",
+                },
+            ],
         },
         {
             id: "tobopay",
@@ -875,12 +964,25 @@ export const portfolio = {
             name: "Tobopay",
             status: "maintained",
             statusLabel: "● maintained",
+            flagship: true,
             summary:
-                "Backend infrastructure and deployments for a payments product, designed and maintained end-to-end.",
+                "Payments product backend, built end-to-end: infrastructure, design, and deployments.",
             description:
-                "Designed, developed, and maintained the entire backend infrastructure and deployments for Tobopay.",
+                "I built Tobopay's backend end-to-end: designed, developed, and maintained the entire backend infrastructure and deployments.",
             role: "backend developer",
             stack: "python",
+            systems: [
+                {
+                    name: "Backend API & services",
+                    summary:
+                        "Core backend services designed and built from scratch for the payments product.",
+                },
+                {
+                    name: "Infrastructure & deployments",
+                    summary:
+                        "Owned the deployment pipeline and backend infrastructure end-to-end, solo.",
+                },
+            ],
         },
         {
             id: "zappy",
@@ -914,6 +1016,7 @@ export const portfolio = {
             name: "Waitstream",
             status: "production",
             statusLabel: "● in production",
+            flagship: true,
             summary:
                 "AI-powered waitlist-management platform for streamlining bookings and reducing no-shows, built solo freelance.",
             description:
@@ -921,6 +1024,33 @@ export const portfolio = {
             role: "backend developer · freelance",
             stack: "python · fastapi · postgresql",
             site: "https://waitstream.com",
+            systems: [
+                {
+                    name: "Waitlist & booking core",
+                    summary:
+                        "Core engine handling waitlist state and booking flow for businesses.",
+                },
+                {
+                    name: "No-show reduction",
+                    summary:
+                        "AI-driven logic aimed at cutting no-shows and improving booking follow-through.",
+                },
+                {
+                    name: "Solo backend ownership",
+                    summary:
+                        "Entire backend designed, built, and deployed independently as the sole engineer.",
+                },
+            ],
+            diff: [
+                {
+                    type: "rem",
+                    text: "- manual waitlist tracking, no automated no-show mitigation",
+                },
+                {
+                    type: "add",
+                    text: "+ AI-powered waitlist and booking platform, backend built and deployed solo",
+                },
+            ],
         },
         {
             id: "gxpanse",
@@ -928,12 +1058,30 @@ export const portfolio = {
             name: "Gxpanse",
             status: "wip",
             statusLabel: "● in progress",
+            flagship: true,
             summary:
-                "A social media and marketplace platform merged into one product, built freelance.",
+                "A social media and marketplace platform merged into one product; built the backend freelance.",
             description:
-                "Gxpanse combines social media and large-scale shopping into a single platform. Freelance backend work on the product's core services.",
+                "Gxpanse combines social media and large-scale shopping into a single platform. I built the backend for its core services as a freelance engineer.",
             role: "backend developer · freelance",
             stack: "python",
+            systems: [
+                {
+                    name: "Social feed & marketplace core",
+                    summary:
+                        "Backend core services for a product merging a social feed with large-scale shopping.",
+                },
+            ],
+            diff: [
+                {
+                    type: "rem",
+                    text: "- no unified backend for social feed + marketplace in one product",
+                },
+                {
+                    type: "add",
+                    text: "+ core services backend for a combined social + marketplace platform, in progress",
+                },
+            ],
         },
     ] satisfies Project[],
     statusBar: {

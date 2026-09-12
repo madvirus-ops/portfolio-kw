@@ -127,57 +127,25 @@ function ResumePage() {
                 </section>
 
                 <section className="mb-8">
-                    <SectionTitle>Selected systems</SectionTitle>
-                    <ul className="space-y-4">
+                    <SectionTitle>Projects</SectionTitle>
+                    <ul className="space-y-1.5 text-[13px] text-[#3a4045] print:text-[9.5pt]">
                         {featuredProjects.map((project) => (
-                            <li key={project.id} className="avoid-break">
-                                <div className="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
-                                    <h3 className="font-mono text-[13.5px] font-semibold text-[#101214] print:text-[10.5pt]">
-                                        {project.name}
-                                        <span className="ml-2 font-normal text-[#7c8489]">
-                                            {project.role}
-                                        </span>
-                                    </h3>
-                                    <span className="shrink-0 font-mono text-[11px] text-[#7c8489] print:text-[8.5pt]">
-                                        {project.statusLabel.replace("● ", "")}
-                                    </span>
-                                </div>
-                                <p className="mt-1 text-[#3a4045]">
-                                    {project.description}
-                                </p>
-                                {project.diff?.length ? (
-                                    <ul className="mt-1.5 list-disc space-y-0.5 pl-5 text-[13px] text-[#3a4045] print:text-[9.5pt]">
-                                        {project.diff
-                                            .filter((line) => line.type === "add")
-                                            .map((line) => (
-                                                <li key={line.text}>
-                                                    {line.text.replace(/^\+\s*/, "")}
-                                                </li>
-                                            ))}
-                                    </ul>
-                                ) : null}
-                                <p className="mt-1.5 font-mono text-[11px] text-[#7c8489] print:text-[8.5pt]">
-                                    stack: {project.stack}
-                                    {project.site ? (
-                                        <>
-                                            {" · "}
-                                            <a
-                                                href={project.site}
-                                                target="_blank"
-                                                rel="noreferrer"
-                                            >
-                                                {stripProtocol(project.site)}
-                                            </a>
-                                        </>
-                                    ) : null}
-                                </p>
+                            <li key={project.id}>
+                                <span className="font-mono font-semibold text-[#101214]">
+                                    {project.name}
+                                </span>
+                                <span className="text-[#7c8489]">
+                                    {" "}
+                                    · {project.role} ·{" "}
+                                </span>
+                                {project.summary}
                             </li>
                         ))}
                     </ul>
                 </section>
 
                 <section className="mb-8 avoid-break">
-                    <SectionTitle>Additional work</SectionTitle>
+                    <SectionTitle>Additional Projects</SectionTitle>
                     <ul className="space-y-1.5 text-[13px] text-[#3a4045] print:text-[9.5pt]">
                         {moreProjects.map((project) => (
                             <li key={project.id}>
@@ -189,6 +157,34 @@ function ResumePage() {
                                     · {project.role} ·{" "}
                                 </span>
                                 {project.summary}
+                            </li>
+                        ))}
+                    </ul>
+                </section>
+
+                <section className="mb-8 avoid-break">
+                    <SectionTitle>Education</SectionTitle>
+                    <ul className="space-y-2">
+                        {portfolio.education.map((entry) => (
+                            <li key={entry.id}>
+                                <div className="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
+                                    <h3 className="font-mono text-[13.5px] font-semibold text-[#101214] print:text-[10.5pt]">
+                                        {entry.degree}
+                                        <span className="font-normal text-[#7c8489]">
+                                            {" "}
+                                            ·{" "}
+                                        </span>
+                                        <span className="text-[#0f766e]">
+                                            {entry.institution}
+                                        </span>
+                                    </h3>
+                                    <span className="shrink-0 font-mono text-[11.5px] tabular-nums text-[#7c8489] print:text-[8.5pt]">
+                                        {entry.period}
+                                    </span>
+                                </div>
+                                <p className="mt-0.5 text-[13px] text-[#7c8489] print:text-[9.5pt]">
+                                    {entry.location}
+                                </p>
                             </li>
                         ))}
                     </ul>

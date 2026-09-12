@@ -16,14 +16,14 @@ Prefer this file for a short orientation, then fetch `llms-full.txt` for the com
 - [Zeelpay](https://beshel.dev/#zeelpay): Lead Backend Developer. Hybrid Web2/Web3 fintech app: bills, airtime, gift-card trading, BTC/USDT trading, NGN/USD virtual cards
 - [Shazzy](https://beshel.dev/#shazzy): Backend Developer, Shazz Tech. All-in-one digital payments app: money transfer, crypto trading, virtual USD cards
 - [Gexipay](https://beshel.dev/#gexipay): Backend Developer (freelance). Consumer fintech app: bill payments, bank transfers, crypto/gift-card trading, virtual cards, betting-wallet funding
+- [Paysefy](https://beshel.dev/#paysefy): Lead Backend Developer, Sefy Technologies. Fintech bills-payment platform built end-to-end: architecture, implementation, technical documentation
+- [Tobopay](https://beshel.dev/#tobopay): Backend Developer. Payments product backend built end-to-end: infrastructure, services, deployments
+- [Waitstream](https://beshel.dev/#waitstream): Backend Developer (solo freelance). AI-powered waitlist management platform: streamlining bookings, reducing no-shows
+- [Gxpanse](https://beshel.dev/#gxpanse): Backend Developer (freelance). Social media and marketplace platform merged into one, in progress
 
 ## More work
 - [AuvraAI](https://beshel.dev/#auvraai): AI voice-call and customer-support platform, pipeline logic for virtual agents
-- [Paysefy](https://beshel.dev/#paysefy): Sefy Technologies. Fintech bills-payment platform, backend architecture lead
-- [Tobopay](https://beshel.dev/#tobopay): End-to-end backend infrastructure and deployments
 - [Zappy](https://beshel.dev/#zappy): Zappy Global. Instant Nigerian bank transfers, dual NGN/USD wallet with FX conversion
-- [Waitstream](https://beshel.dev/#waitstream): Solo freelance. AI-powered waitlist management, reducing no-shows
-- [Gxpanse](https://beshel.dev/#gxpanse): Freelance. Social media and shopping platform in one
 
 ## Sections
 - [Experience](https://beshel.dev/#experience): Role timeline, including AET Technologies (VAS & mobile-network DCB, 9-to-5) and SCIDaR (health-coverage API)
