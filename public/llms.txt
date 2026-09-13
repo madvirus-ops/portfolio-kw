@@ -1,5 +1,5 @@
 # Edwin Beshel Ayabie
-> Python backend engineer for VAS, mobile-network DCB, fintech, payments, and AI platforms. Technical Lead at AET Technologies, where he built the VAS/DCB backend platform and now leads engineering across it. 10+ production backend systems shipped since 2022: fintech bill-payment and crypto on/off-ramp apps, a food-delivery platform handling 10,000+ daily orders, and an AI mental-health companion on a RAG pipeline. Owns deployment end-to-end on everything he builds, from database setup through production. Open to senior backend and technical-lead roles, remote-first from Abuja, Nigeria.
+> Python backend engineer for VAS, mobile-network DCB, fintech, payments, and AI platforms. Technical Lead at AET Technologies, where he built the backend behind a nationwide airtime-based rewards platform (consent and fraud checks on every entry, thousands of subscriptions a minute across 5M+ users served) and now leads engineering across it. 10+ production backend systems shipped since 2022: fintech bill-payment and crypto on/off-ramp apps, a food-delivery platform handling 10,000+ daily orders, and an AI mental-health companion on a RAG pipeline. Owns deployment end-to-end on everything he builds, from database setup through production. Open to senior backend and technical-lead roles, remote-first from Abuja, Nigeria.
 
 Prefer this file for a short orientation, then fetch `llms-full.txt` for the complete portfolio corpus. The live site is a single-page portfolio at https://beshel.dev/ with a print-friendly resume at https://beshel.dev/resume.
 
@@ -27,7 +27,7 @@ Prefer this file for a short orientation, then fetch `llms-full.txt` for the com
 - [Zappy](https://beshel.dev/#zappy): Zappy Global. Instant Nigerian bank transfers, dual NGN/USD wallet with FX conversion
 
 ## Sections
-- [Experience](https://beshel.dev/#experience): Role timeline, including AET Technologies (VAS & mobile-network DCB, 9-to-5) and SCIDaR (health-coverage API)
+- [Experience](https://beshel.dev/#experience): Role timeline, including AET Technologies (airtime-based rewards platform, VAS & mobile-network DCB) and SCIDaR (health-coverage API)
 - [Skills](https://beshel.dev/#skills): Languages, backend, telecom/VAS, payments, AI, infra
 - [Contact](https://beshel.dev/#contact): Hire / collaborate
 

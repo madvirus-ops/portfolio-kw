@@ -95,7 +95,7 @@ export const portfolio = {
     meta: {
         title: "Edwin Beshel Ayabie | Python Backend Engineer for Fintech, Payments, and AI Platforms",
         description:
-            "Edwin Beshel Ayabie is a Python backend engineer and Technical Lead at AET Technologies, building VAS, mobile-network DCB, fintech, and AI systems out of Abuja, Nigeria: bill-payment and crypto on/off-ramp platforms, FastAPI/Django services, Celery task pipelines, and RAG-based AI products across 10+ production systems since 2022.",
+            "Edwin Beshel Ayabie is a Python backend engineer and Technical Lead at AET Technologies (VAS and mobile-network direct carrier billing), also building fintech and AI systems out of Abuja, Nigeria: bill-payment and crypto on/off-ramp platforms, FastAPI/Django services, Celery task pipelines, and RAG-based AI products across 10+ production systems since 2022.",
     },
     site: {
         url: "https://beshel.dev",
@@ -175,7 +175,7 @@ export const portfolio = {
     punch: "Technical Lead at AET Technologies · backend engineer across fintech, payments, and AI products",
     valueProp:
         "I build backend systems for fintech, payments, and AI products, where transaction correctness, concurrency, and reliability under load all matter.",
-    lede: "Backend engineer across 10+ production systems since 2022: VAS and mobile-network DCB (direct carrier billing) platforms, fintech bill-payment and crypto on/off-ramp apps, a food-delivery platform handling 10,000+ daily orders, and an AI mental-health companion built on a RAG pipeline. I own deployment end-to-end on everything I build, from database setup through to production. Currently Technical Lead at AET Technologies, where I built the VAS/DCB backend platform and now lead its engineering, mentoring engineers and guiding architecture across its wider fintech systems too.",
+    lede: "Backend engineer across 10+ production systems since 2022: VAS and mobile-network DCB (direct carrier billing) platforms, fintech bill-payment and crypto on/off-ramp apps, a food-delivery platform handling 10,000+ daily orders, and an AI mental-health companion built on a RAG pipeline. I own deployment end-to-end on everything I build, from database setup through to production. Currently Technical Lead at AET Technologies, where I built the backend behind a nationwide airtime-based rewards platform: consent and fraud checks on every entry, running at thousands of subscriptions a minute for 5M+ users served and still growing. I now lead engineering across it.",
     availability:
         "Open to senior backend and technical-lead roles · remote-first · Abuja, Nigeria (WAT, UTC+1)",
     tags: [
@@ -203,6 +203,10 @@ export const portfolio = {
         {
             value: "40%",
             label: "engagement lift from an AI emotional-support pipeline",
+        },
+        {
+            value: "5M+",
+            label: "users served on an airtime-based rewards platform, still growing",
         },
     ] satisfies Highlight[],
     actions: [
@@ -284,7 +288,7 @@ export const portfolio = {
             org: "AET Technologies",
             period: "Mar 2025 - present",
             summary:
-                "My 9-to-5: I built AET's VAS and mobile-network DCB (direct carrier billing) backend platform and now lead engineering across it and AET's wider fintech systems — reviewing architecture and performance decisions, mentoring 10+ junior developers in Python, JavaScript, and distributed systems (a reported 30% productivity lift on critical projects), resolving production incidents in background task execution, API failures, and database performance, and communicating technical risk to senior stakeholders.",
+                "I built the backend behind AET's nationwide airtime-based rewards platform: consent and fraud checks on every entry, holding up at thousands of subscriptions a minute across 5M+ users served. Now leading engineering across it — reviewing architecture and performance decisions, mentoring 10+ junior developers in Python, JavaScript, and distributed systems (a reported 30% productivity lift on critical projects), resolving production incidents in background task execution, API failures, and database performance, and communicating technical risk to senior stakeholders.",
         },
         {
             id: "techmakeeasy",
@@ -301,7 +305,7 @@ export const portfolio = {
             org: "AET Technologies",
             period: "Apr 2024 - Feb 2025",
             summary:
-                "Designed and built USSD, SMS, and web APIs for AET's VAS products, including mobile-network DCB (direct carrier billing) integrations, external aggregator and ISP integrations over REST and SOAP/XML, and the billing logic behind those workflows.",
+                "Designed and built USSD, SMS, and web APIs for AET's airtime-based rewards platform, including the consent and fraud-check gateways users pass through before entry, mobile-network DCB (direct carrier billing) integrations, external aggregator and ISP integrations over REST and SOAP/XML, and the billing logic behind those workflows.",
         },
         {
             id: "sefy-paysefy",
