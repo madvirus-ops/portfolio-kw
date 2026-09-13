@@ -292,8 +292,8 @@ export const portfolio = {
             org: "Techmakeeasy (NectaBills / NectaSwap)",
             period: "Jan 2025 - Apr 2026",
             summary:
-                "Backend engineer on NectaBills and NectaSwap, a fintech app for bills, transfers, eSIM, gift cards, NGN/USD virtual cards, and crypto on/off-ramp. Implemented idempotent billing and transaction workflows preventing duplicate charges across 100,000+ monthly transactions, built async payment pipelines on Celery and RabbitMQ for execution, retries, and reconciliation, real-time card authorization, and integrated multiple VAS aggregators and payment providers over REST and SOAP.",
-            projectIds: ["nectabills"],
+                "Backend engineer at Techmakeeasy on two products: NectaBills (bills, airtime, eSIM, transfers, savings) and NectaSwap (crypto-to-Naira swap plus NGN/USD virtual cards), sharing the same wallet and transaction infrastructure. Implemented idempotent billing and transaction workflows preventing duplicate charges across 100,000+ monthly transactions, built async payment pipelines on Celery and RabbitMQ for execution, retries, and reconciliation, real-time card authorization, and integrated multiple VAS aggregators and payment providers over REST and SOAP.",
+            projectIds: ["nectabills", "nectaswap"],
         },
         {
             id: "aet-backend",
@@ -346,7 +346,7 @@ export const portfolio = {
             org: "Shazz Tech (Shazzy)",
             period: "May 2023 - Mar 2025",
             summary:
-                "Backend for Shazzy, an all-in-one digital payments app spanning money transfers, crypto trading, and virtual USD cards for global payments. Built the crypto wallet and virtual-card functionality, including real-time card authorization, and improved database performance through query optimization.",
+                "Backend for Shazzy, a crypto wallet app for buying/selling tokens and spending directly via card. Built the crypto wallet and card functionality, including real-time card authorization, and improved database performance through query optimization.",
             projectIds: ["shazzy"],
         },
         {
@@ -498,6 +498,14 @@ export const portfolio = {
             hint: "case study",
         },
         {
+            id: "nectaswap",
+            label: "nectaswap.md",
+            href: "#nectaswap",
+            kind: "file",
+            indent: true,
+            hint: "case study",
+        },
+        {
             id: "moodcraft",
             label: "moodcraft.md",
             href: "#moodcraft",
@@ -607,6 +615,7 @@ export const portfolio = {
             sectionIds: [
                 "yumbarn",
                 "nectabills",
+                "nectaswap",
                 "moodcraft",
                 "zeelpay",
                 "shazzy",
@@ -700,14 +709,14 @@ export const portfolio = {
         {
             id: "nectabills",
             fileName: "nectabills.md",
-            name: "NectaBills / NectaSwap",
+            name: "NectaBills",
             status: "production",
             statusLabel: "● in production",
             flagship: true,
             summary:
-                "Fintech bills-payment app with crypto on/off-ramp: idempotent billing across 100,000+ monthly transactions on Celery/RabbitMQ pipelines.",
+                "Fintech app for bills, airtime, eSIMs, and savings: idempotent billing across 100,000+ monthly transactions on Celery/RabbitMQ pipelines.",
             description:
-                "NectaBills, and its crypto counterpart NectaSwap, is Techmakeeasy's fintech app for bills, airtime, data, eSIM, gift cards, NGN/USD virtual cards, and crypto on/off-ramp. I implemented the core billing and transaction workflows with idempotent processing to prevent duplicate charges across 100,000+ transactions a month, built asynchronous background pipelines on Celery and RabbitMQ for payment execution, retries, and reconciliation, integrated multiple third-party payment providers and VAS aggregators over REST and SOAP, built real-time authorization for the virtual cards, and optimized database queries and task throughput for reliability under concurrent transaction load.",
+                "NectaBills is Techmakeeasy's fintech app for bill payments, airtime and data top-up, airtime-to-cash conversion, eSIM management, transfers, and interest-earning savings. I implemented the core billing and transaction workflows with idempotent processing to prevent duplicate charges across 100,000+ transactions a month, built asynchronous background pipelines on Celery and RabbitMQ for payment execution, retries, and reconciliation, integrated multiple third-party payment providers and VAS aggregators over REST and SOAP, and optimized database queries and task throughput for reliability under concurrent transaction load.",
             role: "backend engineer",
             stack: "python · fastapi · celery · rabbitmq · postgresql · redis",
             site: "https://nectabills.com",
@@ -725,17 +734,7 @@ export const portfolio = {
                 {
                     name: "VAS & provider integrations",
                     summary:
-                        "Multiple third-party payment providers and VAS aggregators integrated over REST and SOAP for airtime, data, utilities, and gift cards.",
-                },
-                {
-                    name: "Crypto on/off-ramp (NectaSwap)",
-                    summary:
-                        "Crypto buy/sell flows layered onto the same wallet and transaction infrastructure.",
-                },
-                {
-                    name: "Real-time card authorization",
-                    summary:
-                        "NGN/USD virtual cards with live balance control: POS/ATM transaction requests are routed to the backend for real-time approval or decline against the card's available balance.",
+                        "Multiple third-party payment providers and VAS aggregators integrated over REST and SOAP for airtime, data, eSIMs, and bill payments.",
                 },
             ],
             diff: [
@@ -751,9 +750,42 @@ export const portfolio = {
                     type: "add",
                     text: "+ Celery/RabbitMQ pipeline for async execution, retries, and reconciliation",
                 },
+            ],
+        },
+        {
+            id: "nectaswap",
+            fileName: "nectaswap.md",
+            name: "NectaSwap",
+            status: "production",
+            statusLabel: "● in production",
+            flagship: true,
+            summary:
+                "Crypto-to-Naira swap app from Techmakeeasy with NGN/USD virtual cards for global spending, on shared wallet and transaction infrastructure with NectaBills.",
+            description:
+                "NectaSwap is Techmakeeasy's crypto companion app: swap crypto for Naira, plus NectaSwap Cards for spending globally and virtually. I built the crypto buy/sell flows and real-time authorization for the virtual cards, layered onto the same wallet and transaction infrastructure as NectaBills, reusing the same idempotent transaction processing and reconciliation pipeline.",
+            role: "backend engineer",
+            stack: "python · fastapi · celery · rabbitmq · postgresql · redis",
+            site: "https://nectaswap.com",
+            systems: [
+                {
+                    name: "Crypto-to-Naira swap",
+                    summary:
+                        "Crypto buy/sell flows layered onto the same wallet and transaction infrastructure as NectaBills.",
+                },
+                {
+                    name: "Real-time card authorization",
+                    summary:
+                        "NGN/USD virtual cards with live balance control: POS/ATM transaction requests are routed to the backend for real-time approval or decline against the card's available balance.",
+                },
+            ],
+            diff: [
                 {
                     type: "add",
-                    text: "+ crypto on/off-ramp (NectaSwap) on the same wallet rails",
+                    text: "+ crypto-to-Naira swap on the same wallet rails as NectaBills",
+                },
+                {
+                    type: "add",
+                    text: "+ NGN/USD virtual cards with real-time POS/ATM authorization",
                 },
             ],
         },
@@ -818,7 +850,7 @@ export const portfolio = {
             summary:
                 "Hybrid Web2/Web3 fintech app: bills, airtime, gift-card trading, and BTC/USDT trading with NGN/USD virtual cards.",
             description:
-                "Zeelpay is a hybrid Web2/Web3 consumer fintech app: bill payments, airtime/data top-up, gift-card trading, Bitcoin/USDT trading, and NGN/USD virtual cards, alongside P2P transfers. I designed backend services supporting both the cryptocurrency and bills-payment sides of the product and enforced code quality through automated testing and review practices.",
+                "Zeelpay is a hybrid Web2/Web3 consumer fintech app: bill payments, airtime/data top-up, airtime-to-cash conversion, gift-card trading, Bitcoin/USDT trading, and NGN/USD virtual cards, alongside P2P transfers. I designed backend services supporting both the cryptocurrency and bills-payment sides of the product and enforced code quality through automated testing and review practices.",
             role: "lead backend developer",
             stack: "python · fastapi · postgresql · redis",
             site: "https://zeelpay.com",
@@ -826,7 +858,7 @@ export const portfolio = {
                 {
                     name: "Bills & VAS services",
                     summary:
-                        "Bill payments and airtime/data top-up backed by aggregator integrations.",
+                        "Bill payments, airtime/data top-up, and airtime-to-cash conversion backed by aggregator integrations.",
                 },
                 {
                     name: "Crypto trading & virtual cards",
@@ -862,21 +894,22 @@ export const portfolio = {
             statusLabel: "● in production",
             flagship: true,
             summary:
-                "All-in-one digital payments app: money transfer, crypto trading, and virtual USD cards for global payments.",
+                "Crypto wallet app: buy/sell tokens and spend directly via card, in-store and online.",
             description:
-                "Shazzy is Shazz Tech's all-in-one digital payments app: instant money transfers, crypto trading (buy/sell/swap BTC, ETH, and more), and virtual USD cards for global payments, plus airtime/data top-up. I built the crypto wallet and virtual-card functionality and improved database performance through query optimization.",
+                "Shazzy is Shazz Tech's crypto wallet app: buy and sell tokens like BTC in your local currency, then spend directly using a Shazzy card in stores and online. I built the crypto wallet and card functionality, including real-time card authorization, and improved database performance through query optimization.",
             role: "backend developer",
             stack: "python · fastapi · postgresql",
+            site: "https://shazzy.app",
             systems: [
                 {
                     name: "Crypto wallet",
                     summary:
-                        "Buy/sell/swap flows for BTC, ETH, and other assets inside the wallet.",
+                        "Buy/sell flows for tokens like BTC in the user's local currency.",
                 },
                 {
-                    name: "Virtual USD cards",
+                    name: "Card spending",
                     summary:
-                        "Card issuance with real-time authorization: POS/ATM transaction requests are routed to the backend for real-time approval or decline against the card's live balance.",
+                        "Card issuance with real-time authorization: transaction requests are routed to the backend for real-time approval or decline against the card's live balance.",
                 },
             ],
             diff: [
@@ -898,11 +931,12 @@ export const portfolio = {
             statusLabel: "● in production",
             flagship: true,
             summary:
-                "Consumer fintech app: bill payments, bank transfers, crypto and gift-card trading, virtual cards, and betting-wallet funding.",
+                "Consumer fintech app: bill payments, bank transfers, airtime-to-cash, crypto and gift-card trading, virtual cards, and betting-wallet funding.",
             description:
-                "Gexipay is a consumer fintech app for paying Nigerian bills, transferring money to bank accounts, trading crypto and gift cards, issuing virtual cards, and funding betting wallets. I built the full backend: secure and compliant transaction-processing workflows, database performance work through indexing and query refactoring, third-party integrations over JSON and XML APIs, and real-time authorization for the virtual cards.",
+                "Gexipay is a consumer fintech app for paying Nigerian bills, transferring money to bank accounts, converting airtime to cash, trading crypto and gift cards, issuing virtual cards, and funding betting wallets. I built the full backend: secure and compliant transaction-processing workflows, database performance work through indexing and query refactoring, third-party integrations over JSON and XML APIs, and real-time authorization for the virtual cards.",
             role: "backend developer · freelance",
             stack: "python · fastapi · postgresql",
+            site: "https://gexipay.com",
             systems: [
                 {
                     name: "Real-time card authorization",
@@ -992,6 +1026,7 @@ export const portfolio = {
                 "Tobopay is a Nigerian payments app: a wallet backed by a proper ledger, bill payments, airtime-to-cash conversion, and Tcash, a voucher-style cash-equivalent product. I built it end-to-end and solo, with nothing handed to me to maintain: wallet and ledger logic, bills and airtime-to-cash flows, Tcash vouchers, and NGN/USD virtual cards with real-time authorization — POS and ATM transaction requests routed to the backend for approval against the card's live balance — plus the infrastructure and deployment pipeline underneath all of it.",
             role: "backend developer",
             stack: "python",
+            site: "https://tobopay.co",
             systems: [
                 {
                     name: "Wallet & ledger",
