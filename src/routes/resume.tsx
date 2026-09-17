@@ -67,7 +67,7 @@ function ResumePage() {
                         {portfolio.title}
                     </p>
                     <p className="mt-3 max-w-[70ch] text-[#3a4045]">
-                        {portfolio.valueProp}
+                        {portfolio.resumeSummary}
                     </p>
                     <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1 font-mono text-[11.5px] text-[#4b5257] print:text-[8.5pt]">
                         {resumeLinks.map((link) => (
@@ -95,7 +95,7 @@ function ResumePage() {
 
                 <section className="mb-8">
                     <SectionTitle>Experience</SectionTitle>
-                    <ol className="space-y-4">
+                    <ul className="space-y-4">
                         {portfolio.experience.map((entry) => (
                             <li key={entry.id} className="avoid-break">
                                 <div className="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
@@ -140,7 +140,7 @@ function ResumePage() {
                                 )}
                             </li>
                         ))}
-                    </ol>
+                    </ul>
                 </section>
 
                 <section className="mb-8">

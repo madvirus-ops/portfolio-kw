@@ -97,7 +97,7 @@ export const portfolio = {
     meta: {
         title: "Edwin Beshel Ayabie | Python Backend Engineer for Fintech, Payments, and AI Platforms",
         description:
-            "Edwin Beshel Ayabie is a Python backend engineer and Technical Lead at AET Technologies (VAS and mobile-network direct carrier billing), also building fintech and AI systems out of Abuja, Nigeria: bill-payment and crypto on/off-ramp platforms, FastAPI/Django services, Celery task pipelines, and RAG-based AI products across 10+ production systems since 2022.",
+            "Edwin Beshel Ayabie is a Python backend engineer building production fintech, payments, VAS, and AI systems: bill-payment and crypto on/off-ramp apps, FastAPI/Django services, and RAG-based AI products serving 5M+ users across 10+ production systems since 2022.",
     },
     site: {
         url: "https://beshel.dev",
@@ -184,6 +184,8 @@ export const portfolio = {
     punch: "Technical Lead at AET Technologies · backend engineer across fintech, payments, and AI products",
     valueProp:
         "I build backend systems for fintech, payments, and AI products, where transaction correctness, concurrency, and reliability under load all matter.",
+    resumeSummary:
+        "Backend Engineer specializing in Python, FastAPI, Django, PostgreSQL, Redis, Celery, RabbitMQ, and REST APIs, building distributed systems for fintech, payments, and AI platforms. Experienced designing and deploying high-throughput transaction systems, asynchronous processing pipelines, third-party API integrations, and production infrastructure on AWS, end-to-end from database setup through deployment.",
     lede: "Backend engineer across 10+ production systems since 2022: VAS and mobile-network DCB (direct carrier billing) platforms, fintech bill-payment and crypto on/off-ramp apps, a food-delivery platform handling 10,000+ daily orders, and an AI mental-health companion built on a RAG pipeline. I own deployment end-to-end on everything I build, from database setup through to production. Currently Technical Lead at AET Technologies, where I built the backend behind a nationwide airtime-based rewards platform: consent and fraud checks on every entry, running at thousands of subscriptions a minute for 5M+ users served and still growing. I now lead engineering across it.",
     availability:
         "Open to senior backend and technical-lead roles · remote-first · Abuja, Nigeria (WAT, UTC+1)",
@@ -248,7 +250,7 @@ export const portfolio = {
     experience: [
         {
             id: "synterra-digital",
-            role: "Back End Developer & Data Scientist",
+            role: "Backend Developer & Data Scientist",
             org: "Synterra Digital",
             orgHref: "https://synterradigital.ai",
             employmentType: "Contract",
