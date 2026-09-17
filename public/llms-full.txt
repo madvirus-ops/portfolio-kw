@@ -60,6 +60,10 @@ Highlights:
 - database indexing
 - query optimization
 - background task reliability
+- AWS (EC2, S3, RDS, Lambda)
+- CI/CD
+- GitHub Actions
+- Nginx
 
 ## Contact
 
@@ -76,58 +80,68 @@ Highlights:
 
 ### Back End Developer & Data Scientist · Synterra Digital
 - Period: Jul 2026 - present
+- Type: Contract
 - Company: https://synterradigital.ai
 
 Dual backend and data role at an early-stage AI company, building the data and API layer behind its product ahead of public launch.
 
 ### Backend Engineer · SCIDaR
 - Period: Feb 2026 - Jul 2026
+- Type: Contract
 - Company: https://scidar.org
 
 Contract backend engineer at Solina Centre for International Development and Research (SCIDaR), a Nigerian health and development research organization that has run 15+ transformation programs across 15+ states since 2017. Rebuilt the API layer behind an internal program-coverage tool, cutting response times by over 80% to consistently under 100ms, and built an ETL pipeline feeding downstream program analysis.
 
 ### Backend Engineer · AuvraAI
 - Period: Nov 2025 - Aug 2026
+- Type: Contract
 - Project: https://beshel.dev/#auvraai
 
 Built backend pipelines and pathway logic for an AI voice-call and customer-support platform, powering virtual agents that handle live calls.
 
 ### Backend Developer · Ashinity Synergy
 - Period: Jul 2025 - Sep 2025
+- Type: Contract
 - Project: https://beshel.dev/#moodcraft
 
 Backend for Moodcraft, an AI mental-health companion app. Engineered and maintained a RAG pipeline and LLM integration for mood classification and personalized response generation, plus secure ingestion pipelines for sensitive user data and the FastAPI inference services behind the app, alongside a reported 40% lift in user engagement.
 
 ### Lead Backend Engineer · Tiango Logistics (Yumbarn)
 - Period: May 2025 - Dec 2025
+- Type: Contract
 - Project: https://beshel.dev/#yumbarn
 
 Backend lead for Yumbarn, Tiango Logistics' food ordering and delivery platform. Architected and deployed the core REST API serving the customer, vendor, and rider apps, built real-time order fulfillment with geolocation-based rider assignment and payment processing, and introduced Redis caching that cut API latency by over 25% at 10,000+ daily orders.
 
 ### Technical Lead · AET Technologies
 - Period: Mar 2025 - present
+- Type: Full-time
 
 Built the backend behind AET's nationwide airtime-based rewards platform: consent and fraud checks on every entry, holding up at thousands of subscriptions a minute across 5M+ users served. Now leading engineering across it: reviewing architecture and performance decisions, mentoring 10+ junior developers in Python, JavaScript, and distributed systems (a reported 30% productivity lift on critical projects), resolving production incidents in background task execution, API failures, and database performance, and communicating technical risk to senior stakeholders.
 
 ### Backend Engineer · Techmakeeasy (NectaBills / NectaSwap)
 - Period: Jan 2025 - Apr 2026
+- Type: Contract
 - Project: https://beshel.dev/#nectabills
 
 Backend engineer at Techmakeeasy on two products: NectaBills (bills, airtime, eSIM, transfers, savings) and NectaSwap (crypto-to-Naira swap plus NGN/USD virtual cards), sharing the same wallet and transaction infrastructure. Implemented idempotent billing and transaction workflows preventing duplicate charges across 100,000+ monthly transactions, built async payment pipelines on Celery and RabbitMQ for execution, retries, and reconciliation, real-time card authorization, and integrated multiple VAS aggregators and payment providers over REST and SOAP.
 
 ### Backend Developer · AET Technologies
 - Period: Apr 2024 - Feb 2025
+- Type: Full-time
 
 Designed and built USSD, SMS, and web APIs for AET's airtime-based rewards platform, including the consent and fraud-check gateways users pass through before entry, mobile-network DCB (direct carrier billing) integrations, external aggregator and ISP integrations over REST and SOAP/XML, and the billing logic behind those workflows.
 
 ### Lead Backend Developer · Sefy Technologies (Paysefy)
 - Period: Feb 2024 - Nov 2024
+- Type: Full-time
 - Project: https://beshel.dev/#paysefy
 
 Built the backend end-to-end for Paysefy, a fintech bills-payment platform: architecture, implementation, and technical documentation covering system design and backend standards, working closely with the frontend team on API integration.
 
 ### Lead Backend Developer · Zeelpay
 - Period: Feb 2024 - Jan 2025
+- Type: Full-time
 - Site: https://zeelpay.com
 - Project: https://beshel.dev/#zeelpay
 
@@ -135,24 +149,28 @@ Backend for Zeelpay, a hybrid Web2/Web3 fintech app for bill payments, airtime/d
 
 ### Backend Developer · Gexipay Technologies
 - Period: Nov 2023 - Jan 2025
+- Type: Full-time
 - Project: https://beshel.dev/#gexipay
 
 Built the full backend for Gexipay, a consumer fintech app for bill payments, bank transfers, airtime-to-cash, crypto and gift-card trading, virtual cards with real-time authorization, and betting-wallet funding. Implemented secure, compliant transaction-processing workflows, optimized database performance through indexing and query refactoring, and integrated third-party services over JSON and XML APIs.
 
 ### Backend Developer · Tobopay
 - Period: Nov 2023 - Dec 2024
+- Type: Contract
 - Project: https://beshel.dev/#tobopay
 
 Built the backend for Tobopay, a Nigerian payments app, end-to-end and solo: wallet and ledger, bills, airtime-to-cash, Tcash vouchers, and NGN/USD virtual cards with real-time POS/ATM authorization, plus the infrastructure and deployment pipeline underneath it.
 
 ### Backend Developer · Shazz Tech (Shazzy)
 - Period: May 2023 - Mar 2025
+- Type: Contract
 - Project: https://beshel.dev/#shazzy
 
 Backend for Shazzy, a crypto wallet app for buying/selling tokens and spending directly via card. Built the crypto wallet and card functionality, including real-time card authorization, and improved database performance through query optimization.
 
 ### Backend Developer · Zappy Global Technology
 - Period: May 2023 - Jan 2025
+- Type: Full-time
 - Site: https://zappy.ng
 - Project: https://beshel.dev/#zappy
 
@@ -175,7 +193,7 @@ Payments & fintech: Bill payments & VAS aggregators · Crypto on/off-ramp (BTC �
 
 AI & data: RAG pipelines · LLM integration & tool use · Mood / intent classification · Secure data-ingestion pipelines · Voice-agent pipelines · ETL & analysis pipelines
 
-Reliability & infra: End-to-end deployment ownership (DB setup → production) · Docker · Linux · Git · Database indexing & query optimization · Redis caching · Background task reliability (Celery retries)
+Reliability & infra: End-to-end deployment ownership (DB setup → production) · AWS (EC2 · S3 · RDS · Lambda) · GitHub Actions · CI/CD pipelines · Nginx · Docker · Linux · Git · Database indexing & query optimization · Redis caching · Background task reliability (Celery retries)
 
 ## Featured systems
 

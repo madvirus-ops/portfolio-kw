@@ -72,8 +72,10 @@ export type Experience = {
     role: string;
     org: string;
     orgHref?: string;
+    employmentType?: string;
     period: string;
     summary: string;
+    bullets?: readonly string[];
     projectIds?: readonly string[];
 };
 
@@ -140,6 +142,9 @@ export const portfolio = {
             "direct carrier billing engineer",
             "USSD SMS gateway engineer",
             "telecom billing engineer Nigeria",
+            "AWS backend engineer",
+            "CI/CD engineer",
+            "GitHub Actions engineer",
         ].join(", "),
         skills: [
             "Python",
@@ -165,6 +170,10 @@ export const portfolio = {
             "ETL pipelines",
             "microservices",
             "end-to-end deployment",
+            "AWS",
+            "CI/CD",
+            "GitHub Actions",
+            "Nginx",
             "fintech",
             "distributed systems",
         ],
@@ -242,78 +251,134 @@ export const portfolio = {
             role: "Back End Developer & Data Scientist",
             org: "Synterra Digital",
             orgHref: "https://synterradigital.ai",
+            employmentType: "Contract",
             period: "Jul 2026 - present",
             summary:
                 "Dual backend and data role at an early-stage AI company, building the data and API layer behind its product ahead of public launch.",
+            bullets: [
+                "Building the data and API layer for an early-stage AI product ahead of public launch.",
+                "Operating in a dual backend engineering and data science capacity.",
+            ],
         },
         {
             id: "scidar",
             role: "Backend Engineer",
             org: "SCIDaR",
             orgHref: "https://scidar.org",
+            employmentType: "Contract",
             period: "Feb 2026 - Jul 2026",
             summary:
                 "Contract backend engineer at Solina Centre for International Development and Research (SCIDaR), a Nigerian health and development research organization that has run 15+ transformation programs across 15+ states since 2017. Rebuilt the API layer behind an internal program-coverage tool, cutting response times by over 80% to consistently under 100ms, and built an ETL pipeline feeding downstream program analysis.",
+            bullets: [
+                "Rebuilt the API layer behind an internal program-coverage tool, cutting response times by 80%+ to consistently under 100ms.",
+                "Built an ETL pipeline feeding downstream program analysis for a research organization running 15+ transformation programs across 15+ states.",
+            ],
         },
         {
             id: "auvraai",
             role: "Backend Engineer",
             org: "AuvraAI",
+            employmentType: "Contract",
             period: "Nov 2025 - Aug 2026",
             summary:
                 "Built backend pipelines and pathway logic for an AI voice-call and customer-support platform, powering virtual agents that handle live calls.",
+            bullets: [
+                "Built backend pipelines and pathway logic for an AI voice-call and customer-support platform.",
+                "Powered virtual agents handling live customer calls.",
+            ],
             projectIds: ["auvraai"],
         },
         {
             id: "ashinity-moodcraft",
             role: "Backend Developer",
             org: "Ashinity Synergy",
+            employmentType: "Contract",
             period: "Jul 2025 - Sep 2025",
             summary:
                 "Backend for Moodcraft, an AI mental-health companion app. Engineered and maintained a RAG pipeline and LLM integration for mood classification and personalized response generation, plus secure ingestion pipelines for sensitive user data and the FastAPI inference services behind the app, alongside a reported 40% lift in user engagement.",
+            bullets: [
+                "Engineered and maintained a RAG pipeline and LLM integration for mood classification and personalized response generation.",
+                "Built secure data-ingestion pipelines for sensitive user data.",
+                "Developed FastAPI inference services powering the app, contributing to a reported 40% lift in user engagement.",
+            ],
             projectIds: ["moodcraft"],
         },
         {
             id: "tiango-yumbarn",
             role: "Lead Backend Engineer",
             org: "Tiango Logistics (Yumbarn)",
+            employmentType: "Contract",
             period: "May 2025 - Dec 2025",
             summary:
                 "Backend lead for Yumbarn, Tiango Logistics' food ordering and delivery platform. Architected and deployed the core REST API serving the customer, vendor, and rider apps, built real-time order fulfillment with geolocation-based rider assignment and payment processing, and introduced Redis caching that cut API latency by over 25% at 10,000+ daily orders.",
+            bullets: [
+                "Architected and deployed the core REST API serving the customer, vendor, and rider apps.",
+                "Built real-time order fulfillment with geolocation-based rider assignment and payment processing.",
+                "Introduced Redis caching that cut API latency by 25%+ at 10,000+ daily orders.",
+            ],
             projectIds: ["yumbarn"],
         },
         {
             id: "aet-lead",
             role: "Technical Lead",
             org: "AET Technologies",
+            employmentType: "Full-time",
             period: "Mar 2025 - present",
             summary:
                 "I built the backend behind AET's nationwide airtime-based rewards platform: consent and fraud checks on every entry, holding up at thousands of subscriptions a minute across 5M+ users served. Now leading engineering across it — reviewing architecture and performance decisions, mentoring 10+ junior developers in Python, JavaScript, and distributed systems (a reported 30% productivity lift on critical projects), resolving production incidents in background task execution, API failures, and database performance, and communicating technical risk to senior stakeholders.",
+            bullets: [
+                "Built the backend behind a nationwide airtime-based rewards platform, including consent and fraud checks on every entry.",
+                "Scaled the platform to hold up at thousands of subscriptions a minute across 5M+ users served.",
+                "Lead architecture and performance decisions across the engineering team.",
+                "Mentor 10+ junior developers in Python, JavaScript, and distributed systems (a reported 30% productivity lift on critical projects).",
+                "Resolve production incidents in background task execution, API failures, and database performance; communicate technical risk to senior stakeholders.",
+            ],
         },
         {
             id: "techmakeeasy",
             role: "Backend Engineer",
             org: "Techmakeeasy (NectaBills / NectaSwap)",
+            employmentType: "Contract",
             period: "Jan 2025 - Apr 2026",
             summary:
                 "Backend engineer at Techmakeeasy on two products: NectaBills (bills, airtime, eSIM, transfers, savings) and NectaSwap (crypto-to-Naira swap plus NGN/USD virtual cards), sharing the same wallet and transaction infrastructure. Implemented idempotent billing and transaction workflows preventing duplicate charges across 100,000+ monthly transactions, built async payment pipelines on Celery and RabbitMQ for execution, retries, and reconciliation, real-time card authorization, and integrated multiple VAS aggregators and payment providers over REST and SOAP.",
+            bullets: [
+                "Built backend for two products, NectaBills and NectaSwap, sharing wallet and transaction infrastructure.",
+                "Implemented idempotent billing workflows preventing duplicate charges across 100,000+ monthly transactions.",
+                "Built async payment pipelines on Celery and RabbitMQ for execution, retries, and reconciliation.",
+                "Built real-time card authorization for NGN/USD virtual cards.",
+                "Integrated multiple VAS aggregators and payment providers over REST and SOAP.",
+            ],
             projectIds: ["nectabills", "nectaswap"],
         },
         {
             id: "aet-backend",
             role: "Backend Developer",
             org: "AET Technologies",
+            employmentType: "Full-time",
             period: "Apr 2024 - Feb 2025",
             summary:
                 "Designed and built USSD, SMS, and web APIs for AET's airtime-based rewards platform, including the consent and fraud-check gateways users pass through before entry, mobile-network DCB (direct carrier billing) integrations, external aggregator and ISP integrations over REST and SOAP/XML, and the billing logic behind those workflows.",
+            bullets: [
+                "Designed and built USSD, SMS, and web APIs for an airtime-based rewards platform.",
+                "Built the consent and fraud-check gateways users pass through before entry.",
+                "Integrated mobile-network DCB (direct carrier billing), external aggregators, and ISPs over REST and SOAP/XML.",
+                "Built the billing logic behind these workflows.",
+            ],
         },
         {
             id: "sefy-paysefy",
             role: "Lead Backend Developer",
             org: "Sefy Technologies (Paysefy)",
+            employmentType: "Full-time",
             period: "Feb 2024 - Nov 2024",
             summary:
                 "Built the backend end-to-end for Paysefy, a fintech bills-payment platform: architecture, implementation, and technical documentation covering system design and backend standards, working closely with the frontend team on API integration.",
+            bullets: [
+                "Built the backend end-to-end for Paysefy, a fintech bills-payment platform: architecture through implementation.",
+                "Authored technical documentation covering system design and backend standards.",
+                "Worked closely with the frontend team on API integration.",
+            ],
             projectIds: ["paysefy"],
         },
         {
@@ -321,36 +386,61 @@ export const portfolio = {
             role: "Lead Backend Developer",
             org: "Zeelpay",
             orgHref: "https://zeelpay.com",
+            employmentType: "Full-time",
             period: "Feb 2024 - Jan 2025",
             summary:
                 "Backend for Zeelpay, a hybrid Web2/Web3 fintech app for bill payments, airtime/data top-up, gift-card trading, and Bitcoin/USDT trading with NGN/USD virtual cards on real-time authorization. Designed the services supporting both the cryptocurrency and bills-payment sides of the product and enforced code quality through automated testing and review.",
+            bullets: [
+                "Designed backend services supporting both the cryptocurrency and bills-payment sides of a hybrid Web2/Web3 fintech app.",
+                "Built NGN/USD virtual cards with real-time authorization.",
+                "Enforced code quality through automated testing and review.",
+            ],
             projectIds: ["zeelpay"],
         },
         {
             id: "gexipay",
             role: "Backend Developer",
             org: "Gexipay Technologies",
+            employmentType: "Full-time",
             period: "Nov 2023 - Jan 2025",
             summary:
                 "Built the full backend for Gexipay, a consumer fintech app for bill payments, bank transfers, crypto and gift-card trading, virtual cards with real-time authorization, and betting-wallet funding. Implemented secure, compliant transaction-processing workflows, optimized database performance through indexing and query refactoring, and integrated third-party services over JSON and XML APIs.",
+            bullets: [
+                "Built the full backend for Gexipay: bill payments, bank transfers, crypto/gift-card trading, virtual cards, betting-wallet funding.",
+                "Implemented secure, compliant transaction-processing workflows and real-time card authorization.",
+                "Optimized database performance through indexing and query refactoring.",
+                "Integrated third-party services over JSON and XML APIs.",
+            ],
             projectIds: ["gexipay"],
         },
         {
             id: "tobopay",
             role: "Backend Developer",
             org: "Tobopay",
+            employmentType: "Contract",
             period: "Nov 2023 - Dec 2024",
             summary:
                 "Built the backend for Tobopay, a Nigerian payments app, end-to-end and solo: wallet and ledger, bills, airtime-to-cash, Tcash vouchers, and NGN/USD virtual cards with real-time POS/ATM authorization, plus the infrastructure and deployment pipeline underneath it.",
+            bullets: [
+                "Built the backend for Tobopay end-to-end and solo: wallet and ledger, bills, and airtime-to-cash conversion.",
+                "Built Tcash, a voucher-style cash-equivalent product.",
+                "Built NGN/USD virtual cards with real-time POS/ATM authorization.",
+                "Owned the infrastructure and deployment pipeline solo.",
+            ],
             projectIds: ["tobopay"],
         },
         {
             id: "shazzy",
             role: "Backend Developer",
             org: "Shazz Tech (Shazzy)",
+            employmentType: "Contract",
             period: "May 2023 - Mar 2025",
             summary:
                 "Backend for Shazzy, a crypto wallet app for buying/selling tokens and spending directly via card. Built the crypto wallet and card functionality, including real-time card authorization, and improved database performance through query optimization.",
+            bullets: [
+                "Built the crypto wallet and card functionality for Shazzy, including real-time card authorization.",
+                "Improved database performance through query optimization.",
+            ],
             projectIds: ["shazzy"],
         },
         {
@@ -358,9 +448,14 @@ export const portfolio = {
             role: "Backend Developer",
             org: "Zappy Global Technology",
             orgHref: "https://zappy.ng",
+            employmentType: "Full-time",
             period: "May 2023 - Jan 2025",
             summary:
                 "Backend engineer on Zappy, a Nigerian payments app for instant bank transfers and a dual NGN/USD wallet with real-time FX conversion and airtime-to-cash.",
+            bullets: [
+                "Built backend for instant Nigerian bank transfers.",
+                "Built a dual NGN/USD wallet with real-time FX conversion and airtime-to-cash.",
+            ],
             projectIds: ["zappy"],
         },
         {
@@ -370,6 +465,11 @@ export const portfolio = {
             period: "2020 - 2023",
             summary:
                 "Started in freelance web design and blogging before moving into Python backend development through internships and small teams: HNG Internship, KodeCamp, Zuri Team, Sidehustle, and Workshopapps, plus early freelance backend work for Naijabase Media.",
+            bullets: [
+                "Started in freelance web design and blogging.",
+                "Moved into Python backend development through internships: HNG Internship, KodeCamp, Zuri Team, Sidehustle, and Workshopapps.",
+                "Took on early freelance backend work for Naijabase Media.",
+            ],
         },
     ] satisfies Experience[],
     skillGroups: [
@@ -431,6 +531,9 @@ export const portfolio = {
             label: "Reliability & infra",
             items: [
                 "End-to-end deployment ownership (DB setup → production)",
+                "AWS (EC2 · S3 · RDS · Lambda)",
+                "GitHub Actions · CI/CD pipelines",
+                "Nginx",
                 "Docker",
                 "Linux",
                 "Git",
@@ -445,7 +548,7 @@ export const portfolio = {
             id: "msc-ejust",
             degree: "Master of Science (MSc), Space Environment",
             institution: "Egypt-Japan University of Science and Technology",
-            period: "Feb 2025 - Aug 2027",
+            period: "Expected Aug 2027",
             location: "Alexandria, Egypt",
         },
         {

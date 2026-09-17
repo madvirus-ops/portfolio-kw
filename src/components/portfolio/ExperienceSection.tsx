@@ -38,6 +38,9 @@ export function ExperienceSection() {
                                 )}
                             </h3>
                             <span className="shrink-0 font-mono text-[11.5px] tabular-nums text-dim">
+                                {entry.employmentType
+                                    ? `${entry.employmentType} · `
+                                    : ""}
                                 {entry.period}
                             </span>
                         </div>

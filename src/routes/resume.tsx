@@ -85,6 +85,12 @@ function ResumePage() {
                         ))}
                         <li>{portfolio.location}</li>
                     </ul>
+                    <p className="mt-3 max-w-[70ch] font-mono text-[11px] leading-relaxed text-[#4b5257] print:text-[8.5pt]">
+                        <span className="font-semibold uppercase tracking-[0.08em] text-[#7c8489]">
+                            Core Technologies:
+                        </span>{" "}
+                        {portfolio.site.skills.join(" · ")}
+                    </p>
                 </header>
 
                 <section className="mb-8">
@@ -115,12 +121,23 @@ function ResumePage() {
                                         )}
                                     </h3>
                                     <span className="shrink-0 font-mono text-[11.5px] tabular-nums text-[#7c8489] print:text-[8.5pt]">
+                                        {entry.employmentType
+                                            ? `${entry.employmentType} · `
+                                            : ""}
                                         {entry.period}
                                     </span>
                                 </div>
-                                <p className="mt-1 text-[#3a4045]">
-                                    {entry.summary}
-                                </p>
+                                {entry.bullets?.length ? (
+                                    <ul className="mt-1.5 list-disc space-y-0.5 pl-5 text-[#3a4045]">
+                                        {entry.bullets.map((bullet) => (
+                                            <li key={bullet}>{bullet}</li>
+                                        ))}
+                                    </ul>
+                                ) : (
+                                    <p className="mt-1 text-[#3a4045]">
+                                        {entry.summary}
+                                    </p>
+                                )}
                             </li>
                         ))}
                     </ol>
