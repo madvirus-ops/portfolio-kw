@@ -113,10 +113,10 @@ export function CommandPalette() {
                 role="dialog"
                 aria-modal="true"
                 aria-label="Jump to section"
-                className="w-full max-w-[440px] overflow-hidden rounded border border-line bg-surface shadow-[0_24px_80px_rgba(0,0,0,0.45)]"
+                className="w-full max-w-[440px] overflow-hidden rounded-lg border border-rule bg-raised shadow-[0_24px_80px_rgba(0,0,0,0.35)]"
             >
-                <div className="flex items-center gap-2 border-b border-line px-3.5 py-3">
-                    <span className="font-mono text-[13px] text-signal">$</span>
+                <div className="flex items-center gap-2 border-b border-rule px-3.5 py-3">
+                    <span className="font-mono text-[13px] text-accent-ink">/</span>
                     <input
                         ref={inputRef}
                         value={query}
@@ -154,9 +154,9 @@ export function CommandPalette() {
                                 ? `${listId}-${filtered[activeIndex].id}`
                                 : undefined
                         }
-                        className="w-full bg-transparent font-mono text-[13px] text-text outline-none placeholder:text-dim"
+                        className="w-full bg-transparent font-mono text-[13px] text-ink outline-none placeholder:text-muted"
                     />
-                    <kbd className="hidden shrink-0 rounded border border-line px-1.5 py-0.5 font-mono text-[10px] text-dim sm:inline">
+                    <kbd className="hidden shrink-0 rounded-lg border border-rule px-1.5 py-0.5 font-mono text-[10px] text-muted sm:inline">
                         esc
                     </kbd>
                 </div>
@@ -168,7 +168,7 @@ export function CommandPalette() {
                     className="max-h-[min(360px,50vh)] overflow-y-auto py-1.5"
                 >
                     {filtered.length === 0 ? (
-                        <li className="px-3.5 py-3 font-mono text-[12px] text-dim">
+                        <li className="px-3.5 py-3 font-mono text-[12px] text-muted">
                             no matches
                         </li>
                     ) : (
@@ -189,12 +189,12 @@ export function CommandPalette() {
                                         className={[
                                             "flex w-full items-center justify-between gap-3 px-3.5 py-2 text-left font-mono text-[12.5px] transition-colors",
                                             active
-                                                ? "bg-[rgba(94,234,212,0.08)] text-signal"
-                                                : "text-muted hover:text-text",
+                                                ? "bg-accent-wash text-accent-ink"
+                                                : "text-muted hover:text-ink",
                                         ].join(" ")}
                                     >
                                         <span>{item.label}</span>
-                                        <span className="text-[10.5px] text-dim">
+                                        <span className="text-[10.5px] text-muted">
                                             {item.hint}
                                         </span>
                                     </button>

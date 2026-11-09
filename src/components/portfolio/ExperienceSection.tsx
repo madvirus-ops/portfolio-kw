@@ -1,8 +1,7 @@
 import { portfolio } from "#/data/portfolio";
 import {
     RevealSection,
-    SectionHeading,
-    SectionPrompt,
+    SectionHeader,
 } from "#/components/portfolio/ContentSections";
 
 const projectNames = new Map(
@@ -11,58 +10,61 @@ const projectNames = new Map(
 
 export function ExperienceSection() {
     return (
-        <RevealSection id="experience" className="mb-16">
-            <SectionPrompt command="git log --oneline experience.md" />
-            <SectionHeading id="experience">Experience</SectionHeading>
+        <RevealSection id="experience">
+            <SectionHeader id="experience">Experience</SectionHeader>
 
-            <ol className="timeline">
-                {portfolio.experience.map((entry) => (
-                    <li key={entry.id} className="timeline-item">
-                        <div className="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
-                            <h3 className="font-mono text-[14px] font-semibold text-text">
-                                {entry.role}
-                                <span className="font-normal text-dim"> @ </span>
-                                {entry.orgHref ? (
-                                    <a
-                                        href={entry.orgHref}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                        className="text-signal transition-colors hover:text-text"
-                                    >
-                                        {entry.org}
-                                    </a>
-                                ) : (
-                                    <span className="text-signal">
-                                        {entry.org}
+            <div className="gutter pt-2 pb-7">
+                <ol className="timeline">
+                    {portfolio.experience.map((entry) => (
+                        <li key={entry.id} className="timeline-item">
+                            <div className="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
+                                <h3 className="text-[1.05rem] leading-snug font-semibold tracking-[-0.03em]">
+                                    {entry.role}
+                                    <span className="font-normal text-muted">
+                                        {" "}
+                                        at{" "}
                                     </span>
-                                )}
-                            </h3>
-                            <span className="shrink-0 font-mono text-[11.5px] tabular-nums text-dim">
-                                {entry.employmentType
-                                    ? `${entry.employmentType} · `
-                                    : ""}
-                                {entry.period}
-                            </span>
-                        </div>
-                        <p className="mt-1.5 max-w-[62ch] text-[13.5px] leading-relaxed text-muted">
-                            {entry.summary}
-                        </p>
-                        {entry.projectIds?.length ? (
-                            <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1 font-mono text-[11px] text-dim">
-                                {entry.projectIds.map((projectId) => (
-                                    <a
-                                        key={projectId}
-                                        href={`#${projectId}`}
-                                        className="transition-colors hover:text-signal"
-                                    >
-                                        ↳ {projectNames.get(projectId) ?? projectId}
-                                    </a>
-                                ))}
+                                    {entry.orgHref ? (
+                                        <a
+                                            href={entry.orgHref}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="text-accent-ink underline decoration-accent/40 underline-offset-[3px] transition-colors hover:decoration-accent"
+                                        >
+                                            {entry.org}
+                                        </a>
+                                    ) : (
+                                        <span>{entry.org}</span>
+                                    )}
+                                </h3>
+                                <span className="shrink-0 font-mono text-[0.68rem] text-muted tabular-nums">
+                                    {entry.employmentType
+                                        ? `${entry.employmentType} · `
+                                        : ""}
+                                    {entry.period}
+                                </span>
                             </div>
-                        ) : null}
-                    </li>
-                ))}
-            </ol>
+                            <p className="mt-1.5 max-w-[62ch] text-[0.9rem] leading-[1.5] text-body">
+                                {entry.summary}
+                            </p>
+                            {entry.projectIds?.length ? (
+                                <div className="mt-2 flex flex-wrap gap-1.5">
+                                    {entry.projectIds.map((projectId) => (
+                                        <a
+                                            key={projectId}
+                                            href={`#${projectId}`}
+                                            className="chip"
+                                        >
+                                            {projectNames.get(projectId) ??
+                                                projectId}
+                                        </a>
+                                    ))}
+                                </div>
+                            ) : null}
+                        </li>
+                    ))}
+                </ol>
+            </div>
         </RevealSection>
     );
 }

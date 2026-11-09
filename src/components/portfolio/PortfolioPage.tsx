@@ -1,67 +1,89 @@
-import { featuredProjects, sectionIds } from "#/data/portfolio";
-import {
-    AboutSection,
-    ContactSection,
-} from "#/components/portfolio/ContentSections";
+import { useCallback, useEffect, useState } from "react";
+
+import { portfolio, sectionIds } from "#/data/portfolio";
+import { AboutSection, ContactSection, Hero } from "#/components/portfolio/ContentSections";
 import { CommandPalette } from "#/components/portfolio/CommandPalette";
 import { ConsoleEasterEgg } from "#/components/portfolio/ConsoleEasterEgg";
 import { ExperienceSection } from "#/components/portfolio/ExperienceSection";
-import { MoreWorkSection } from "#/components/portfolio/MoreWorkSection";
-import { ProjectPanel } from "#/components/portfolio/ProjectPanel";
-import { Sidebar } from "#/components/portfolio/Sidebar";
+import { Footer } from "#/components/portfolio/Footer";
+import { Masthead } from "#/components/portfolio/Masthead";
 import { SkillsSection } from "#/components/portfolio/SkillsSection";
-import { StatusBar } from "#/components/portfolio/StatusBar";
+import { WorkSection } from "#/components/portfolio/WorkSection";
 import { useActiveSection } from "#/hooks/useActiveSection";
+
+const projectIds = new Set<string>(portfolio.projects.map((p) => p.id));
+
+function projectIdFromHash() {
+    const id = window.location.hash.slice(1);
+    return projectIds.has(id) ? id : null;
+}
 
 export function PortfolioPage() {
     const activeId = useActiveSection(sectionIds);
+    const [openId, setOpenId] = useState<string | null>(null);
+    const [query, setQuery] = useState("");
+    const [status, setStatus] = useState("all");
+
+    // Project case studies open in a panel and are deep-linkable via #id, so
+    // links from the experience list, the command palette and search results
+    // keep working.
+    useEffect(() => {
+        const sync = () => setOpenId(projectIdFromHash());
+        sync();
+        window.addEventListener("hashchange", sync);
+        return () => window.removeEventListener("hashchange", sync);
+    }, []);
+
+    const openProject = useCallback((id: string) => {
+        window.history.replaceState(null, "", `#${id}`);
+        setOpenId(id);
+    }, []);
+
+    const closeProject = useCallback(() => {
+        setOpenId(null);
+        if (projectIdFromHash()) {
+            window.history.replaceState(null, "", "#work");
+        }
+    }, []);
+
+    const pickTool = useCallback((tool: string) => {
+        setStatus("all");
+        setQuery(tool);
+        document
+            .getElementById("work")
+            ?.scrollIntoView({ block: "start" });
+        window.history.replaceState(null, "", "#work");
+    }, []);
 
     return (
         <>
             <a
-                href="#about"
-                className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded focus:bg-surface-2 focus:px-3 focus:py-2 focus:font-mono focus:text-sm focus:text-signal"
+                href="#summary"
+                className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[60] focus:rounded focus:bg-ink focus:px-4 focus:py-2.5 focus:text-sm focus:text-paper"
             >
                 Skip to content
             </a>
 
-            <div className="mx-auto grid min-h-screen max-w-[1180px] grid-cols-1 pb-[calc(26px+env(safe-area-inset-bottom,0px))] min-[821px]:grid-cols-[260px_1fr]">
-                <Sidebar activeId={activeId} />
+            <Masthead activeId={activeId} />
 
-                <main className="min-w-0 px-4 py-8 pb-20 sm:px-6 sm:py-10 min-[821px]:px-10 min-[821px]:py-11">
-                    <AboutSection />
+            <main className="shell">
+                <Hero />
+                <AboutSection />
+                <ExperienceSection />
+                <WorkSection
+                    query={query}
+                    onQueryChange={setQuery}
+                    status={status}
+                    onStatusChange={setStatus}
+                    openId={openId}
+                    onOpen={openProject}
+                    onClose={closeProject}
+                />
+                <SkillsSection onPickTool={pickTool} />
+                <ContactSection />
+            </main>
 
-                    <section
-                        aria-labelledby="selected-systems-heading"
-                        className="mb-8"
-                    >
-                        <h2
-                            id="selected-systems-heading"
-                            className="mb-2 font-mono text-[13px] font-semibold uppercase tracking-[0.08em] text-dim"
-                        >
-                            Selected systems
-                        </h2>
-                        <p className="max-w-[62ch] text-sm text-muted">
-                            Flagship case studies that show backend ownership
-                            across money movement, reliability, AI operations,
-                            and go-to-production delivery.
-                        </p>
-                    </section>
-
-                    <div>
-                        {featuredProjects.map((project) => (
-                            <ProjectPanel key={project.id} project={project} />
-                        ))}
-                    </div>
-
-                    <MoreWorkSection />
-                    <ExperienceSection />
-                    <SkillsSection />
-                    <ContactSection />
-                </main>
-            </div>
-
-            <StatusBar />
+            <Footer />
             <CommandPalette />
             <ConsoleEasterEgg />
         </>

@@ -1,31 +1,65 @@
-import { portfolio } from "#/data/portfolio";
+import { portfolio, type Project } from "#/data/portfolio";
+import { matchesQuery } from "#/components/portfolio/WorkSection";
 import {
     RevealSection,
-    SectionHeading,
-    SectionPrompt,
+    SectionHeader,
 } from "#/components/portfolio/ContentSections";
 
-export function SkillsSection() {
-    return (
-        <RevealSection id="skills" className="mb-16">
-            <SectionPrompt command="cat skills.md" />
-            <SectionHeading id="skills">Skills</SectionHeading>
+const projects = portfolio.projects as readonly Project[];
 
-            <dl className="grid grid-cols-1 gap-px overflow-hidden rounded border border-line bg-line sm:grid-cols-2">
+// Only offer a filter for tools that actually appear in a project, so a click
+// never lands on an empty list.
+function hasProjects(tool: string) {
+    return projects.some((project) => matchesQuery(project, tool));
+}
+
+type SkillsSectionProps = {
+    onPickTool: (tool: string) => void;
+};
+
+export function SkillsSection({ onPickTool }: SkillsSectionProps) {
+    return (
+        <RevealSection id="skills">
+            <SectionHeader
+                id="skills"
+                aside={
+                    <p className="font-mono text-[0.65rem] text-muted">
+                        Select a tool to see matching projects.
+                    </p>
+                }
+            >
+                Tech stack
+            </SectionHeader>
+
+            <dl className="gutter pb-4">
                 {portfolio.skillGroups.map((group) => (
-                    <div key={group.label} className="bg-surface px-4 py-3.5">
-                        <dt className="mb-2 font-mono text-[11.5px] font-semibold uppercase tracking-[0.08em] text-dim">
+                    <div
+                        key={group.label}
+                        className="grid items-baseline gap-2 border-t border-dashed border-quiet py-2.5 first:border-t-0 sm:grid-cols-[7.4rem_minmax(0,1fr)]"
+                    >
+                        <dt className="font-mono text-[0.69rem] leading-snug text-muted max-sm:pt-0">
                             {group.label}
                         </dt>
-                        <dd className="flex flex-wrap gap-1.5 font-mono text-[11.5px] text-muted">
-                            {group.items.map((item) => (
-                                <span
-                                    key={item}
-                                    className="rounded-[3px] border border-line bg-surface-2 px-2 py-0.5"
-                                >
-                                    {item}
-                                </span>
-                            ))}
+                        <dd className="flex flex-wrap gap-1.5">
+                            {group.items.map((item) =>
+                                hasProjects(item) ? (
+                                    <button
+                                        key={item}
+                                        type="button"
+                                        onClick={() => onPickTool(item)}
+                                        className="chip min-h-8 max-sm:min-h-11"
+                                    >
+                                        {item}
+                                    </button>
+                                ) : (
+                                    <span
+                                        key={item}
+                                        className="chip border-dashed text-muted"
+                                    >
+                                        {item}
+                                    </span>
+                                ),
+                            )}
                         </dd>
                     </div>
                 ))}

@@ -6,12 +6,12 @@ type DiffBlockProps = {
 
 export function DiffBlock({ lines }: DiffBlockProps) {
     return (
-        <div className="diff-scroll mt-3.5 rounded border border-line bg-surface-2 px-4 py-3.5 font-mono text-[12.5px] leading-relaxed text-dim">
+        <div className="diff-scroll mt-4 rounded-[5px] border border-rule bg-wash px-4 py-3.5 font-mono text-[0.75rem] leading-relaxed">
             {lines.map((line) => (
                 <div
                     key={line.text}
                     className={
-                        line.type === "add" ? "text-signal" : "text-diff-rem"
+                        line.type === "add" ? "text-accent-ink" : "text-rem"
                     }
                 >
                     {line.text}

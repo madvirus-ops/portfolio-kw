@@ -39,7 +39,7 @@ function ResumePage() {
                 <div className="mx-auto flex max-w-[820px] items-center justify-between gap-3 px-5 py-2.5 font-mono text-[12px] text-[#4b5257]">
                     <Link
                         to="/"
-                        className="transition-colors hover:text-[#0f766e]"
+                        className="transition-colors hover:text-[#6b5a33]"
                     >
                         ← back to portfolio
                     </Link>
@@ -50,7 +50,7 @@ function ResumePage() {
                         <button
                             type="button"
                             onClick={() => window.print()}
-                            className="rounded-[3px] border border-[#0f766e] bg-[#0f766e] px-3 py-1.5 text-white transition-colors hover:bg-[#115e59]"
+                            className="rounded-[3px] border border-[#6b5a33] bg-[#6b5a33] px-3 py-1.5 text-white transition-colors hover:bg-[#54462a]"
                         >
                             print / save PDF
                         </button>
@@ -60,10 +60,10 @@ function ResumePage() {
 
             <article className="mx-auto max-w-[820px] px-5 py-10 text-[14px] leading-relaxed sm:px-8 print:py-0">
                 <header className="avoid-break mb-8">
-                    <h1 className="font-mono text-[26px] font-semibold tracking-[-0.02em] text-[#101214] print:text-[20pt]">
+                    <h1 className="font-serif text-[36px] leading-none font-normal tracking-[-0.03em] text-[#111314] print:text-[26pt]">
                         {portfolio.headline}
                     </h1>
-                    <p className="mt-1 font-mono text-[13px] text-[#0f766e] print:text-[10pt]">
+                    <p className="mt-1 font-mono text-[13px] text-[#6b5a33] print:text-[10pt]">
                         {portfolio.title}
                     </p>
                     <p className="mt-3 max-w-[70ch] text-[#3a4045]">
@@ -74,7 +74,7 @@ function ResumePage() {
                             <li key={link.href}>
                                 <a
                                     href={link.href}
-                                    className="hover:text-[#0f766e]"
+                                    className="hover:text-[#6b5a33]"
                                     {...(isExternalHref(link.href)
                                         ? { target: "_blank", rel: "noreferrer" }
                                         : {})}
@@ -110,12 +110,12 @@ function ResumePage() {
                                                 href={entry.orgHref}
                                                 target="_blank"
                                                 rel="noreferrer"
-                                                className="text-[#0f766e]"
+                                                className="text-[#6b5a33]"
                                             >
                                                 {entry.org}
                                             </a>
                                         ) : (
-                                            <span className="text-[#0f766e]">
+                                            <span className="text-[#6b5a33]">
                                                 {entry.org}
                                             </span>
                                         )}
@@ -191,7 +191,7 @@ function ResumePage() {
                                             {" "}
                                             ·{" "}
                                         </span>
-                                        <span className="text-[#0f766e]">
+                                        <span className="text-[#6b5a33]">
                                             {entry.institution}
                                         </span>
                                     </h3>

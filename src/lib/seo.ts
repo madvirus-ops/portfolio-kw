@@ -2,8 +2,9 @@ import { portfolio } from "#/data/portfolio";
 
 const siteUrl = portfolio.site.url;
 
-const fontsHref =
-    "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap";
+// Runs before first paint so a saved light preference never flashes dark.
+// Keep the colours in sync with THEME_COLORS in ThemeToggle.tsx.
+const themeInitScript = `try{if(localStorage.getItem("portfolio-theme")==="light"){document.documentElement.dataset.theme="light";var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute("content","#f6f6f3")}}catch(e){}`;
 
 export function absoluteUrl(path: string) {
     return new URL(path, siteUrl).href;
@@ -146,8 +147,8 @@ export function getRootHead() {
             { name: "publisher", content: "Edwin Beshel Ayabie" },
             { name: "keywords", content: portfolio.site.keywords },
             { name: "category", content: "technology" },
-            { name: "theme-color", content: "#101214" },
-            { name: "color-scheme", content: "dark" },
+            { name: "theme-color", content: "#111314" },
+            { name: "color-scheme", content: "dark light" },
             {
                 name: "robots",
                 content:
@@ -205,15 +206,9 @@ export function getRootHead() {
                 sizes: "180x180",
             },
             { rel: "manifest", href: "/manifest.json" },
-            { rel: "preconnect", href: "https://fonts.googleapis.com" },
-            {
-                rel: "preconnect",
-                href: "https://fonts.gstatic.com",
-                crossOrigin: "anonymous" as const,
-            },
-            { rel: "stylesheet", href: fontsHref },
         ],
         scripts: [
+            { children: themeInitScript },
             {
                 type: "application/ld+json",
                 children: JSON.stringify(getPersonJsonLd()),

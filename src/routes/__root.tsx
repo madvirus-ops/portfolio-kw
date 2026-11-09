@@ -39,11 +39,11 @@ export const Route = createRootRoute({
 
 function RootDocument({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="en">
+        <html lang="en" data-theme="dark" suppressHydrationWarning>
             <head>
                 <HeadContent />
             </head>
-            <body className="min-h-screen bg-bg font-sans text-text antialiased">
+            <body className="min-h-screen bg-paper font-sans text-ink antialiased">
                 {children}
                 {Devtools ? (
                     <Suspense fallback={null}>

@@ -5,7 +5,7 @@
 Source of truth: https://beshel.dev/
 Resume: https://beshel.dev/resume
 Index: https://beshel.dev/llms.txt
-Last updated: 2026-09-13
+Last updated: 2026-11-09
 
 ## About
 
@@ -87,6 +87,12 @@ Highlights:
 
 Dual backend and data role at an early-stage AI company, building the data and API layer behind its product ahead of public launch.
 
+### Backend Engineer · SumTarget
+- Period: Jul 2026 - Nov 2026
+- Type: Contract
+
+Built the backend for SumTarget, a two-game number platform and telco VAS product playable on web and by SMS.
+
 ### Backend Engineer · SCIDaR
 - Period: Feb 2026 - Jul 2026
 - Type: Contract
@@ -126,7 +132,7 @@ Built the backend behind AET's nationwide airtime-based rewards platform: consen
 - Type: Contract
 - Project: https://beshel.dev/#nectabills
 
-Backend engineer at Techmakeeasy on two products: NectaBills (bills, airtime, eSIM, transfers, savings) and NectaSwap (crypto-to-Naira swap plus NGN/USD virtual cards), sharing the same wallet and transaction infrastructure. Implemented idempotent billing and transaction workflows preventing duplicate charges across 100,000+ monthly transactions, built async payment pipelines on Celery and RabbitMQ for execution, retries, and reconciliation, real-time card authorization, and integrated multiple VAS aggregators and payment providers over REST and SOAP.
+Backend engineer at Techmakeeasy on two products: NectaBills (bills, airtime, eSIM, transfers, savings) and NectaSwap (crypto-to-Naira swap plus NGN/USD virtual cards), sharing the same wallet and transaction infrastructure. Implemented idempotent billing and transaction workflows preventing duplicate charges across 100,000+ monthly transactions, built async payment pipelines on Celery for execution, retries, and reconciliation, real-time card authorization, and integrated multiple third-party payment providers.
 
 ### Backend Developer · AET Technologies
 - Period: Apr 2024 - Feb 2025
@@ -223,25 +229,25 @@ Highlights:
 - URL: https://beshel.dev/#nectabills
 - Status: in production
 - Role: backend engineer
-- Stack: python · fastapi · celery · rabbitmq · postgresql · redis
+- Stack: python · fastapi · celery · postgresql · redis
 - Site: https://nectabills.com
 
-NectaBills is Techmakeeasy's fintech app for bill payments, airtime and data top-up, airtime-to-cash conversion, eSIM management, transfers, and interest-earning savings. I implemented the core billing and transaction workflows with idempotent processing to prevent duplicate charges across 100,000+ transactions a month, built asynchronous background pipelines on Celery and RabbitMQ for payment execution, retries, and reconciliation, integrated multiple third-party payment providers and VAS aggregators over REST and SOAP, and optimized database queries and task throughput for reliability under concurrent transaction load.
+NectaBills is Techmakeeasy's fintech app for bill payments, airtime and data top-up, airtime-to-cash conversion, eSIM management, transfers, and interest-earning savings. I implemented the core billing and transaction workflows with idempotent processing to prevent duplicate charges across 100,000+ transactions a month, built asynchronous background pipelines on Celery for payment execution, retries, and reconciliation, integrated multiple third-party payment providers, and optimized database queries and task throughput for reliability under concurrent transaction load.
 
 Systems:
 - Idempotent billing engine: transaction workflows built to reject duplicate charges by construction, holding up across 100,000+ transactions a month
-- Async payment pipeline: Celery + RabbitMQ workers handling payment execution, retries, and reconciliation off the request path
-- VAS & provider integrations: multiple third-party payment providers and VAS aggregators over REST and SOAP for airtime, data, eSIMs, and bill payments
+- Async payment pipeline: Celery workers handling payment execution, retries, and reconciliation off the request path
+- Payment provider integrations: multiple third-party payment providers for airtime, data, eSIMs, and bill payments
 
 Highlights:
 - idempotent transaction workflows across 100,000+ monthly charges
-- Celery/RabbitMQ pipeline for async execution, retries, and reconciliation
+- Celery pipeline for async execution, retries, and reconciliation
 
 ### NectaSwap
 - URL: https://beshel.dev/#nectaswap
 - Status: in production
 - Role: backend engineer
-- Stack: python · fastapi · celery · rabbitmq · postgresql · redis
+- Stack: python · fastapi · celery · postgresql · redis
 - Site: https://nectaswap.com
 
 NectaSwap is Techmakeeasy's crypto companion app: swap crypto for Naira, plus NectaSwap Cards for spending globally and virtually. I built the crypto buy/sell flows and real-time authorization for the virtual cards, layered onto the same wallet and transaction infrastructure as NectaBills, reusing the same idempotent transaction processing and reconciliation pipeline.
@@ -392,6 +398,18 @@ Systems:
 - Unified backend: social and commerce sharing one backend rather than two bolted-together systems
 
 ## More work
+
+### SumTarget
+- URL: https://beshel.dev/#sumtarget
+- Status: backend delivered
+- Role: backend engineer · contract
+- Stack: python · fastapi · postgresql · redis · celery
+
+SumTarget is a number-game platform and a telco value-added service (VAS): two games on one player account, playable on the web and by SMS on Nigerian mobile networks. I built the backend as a contract engineer.
+
+Key points:
+- VAS product: players can take part by SMS on Nigerian mobile networks as well as on the web
+- Two games, one account: a scheduled prediction game and a timed number challenge share one player account and wallet
 
 ### AuvraAI
 - URL: https://beshel.dev/#auvraai

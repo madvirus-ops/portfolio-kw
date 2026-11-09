@@ -105,7 +105,7 @@ export const portfolio = {
         locale: "en_NG",
         twitter: "@1madvirus",
         ogImage: "/og.jpg",
-        updated: "2026-09-13",
+        updated: "2026-11-09",
         keywords: [
             "Edwin Beshel Ayabie",
             "Edwin Ayabie",
@@ -263,6 +263,20 @@ export const portfolio = {
             ],
         },
         {
+            id: "sumtarget",
+            role: "Backend Engineer",
+            org: "SumTarget",
+            employmentType: "Contract",
+            period: "Jul 2026 - Nov 2026",
+            summary:
+                "Built the backend for SumTarget, a two-game number platform and telco VAS product playable on web and by SMS.",
+            bullets: [
+                "Built the backend end to end on FastAPI, PostgreSQL, Redis, and Celery.",
+                "Part of a telco value-added service (VAS): players join by SMS on Nigerian mobile networks as well as on the web.",
+            ],
+            projectIds: ["sumtarget"],
+        },
+        {
             id: "scidar",
             role: "Backend Engineer",
             org: "SCIDaR",
@@ -343,13 +357,13 @@ export const portfolio = {
             employmentType: "Contract",
             period: "Jan 2025 - Apr 2026",
             summary:
-                "Backend engineer at Techmakeeasy on two products: NectaBills (bills, airtime, eSIM, transfers, savings) and NectaSwap (crypto-to-Naira swap plus NGN/USD virtual cards), sharing the same wallet and transaction infrastructure. Implemented idempotent billing and transaction workflows preventing duplicate charges across 100,000+ monthly transactions, built async payment pipelines on Celery and RabbitMQ for execution, retries, and reconciliation, real-time card authorization, and integrated multiple VAS aggregators and payment providers over REST and SOAP.",
+                "Backend engineer at Techmakeeasy on two products: NectaBills (bills, airtime, eSIM, transfers, savings) and NectaSwap (crypto-to-Naira swap plus NGN/USD virtual cards), sharing the same wallet and transaction infrastructure. Implemented idempotent billing and transaction workflows preventing duplicate charges across 100,000+ monthly transactions, built async payment pipelines on Celery for execution, retries, and reconciliation, real-time card authorization, and integrated multiple third-party payment providers.",
             bullets: [
                 "Built backend for two products, NectaBills and NectaSwap, sharing wallet and transaction infrastructure.",
                 "Implemented idempotent billing workflows preventing duplicate charges across 100,000+ monthly transactions.",
-                "Built async payment pipelines on Celery and RabbitMQ for execution, retries, and reconciliation.",
+                "Built async payment pipelines on Celery for execution, retries, and reconciliation.",
                 "Built real-time card authorization for NGN/USD virtual cards.",
-                "Integrated multiple VAS aggregators and payment providers over REST and SOAP.",
+                "Integrated multiple third-party payment providers.",
             ],
             projectIds: ["nectabills", "nectaswap"],
         },
@@ -585,10 +599,26 @@ export const portfolio = {
             hint: "intro",
         },
         {
-            id: "projects",
-            label: "projects/",
-            href: "#yumbarn",
-            kind: "dir",
+            id: "experience",
+            label: "experience.md",
+            href: "#experience",
+            kind: "file",
+            hint: "timeline",
+        },
+        {
+            id: "work",
+            label: "work",
+            href: "#work",
+            kind: "file",
+            hint: "all projects",
+        },
+        {
+            id: "sumtarget",
+            label: "sumtarget.md",
+            href: "#sumtarget",
+            kind: "file",
+            indent: true,
+            hint: "case study",
         },
         {
             id: "yumbarn",
@@ -679,21 +709,6 @@ export const portfolio = {
             hint: "case study",
         },
         {
-            id: "more-work",
-            label: "more-work.md",
-            href: "#more-work",
-            kind: "file",
-            indent: true,
-            hint: "2 more systems",
-        },
-        {
-            id: "experience",
-            label: "experience.md",
-            href: "#experience",
-            kind: "file",
-            hint: "timeline",
-        },
-        {
             id: "skills",
             label: "skills.md",
             href: "#skills",
@@ -718,10 +733,18 @@ export const portfolio = {
     primaryNav: [
         { id: "about", label: "about", href: "#about", sectionIds: ["about"] },
         {
+            id: "experience",
+            label: "experience",
+            href: "#experience",
+            sectionIds: ["experience"],
+        },
+        {
             id: "work",
             label: "work",
-            href: "#yumbarn",
+            href: "#work",
             sectionIds: [
+                "work",
+                "sumtarget",
                 "yumbarn",
                 "nectabills",
                 "nectaswap",
@@ -733,14 +756,7 @@ export const portfolio = {
                 "tobopay",
                 "waitstream",
                 "gxpanse",
-                "more-work",
             ],
-        },
-        {
-            id: "experience",
-            label: "experience",
-            href: "#experience",
-            sectionIds: ["experience"],
         },
         {
             id: "skills",
@@ -756,6 +772,31 @@ export const portfolio = {
         },
     ] satisfies PrimaryNavItem[],
     projects: [
+        {
+            id: "sumtarget",
+            fileName: "sumtarget.md",
+            name: "SumTarget",
+            status: "go_live",
+            statusLabel: "● backend delivered",
+            summary:
+                "Number-game VAS platform with two games on one player account, playable on web and by SMS. I built the backend as a contract engineer.",
+            description:
+                "SumTarget is a number-game platform and a telco value-added service (VAS): two games on one player account, playable on the web and by SMS on Nigerian mobile networks. I built the backend as a contract engineer.",
+            role: "backend engineer · contract",
+            stack: "python · fastapi · postgresql · redis · celery",
+            systems: [
+                {
+                    name: "VAS product",
+                    summary:
+                        "A telco value-added service: players can take part by SMS on Nigerian mobile networks as well as on the web.",
+                },
+                {
+                    name: "Two games, one account",
+                    summary:
+                        "A scheduled prediction game and a timed number challenge share one player account and wallet.",
+                },
+            ],
+        },
         {
             id: "yumbarn",
             fileName: "yumbarn.md",
@@ -823,11 +864,11 @@ export const portfolio = {
             statusLabel: "● in production",
             flagship: true,
             summary:
-                "Fintech app for bills, airtime, eSIMs, and savings: idempotent billing across 100,000+ monthly transactions on Celery/RabbitMQ pipelines.",
+                "Fintech app for bills, airtime, eSIMs, and savings: idempotent billing across 100,000+ monthly transactions on Celery pipelines.",
             description:
-                "NectaBills is Techmakeeasy's fintech app for bill payments, airtime and data top-up, airtime-to-cash conversion, eSIM management, transfers, and interest-earning savings. I implemented the core billing and transaction workflows with idempotent processing to prevent duplicate charges across 100,000+ transactions a month, built asynchronous background pipelines on Celery and RabbitMQ for payment execution, retries, and reconciliation, integrated multiple third-party payment providers and VAS aggregators over REST and SOAP, and optimized database queries and task throughput for reliability under concurrent transaction load.",
+                "NectaBills is Techmakeeasy's fintech app for bill payments, airtime and data top-up, airtime-to-cash conversion, eSIM management, transfers, and interest-earning savings. I implemented the core billing and transaction workflows with idempotent processing to prevent duplicate charges across 100,000+ transactions a month, built asynchronous background pipelines on Celery for payment execution, retries, and reconciliation, integrated multiple third-party payment providers, and optimized database queries and task throughput for reliability under concurrent transaction load.",
             role: "backend engineer",
-            stack: "python · fastapi · celery · rabbitmq · postgresql · redis",
+            stack: "python · fastapi · celery · postgresql · redis",
             site: "https://nectabills.com",
             systems: [
                 {
@@ -838,12 +879,12 @@ export const portfolio = {
                 {
                     name: "Async payment pipeline",
                     summary:
-                        "Celery + RabbitMQ workers handling payment execution, retries, and reconciliation off the request path.",
+                        "Celery workers handling payment execution, retries, and reconciliation off the request path.",
                 },
                 {
-                    name: "VAS & provider integrations",
+                    name: "Payment provider integrations",
                     summary:
-                        "Multiple third-party payment providers and VAS aggregators integrated over REST and SOAP for airtime, data, eSIMs, and bill payments.",
+                        "Multiple third-party payment providers integrated for airtime, data, eSIMs, and bill payments.",
                 },
             ],
             diff: [
@@ -857,7 +898,7 @@ export const portfolio = {
                 },
                 {
                     type: "add",
-                    text: "+ Celery/RabbitMQ pipeline for async execution, retries, and reconciliation",
+                    text: "+ Celery pipeline for async execution, retries, and reconciliation",
                 },
             ],
         },
@@ -873,7 +914,7 @@ export const portfolio = {
             description:
                 "NectaSwap is Techmakeeasy's crypto companion app: swap crypto for Naira, plus NectaSwap Cards for spending globally and virtually. I built the crypto buy/sell flows and real-time authorization for the virtual cards, layered onto the same wallet and transaction infrastructure as NectaBills, reusing the same idempotent transaction processing and reconciliation pipeline.",
             role: "backend engineer",
-            stack: "python · fastapi · celery · rabbitmq · postgresql · redis",
+            stack: "python · fastapi · celery · postgresql · redis",
             site: "https://nectaswap.com",
             systems: [
                 {
